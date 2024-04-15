@@ -32,6 +32,7 @@ $(document).ready(function () {
     page_rep_case_list +=   '<div class="only_mob">'; 
     page_rep_case_list +=       '<div class="combo_box_wrap">'; 
     page_rep_case_list +=           '<h3>서비스별 사례를 찾아보세요!</h3>'; 
+    page_rep_case_list +=           '<label for="select_case" class="sr_only">서비스별 사례 선택 목록 열기 : </label>';     
     page_rep_case_list +=               '<select onchange="if(this.value) location.href=(this.value);" id="select_case" class="combo_box">'; 
     page_rep_case_list +=                   '<option value="03_적용사례_서비스별 사례_KTX승차권 예매.html" class="service_option">KTX 승차권 예매</option>'; 
     page_rep_case_list +=                   '<option value="03_적용사례_서비스별 사례_SRT승차권 예매.html" class="service_option">SRT 승차권 예매</option>'; 

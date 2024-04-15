@@ -172,7 +172,8 @@ $(document).ready(function () {
     service_list_traffic_mob +=    '<!-- combo box -->'; 
     service_list_traffic_mob +=    '<div class="combo_box_wrap">';  
     service_list_traffic_mob +=       '<h3>개방서비스를 찾아보세요!</h3>'; 
-    service_list_traffic_mob +=       '<select class="combo_box">'; 
+    service_list_traffic_mob +=       '<label for="select_service_list_traffic_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
+    service_list_traffic_mob +=       '<select id="select_service_list_traffic_mob" class="combo_box">';
     service_list_traffic_mob +=           '<option value="04_개방서비스_교통_벌점감경교육 예약.html" class="service_option traffic_penaltyEdu">벌점감경교육 예약</option>'; 
     service_list_traffic_mob +=           '<option value="04_개방서비스_교통_자동차검사 예약.html" class="service_option traffic_carcheck">자동차검사 예약</option>'; 
     service_list_traffic_mob +=           '<option value="04_개방서비스_교통_자동차 통합이력 조회 서비스.html" class="service_option traffic_carHistory">자동차 통합이력 조회 서비스</option>'; 
@@ -226,8 +227,8 @@ $(document).ready(function () {
     service_list_voucher_mob +=    '<!-- combo box -->'; 
     service_list_voucher_mob +=    '<div class="combo_box_wrap">';  
     service_list_voucher_mob +=       '<h3>개방서비스를 찾아보세요!</h3>'; 
-    service_list_voucher_mob +=       '<select class="combo_box">'; 
-/*     service_list_voucher_mob +=        '<select onchange="if(this.value) location.href=(this.value);" class="combo_box">';  */
+    service_list_voucher_mob +=       '<label for="select_service_list_voucher_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
+    service_list_voucher_mob +=       '<select id="select_service_list_voucher_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">';
     service_list_voucher_mob +=            '<option value="04_개방서비스_바우처·증명_문화누리카드이용.html" class="service_option voucher_mnuriApi">문화누리카드 이용</option>'; 
     service_list_voucher_mob +=            '<option value="04_개방서비스_바우처·증명_세금포인트조회및사용.html" class="service_option voucher_taxPoint">세금포인트 조회 및 사용</option>'; 
     service_list_voucher_mob +=            '<option value="04_개방서비스_바우처·증명_책이음서비스.html" class="service_option voucher_bookConnect">책이음서비스</option>'; 
@@ -277,8 +278,8 @@ $(document).ready(function () {
     service_list_issue_mob +=    '<!-- combo box -->'; 
     service_list_issue_mob +=    '<div class="combo_box_wrap">';  
     service_list_issue_mob +=       '<h3>개방서비스를 찾아보세요!</h3>'; 
-    service_list_issue_mob +=       '<select class="combo_box">'; 
-/*     service_list_issue_mob +=        '<select onchange="if(this.value) location.href=(this.value);" class="combo_box">';  */
+    service_list_issue_mob +=       '<label for="service_list_issue_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
+    service_list_issue_mob +=       '<select id="service_list_issue_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">';
     service_list_issue_mob +=            '<option value="prepare_alertPop" class="service_option issue_healthInsurVer">건강보험자격득실확인서 발급</option>'; 
     service_list_issue_mob +=            '<option value="prepare_alertPop" class="service_option issue_incomeCert">소득금액 증명원 발급</option>'; 
     service_list_issue_mob +=            '<option value="prepare_alertPop" class="service_option issue_resiRegiCert">주민등록표등본(초본) 발급</option>'; 
@@ -327,8 +328,8 @@ $(document).ready(function () {
     service_list_security_mob +=    '<!-- combo box -->'; 
     service_list_security_mob +=    '<div class="combo_box_wrap">';  
     service_list_security_mob +=        '<h3>개방서비스를 찾아보세요!</h3>'; 
-    service_list_security_mob +=        '<select class="combo_box">'; 
-/*     service_list_security_mob +=        '<select onchange="if(this.value) location.href=(this.value);" class="combo_box">';  */
+    service_list_security_mob +=       '<label for="service_list_security_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
+    service_list_security_mob +=       '<select id="service_list_security_mob" onchange="if(this.value) location.href=(this.value);"  class="combo_box">';
     service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_noTeleSale">전화권유판매 수신거부 등록</option>'; 
     /* service_list_security_mob +=            '<option value="04_개방서비스_안전_전화권유판매 수신거부 등록.html" class="service_option security_noTeleSale">전화권유판매 수신거부 등록</option>';  */
     service_list_security_mob +=        '</select>';   
@@ -383,8 +384,8 @@ $(document).ready(function () {
     service_list_vacation_mob +=    '<!-- combo box -->'; 
     service_list_vacation_mob +=    '<div class="combo_box_wrap">';  
     service_list_vacation_mob +=      '<h3>개방서비스를 찾아보세요!</h3>'; 
-    service_list_vacation_mob +=           '<select class="combo_box">'; 
-/*     service_list_vacation_mob +=        '<select onchange="if(this.value) location.href=(this.value);" class="combo_box">';  */
+    service_list_vacation_mob +=       '<label for="service_list_vacation_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
+    service_list_vacation_mob +=       '<select id="service_list_vacation_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">';
     service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_KTX승차권예매.html" class="service_option vacation_korail">KTX 승차권 예매</option>'; 
     service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_SRT승차권 예매.html" class="service_option vacation_srt">SRT 승차권 예매</option>'; 
     service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_국립생태원 예약.html" class="service_option vacation_ntEcoResBook">국립생태원 예약</option>'; 
@@ -437,7 +438,8 @@ $(document).ready(function () {
     service_list_parenting_mob +=    '<!-- combo box -->'; 
     service_list_parenting_mob +=    '<div class="combo_box_wrap">';  
     service_list_parenting_mob +=        '<h3>개방서비스를 찾아보세요!</h3>'; 
-    service_list_parenting_mob +=        '<select onchange="if(this.value) location.href=(this.value);" class="combo_box">'; 
+    service_list_parenting_mob +=        '<select id="service_list_parenting_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">'; 
+    service_list_parenting_mob +=       '<label for="service_list_parenting_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
     service_list_parenting_mob +=            '<option value="04_개방서비스_임신·육아_예방접종 내역 조회.html" class="service_option parenting_vaccinRecord">예방접종 내역 조회</option>'; 
     service_list_parenting_mob +=        '</select>';   
     service_list_parenting_mob +=      '</div>';   
@@ -482,11 +484,12 @@ $(document).ready(function () {
     service_list_young_mob +=    '<!-- combo box -->'; 
     service_list_young_mob +=    '<div class="combo_box_wrap">';  
     service_list_young_mob +=        '<h3>개방서비스를 찾아보세요!</h3>'; 
-    service_list_young_mob +=         '<select onchange="if(this.value) location.href=(this.value);" class="combo_box">'; 
+    service_list_young_mob +=       '<label for="service_list_young_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
+    service_list_young_mob +=         '<select id="service_list_young_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">';
     service_list_young_mob +=            '<option value="04_개방서비스_청년_동원훈련 일정조회.html" class="service_option young_inqRsrvForceTrn">동원훈련 일정조회</option>'; 
     service_list_young_mob +=            '<option value="04_개방서비스_청년_병역판정검사본인선택.html" class="service_option young_applyMilSrvExam">병역판정검사 본인선택</option>'; 
     service_list_young_mob +=            '<option value="04_개방서비스_청년_취업후상환학자금대출채무자신고.html" class="service_option young_stdLoanDebtorRprt">취업 후 상환 학자금대출 채무자신고</option>'; 
-    service_list_young_mob +=        '</select>';   
+    service_list_young_mob +=        '</selectclass=>';   
     service_list_young_mob +=      '</div>';   
     service_list_young_mob +=    '</div>'; 
 
@@ -515,6 +518,7 @@ $(document).ready(function () {
     page_rep_case_list +=   '<div class="only_mob">'; 
     page_rep_case_list +=       '<div class="combo_box_wrap">'; 
     page_rep_case_list +=           '<h3>서비스별 사례를 찾아보세요!</h3>'; 
+    page_rep_case_list +=           '<label for="select_case" class="sr_only">서비스별 사례 선택 목록 열기 : </label>';
     page_rep_case_list +=               '<select onchange="if(this.value) location.href=(this.value);" id="select_case" class="combo_box">'; 
     page_rep_case_list +=                   '<option value="03_적용사례_서비스별 사례_KTX승차권예매.html" class="service_option">KTX 승차권 예매</option>'; 
     page_rep_case_list +=                   '<option value="03_적용사례_서비스별 사례_SRT승차권 예매.html" class="service_option">SRT 승차권 예매</option>'; 
