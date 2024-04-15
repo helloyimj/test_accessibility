@@ -1,0 +1,2252 @@
+@charset "UTF-8";
+.flex_center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* font size */
+:root {
+  --swiper-theme-color: $color_ft_777;
+}
+
+html,
+body {
+  margin: 0;
+  color: #111;
+  font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 10px;
+  line-height: 1;
+  font-style: normal;
+  min-width: 100%;
+  overflow-x: hidden;
+  white-space: normal;
+}
+
+img {
+  display: inline-block;
+  width: auto;
+}
+
+/* 문단 줄바꿈 */
+.pre_wrap {
+  white-space: pre-wrap;
+}
+
+/* 메인페이지 공통 사항  */
+.page_main {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+}
+.page_main .swiper .swiper-pagination {
+  background: #ddd;
+}
+.page_main .swiper img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+}
+.page_main .inner {
+  width: 142rem;
+  margin: 0 auto;
+  height: 100%;
+  padding-top: 22.5rem;
+}
+.page_main section {
+  width: 100vw;
+  height: 100vh;
+  min-height: 96rem;
+  max-height: 99rem;
+  position: relative;
+}
+.page_main section .wrap_section_title {
+  width: 100%;
+  position: relative;
+}
+.page_main section .wrap_section_title .wrap_title_text {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+.page_main section .wrap_section_title .wrap_title_text::before {
+  content: "";
+  position: absolute;
+  width: 4rem;
+  height: 0.6rem;
+  background-color: #005bff;
+  border-radius: 3px;
+  top: -3.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.page_main section .wrap_section_title .wrap_title_text h4 {
+  font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 4.8rem;
+  margin-bottom: 3rem;
+}
+.page_main section .wrap_section_title .wrap_title_text p {
+  font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.6rem;
+  color: #777;
+  line-height: 1.5;
+}
+.page_main section .wrap_section_title .btn_action {
+  position: absolute;
+  right: 0;
+  bottom: 0.6rem;
+}
+.page_main .btn_round {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 4.8rem;
+  font-size: 1.8rem;
+  border-radius: 2.5rem;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.page_main .only_mob {
+  display: none;
+}
+.page_main .only_pc {
+  display: block;
+}
+
+.page_main {
+  /* 메인 비주얼 */
+}
+.page_main .main_visual {
+  width: 100vw;
+  height: 100vh;
+  max-height: 220rem;
+  color: #fff;
+  background-color: #111;
+}
+.page_main .main_visual .inner {
+  padding-top: 0;
+  width: 100%;
+}
+.page_main .main_visual .swiper_main_visual {
+  width: 100vw;
+  height: 100vh;
+  min-height: 96rem;
+  max-height: 220rem;
+  position: relative;
+}
+.page_main .main_visual .swiper_main_visual .swiper-slide {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  position: relative;
+}
+.page_main .main_visual .swiper_main_visual .swiper-slide::after {
+  content: "";
+  background-color: #111;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: 0;
+}
+.page_main .main_visual .swiper_main_visual .swiper-slide.main_visual_slide01 {
+  background-image: url("../img/main/bg_main_visual_01.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+.page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article {
+  margin-left: 25rem;
+}
+.page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article h2 {
+  font-size: 5.6rem;
+  font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin-bottom: 3rem;
+}
+.page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article h3 {
+  font-size: 2rem;
+  font-family: "NotoSansLight", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+.page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article .wrap_btn {
+  display: flex;
+  gap: 1.8rem;
+}
+.page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article .wrap_btn a {
+  width: 18rem;
+}
+.page_main .main_visual .slide_controller {
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  z-index: 100;
+  color: #111;
+  left: 25rem;
+  top: 32%;
+}
+.page_main .main_visual .slide_controller .controller_btns {
+  display: flex;
+  align-items: center;
+}
+.page_main .main_visual .slide_controller .controller_btns .controller_box_state {
+  display: flex;
+  align-items: center;
+}
+.page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-current,
+.page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-total {
+  font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-total {
+  margin-left: 316px;
+}
+.page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination {
+  width: 30rem;
+  height: 0.2rem;
+  margin-left: 2.4rem;
+}
+.page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination .swiper-pagination-progressbar-fill {
+  background-color: #005bff;
+}
+.page_main .main_visual .slide_controller .controller_btns .controller_box_btn {
+  display: flex;
+  align-items: center;
+  margin-left: 1.6rem;
+}
+.page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_prev {
+  position: relative;
+  width: 10px;
+  height: 18px;
+}
+.page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_prev::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon/icon_chevron_left_white.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_next {
+  position: relative;
+  width: 10px;
+  height: 18px;
+}
+.page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_next::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon/icon_chevron_right_white.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+.page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_pause {
+  height: 14px;
+  width: 14px;
+  background-color: #fff;
+  margin: 0 8px;
+}
+.page_main .main_visual .slide_controller .swiper-button-next,
+.page_main .main_visual .slide_controller .swiper-button-prev {
+  visibility: hidden;
+}
+.page_main .main_visual .scroll_down {
+  position: absolute;
+  bottom: 11rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+.page_main .main_visual .scroll_down .scroll_down_btn .scroll_motion_frame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page_main .main_visual .scroll_down .scroll_down_btn .scroll_motion_frame .scroll_mouse {
+  position: relative;
+  width: 2rem;
+  height: 3rem;
+  animation: move1 4s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+.page_main .main_visual .scroll_down .scroll_down_btn .scroll_motion_frame .scroll_mouse::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 3rem;
+  background-image: url("../img/icon/icon_mouse.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@keyframes move1 {
+  0% {
+    top: 0px;
+  }
+  5% {
+    top: 4px;
+  }
+  12% {
+    top: 0px;
+  }
+  17% {
+    top: 4px;
+  }
+  22% {
+    top: 0px;
+  }
+}
+.page_main .main_visual .scroll_down .scroll_down_btn .scroll_motion_frame .arrow_move {
+  position: relative;
+  width: 1.4rem;
+  height: 0.8rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+.page_main .main_visual .scroll_down .scroll_down_btn .scroll_motion_frame .arrow_move span {
+  position: relative;
+}
+.page_main .main_visual .scroll_down .scroll_down_btn .scroll_motion_frame .arrow_move span::after {
+  content: "";
+  position: absolute;
+  width: 1.4rem;
+  height: 0.8rem;
+  background-image: url("../img/icon/icon_expandMore_white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@keyframes move2 {
+  0% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.page_main .main_visual .scroll_down .scroll_down_btn .scroll_motion_frame .arrow_move span:nth-of-type(1) {
+  top: 0;
+  animation: move2 2s linear infinite;
+  animation-delay: 0.1s;
+}
+.page_main .main_visual .scroll_down .scroll_down_btn .scroll_motion_frame .arrow_move span:nth-of-type(2) {
+  top: 1rem;
+  animation: move2 2s linear infinite;
+  animation-delay: 0.4s;
+}
+.page_main .main_visual .scroll_down .scroll_down_btn .scroll_motion_frame .arrow_move span:nth-of-type(3) {
+  top: 2rem;
+  animation: move2 2s linear infinite;
+  animation-delay: 0.6s;
+}
+
+/* 최신적용사례 소개 (더 빠르게, 더 간편하게) */
+.section_app .wrap_section_contents {
+  width: 100%;
+  height: 100vh;
+  min-height: 64rem;
+  max-height: 67rem;
+  background-image: url("../img/main/bg_main_02.png");
+  background-repeat: no-repeat;
+  background-size: 53%;
+  background-position: bottom 0 left 0;
+}
+.section_app .wrap_section_contents .swiper_main_contents01 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article {
+  display: flex;
+  height: 100%;
+  gap: 10rem;
+}
+.section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_img {
+  display: flex;
+  justify-content: center;
+  width: 53%;
+  order: 1;
+}
+.section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_img img {
+  -o-object-fit: none;
+     object-fit: none;
+}
+.section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt {
+  order: 2;
+}
+.section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt .wrap_app_logo {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 2.4rem;
+  overflow: hidden;
+  margin-bottom: 3.2rem;
+  margin-top: 10rem;
+  box-shadow: 10px 10px 20px 0 rgba(37, 53, 121, 0.14);
+}
+.section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt .wrap_app_logo img {
+  width: 14rem;
+  height: 14rem;
+}
+.section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt h5 {
+  font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+.section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #777;
+  margin-bottom: 3.6rem;
+}
+.section_app .swiper-button-next {
+  right: 8rem;
+  bottom: 28rem;
+  height: 5.4rem;
+  width: 2.8rem;
+}
+.section_app .swiper-button-next::after {
+  content: "";
+  position: absolute;
+  height: 5.4rem;
+  width: 2.8rem;
+  background-image: url("../img/icon/icon_chevron_right_gray.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section_app .swiper-button-prev {
+  left: 8rem;
+  bottom: 28rem;
+  height: 5.4rem;
+  width: 2.8rem;
+}
+.section_app .swiper-button-prev::after {
+  content: "";
+  position: absolute;
+  height: 5.4rem;
+  width: 2.8rem;
+  background-image: url("../img/icon/icon_chevron_left_gray.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section_app .swiper-pagination-progressbar {
+  width: calc(100% - 16rem);
+  height: 0.2rem;
+  bottom: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ccc;
+}
+.section_app .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #005bff;
+}
+
+/* 활용 예시 소개 (새로운 가치 창출을 위해) */
+.section_example {
+  background-color: #faf9fe;
+}
+.section_example .wrap_section_contents {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 5rem;
+}
+.section_example .wrap_section_contents > div {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  min-height: 40.2rem;
+  padding: 5rem 4rem;
+  box-shadow: 7px 7px 21px 0 rgba(16, 34, 66, 0.19);
+}
+.section_example .wrap_section_contents > div p {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #777;
+  margin-top: 5rem;
+}
+.section_example .wrap_section_contents > div .wrap_img {
+  display: flex;
+  height: 192px;
+  align-items: end;
+  justify-content: center;
+}
+.section_example .wrap_section_contents > div .wrap_img img {
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+/* BI 소개 (디지털서비스개방 BI를 소개합니다) */
+.section_bi .wrap_section_contents {
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 9rem;
+  min-height: 40rem;
+}
+.section_bi .wrap_section_contents > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(1) {
+  padding: 0 16rem;
+  /*   width: 61rem; */
+  height: 100%;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(1) {
+  width: 17rem;
+  height: 17rem;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(1) img {
+  width: 100%;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(2) {
+  width: 39rem;
+  height: 9rem;
+  margin-top: 3rem;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(2) img {
+  width: 100%;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(2) {
+  /*  width: 65rem; */
+}
+.section_bi .wrap_section_contents > div:nth-of-type(2) > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3.6rem;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(2) > div:last-of-type {
+  margin-bottom: 0;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(2) > div .wrap_img {
+  height: 6.4rem;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(2) > div .wrap_img img {
+  height: 100%;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(2) > div > div div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  min-width: 16rem;
+  margin-right: 3rem;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(2) > div > div div:nth-of-type(2) img {
+  height: 1.6rem;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(2) > div > div div:nth-of-type(2) {
+  margin-top: 1.6rem;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(2) > div p, .section_bi .wrap_section_contents > div:nth-of-type(2) > div span {
+  font-size: 1.4rem;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(2) > div span {
+  color: #777;
+  margin: 0 4px;
+}
+.section_bi .wrap_section_contents > div:nth-of-type(2) > div > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 4rem;
+  width: 42rem;
+  min-height: 10rem;
+  border: 1px solid #ddd;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  font-family: "NotoSansMedium", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  color: #777;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+.section_bi .wrap_section_contents > div .wrap_btn {
+  align-items: stretch;
+  margin-top: 6rem;
+}
+
+@media all and (max-width: 1420px) {
+  .page_main .inner {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 3%;
+    padding-top: 20rem;
+  }
+  .page_main section {
+    width: 100vw;
+    height: auto;
+    min-height: 96rem;
+    max-height: initial;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .page_main section .wrap_section_title {
+    width: 100%;
+    position: relative;
+  }
+  .page_main section .wrap_section_title .btn_action {
+    position: absolute;
+    right: 3%;
+    bottom: 0.6rem;
+  }
+  .page_main {
+    /* 메인 비주얼 */
+  }
+  .page_main .main_visual {
+    min-height: 76.8rem;
+    max-height: 120rem;
+  }
+  .page_main .main_visual .swiper_main_visual {
+    min-height: 76.8rem;
+    max-height: 120rem;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide {
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    position: relative;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide::after {
+    content: "";
+    background-color: #111;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide.main_visual_slide01 {
+    background-image: url("../img/main/bg_main_visual_01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article {
+    margin-left: 8rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article h2 {
+    font-size: 4.8rem;
+    font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-bottom: 3rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article h3 {
+    font-size: 2rem;
+    font-family: "NotoSansLight", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article .wrap_btn {
+    display: flex;
+    gap: 1.8rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article .wrap_btn a {
+    width: 17rem;
+  }
+  .page_main .main_visual .slide_controller {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    z-index: 100;
+    color: #111;
+    left: 11rem;
+    top: 30%;
+  }
+  .page_main .main_visual .slide_controller .controller_btns {
+    display: flex;
+    align-items: center;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state {
+    display: flex;
+    align-items: center;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-current,
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-total {
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-total {
+    margin-left: 216px;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination {
+    width: 20rem;
+    height: 0.2rem;
+    margin-left: 2.4rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: #005bff;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn {
+    display: flex;
+    align-items: center;
+    margin-left: 1.6rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_prev {
+    position: relative;
+    width: 10px;
+    height: 18px;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_prev::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon/icon_chevron_left_white.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_next {
+    position: relative;
+    width: 10px;
+    height: 18px;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_next::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon/icon_chevron_right_white.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_pause {
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    margin: 0 8px;
+  }
+  .page_main .main_visual .slide_controller .swiper-button-next,
+  .page_main .main_visual .slide_controller .swiper-button-prev {
+    visibility: hidden;
+  }
+  .page_main .main_visual .scroll_down {
+    position: absolute;
+    bottom: 8rem;
+  }
+  /* 최신적용사례 소개 (더 빠르게, 더 간편하게) */
+  .section_app .wrap_section_contents {
+    width: 100%;
+    height: 100vh;
+    min-height: 64rem;
+    max-height: 64rem;
+    background-image: url("../img/main/bg_main_02.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: bottom 0 left 0;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    gap: 8rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_img {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    order: 1;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_img img {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt {
+    order: 2;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt .wrap_app_logo {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 2.4rem;
+    overflow: hidden;
+    margin-bottom: 3.2rem;
+    margin-top: 10rem;
+    box-shadow: 10px 10px 20px 0 rgba(37, 53, 121, 0.14);
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt .wrap_app_logo img {
+    width: 13rem;
+    height: 13rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt h5 {
+    font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 1.6rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt p {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #777;
+    margin-bottom: 3.6rem;
+  }
+  .section_app .swiper-button-next {
+    right: 28rem;
+    bottom: 6.4rem;
+    height: 3rem;
+    width: 3rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 50%;
+  }
+  .section_app .swiper-button-next::after {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    background-image: url("../img/icon/icon_chevron_up_gray.svg");
+    background-repeat: no-repeat;
+    background-position: top 0.9rem center;
+    background-size: auto;
+    transform: rotate(90deg);
+  }
+  .section_app .swiper-button-prev {
+    left: 28rem;
+    bottom: 6.4rem;
+    height: 3rem;
+    width: 3rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 50%;
+  }
+  .section_app .swiper-button-prev::after {
+    content: "";
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    background-image: url("../img/icon/icon_chevron_up_gray.svg");
+    background-repeat: no-repeat;
+    background-position: top 0.9rem center;
+    background-size: auto;
+    transform: rotate(270deg);
+  }
+  .section_app .swiper-pagination {
+    width: calc(100% - 60rem);
+    height: 0.3rem;
+    bottom: 6rem;
+  }
+  /* 활용 예시 소개 (새로운 가치 창출을 위해) */
+  .section_example .wrap_section_contents {
+    display: table;
+    table-layout: fixed;
+    border-spacing: 2rem;
+    width: 100%;
+    margin-top: 3rem;
+    padding-bottom: 10rem;
+  }
+  .section_example .wrap_section_contents > div {
+    display: table-cell;
+    background-color: #fff;
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+    min-height: 40.2rem;
+    padding: 4rem 3rem;
+    box-shadow: 7px 7px 21px 0 rgba(16, 34, 66, 0.19);
+  }
+  .section_example .wrap_section_contents > div p {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: #777;
+    margin-top: 5rem;
+    text-align: start;
+  }
+  .section_example .wrap_section_contents > div p .only_mob, .section_example .wrap_section_contents > div p .only_pc {
+    display: none !important;
+  }
+  .section_example .wrap_section_contents > div .wrap_img {
+    display: flex;
+    height: 192px;
+    align-items: end;
+    justify-content: center;
+  }
+  .section_example .wrap_section_contents > div .wrap_img img {
+    -o-object-fit: none;
+       object-fit: none;
+  }
+  /* BI 소개 (디지털서비스개방 BI를 소개합니다) */
+  .section_bi .wrap_section_contents {
+    margin-top: 6rem;
+    min-height: 40rem;
+    justify-content: center;
+  }
+  .section_bi .wrap_section_contents > div {
+    align-items: center;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) {
+    padding: 0 10rem 0 5rem;
+    /*   width: 61rem; */
+    height: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(1) {
+    width: 17rem;
+    height: 17rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(1) img {
+    width: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(2) {
+    width: 29rem;
+    height: 7rem;
+    margin-top: 3rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(2) img {
+    width: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) {
+    /*  width: 65rem; */
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div > p {
+    padding: 2rem;
+    width: 33rem;
+  }
+  .section_bi .wrap_section_contents > div .wrap_btn {
+    align-items: stretch;
+    margin-top: 6rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  /* 메인페이지 공통 사항  */
+  .page_main {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    background-color: #fff;
+  }
+  .page_main .inner {
+    height: 100%;
+    padding: 0 6% 10rem;
+    padding-top: 18rem;
+  }
+  .page_main section {
+    width: 100vw;
+    height: auto;
+    min-height: initial;
+    max-height: initial;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .page_main section .wrap_section_title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .page_main section .wrap_section_title h4 {
+    line-height: 1.2;
+  }
+  .page_main section .wrap_section_title .btn_action {
+    position: relative;
+    margin-top: 1.8rem;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    right: 0;
+  }
+  .page_main .only_pc {
+    display: none;
+  }
+  .page_main .only_mob {
+    display: block;
+  }
+  .page_main {
+    /* 메인 비주얼 */
+  }
+  .page_main .main_visual {
+    width: 100vw;
+    height: 100vh;
+    min-height: 48rem;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #111;
+  }
+  .page_main .main_visual .inner {
+    padding-top: 0;
+    width: 100%;
+  }
+  .page_main .main_visual .swiper_main_visual {
+    width: 100vw;
+    height: 100vh;
+    min-height: 48rem;
+    max-height: 100vh;
+    position: relative;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide {
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    position: relative;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide::after {
+    content: "";
+    background-color: #111;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide.main_visual_slide01 {
+    background-image: url("../img/main/bg_main_visual_01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 0 1.4rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article {
+    margin-left: 0;
+    text-align: center;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article h2 {
+    font-size: 4.2rem;
+    font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-bottom: 3rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article h3 {
+    font-size: 1.8rem;
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 4rem;
+  }
+  .page_main .main_visual .slide_controller {
+    width: auto;
+    height: 18px;
+    position: absolute;
+    z-index: 100;
+    color: #111;
+    left: 50%;
+    top: initial;
+    transform: translateX(-50%);
+    bottom: 10%;
+  }
+  .page_main .main_visual .slide_controller .controller_btns {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state {
+    position: static;
+    position: relative;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-current,
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-total {
+    position: static;
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-total {
+    margin-left: 0;
+    position: static;
+    top: 0;
+    left: 20rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination {
+    position: static;
+    width: 17rem;
+    height: 0.2rem;
+    margin: 0 1rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: #005bff;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn {
+    display: flex;
+    position: static;
+    align-items: center;
+    margin-left: 2.4rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_prev {
+    position: relative;
+    width: 10px;
+    height: 18px;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_prev::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon/icon_chevron_left_white.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_next {
+    position: relative;
+    width: 10px;
+    height: 18px;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_next::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon/icon_chevron_right_white.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_pause {
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    margin: 0 10px;
+  }
+  .page_main .main_visual .slide_controller .swiper-button-next,
+  .page_main .main_visual .slide_controller .swiper-button-prev {
+    visibility: hidden;
+  }
+  .page_main .main_visual .scroll_down {
+    display: none;
+  }
+  /* 최신적용사례 소개 (더 빠르게, 더 간편하게) */
+  .section_app .inner {
+    padding: 0;
+    padding: 18rem 0 0;
+  }
+  .section_app .wrap_section_contents {
+    width: 100%;
+    height: auto;
+    min-height: 64rem;
+    max-height: initial;
+    background-image: url("../img/main/bg_main_02.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: bottom 0 center;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide {
+    width: 100%;
+    padding: 0 1.4rem 10rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    height: 100%;
+    gap: 2rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 14rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_img img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt .wrap_app_logo {
+    width: 11rem;
+    height: 11rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt .wrap_app_logo img {
+    width: 11rem;
+    height: 11rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt h5 {
+    text-align: center;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt p {
+    text-align: center;
+  }
+  .section_app .swiper-button-next {
+    right: 24rem;
+    bottom: 4.5rem;
+  }
+  .section_app .swiper-button-prev {
+    left: 24rem;
+    bottom: 4.5rem;
+  }
+  .section_app .swiper-pagination {
+    width: calc(100% - 60rem);
+    height: 0.2rem;
+    bottom: 6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ccc;
+    z-index: 100;
+  }
+  /* 활용 예시 소개 (새로운 가치 창출을 위해) */
+  .section_example .wrap_section_contents {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    margin-top: 4.7rem;
+    padding: 0 6em;
+  }
+  .section_example .wrap_section_contents > div {
+    min-height: 23.5rem;
+    padding: 4rem 8rem;
+  }
+  .section_example .wrap_section_contents > div .wrap_img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .section_example .wrap_section_contents > div .wrap_img img {
+    width: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .section_example .wrap_section_contents > div p {
+    text-align: center;
+  }
+  .section_example .wrap_section_contents > div p .only_mob {
+    display: block !important;
+  }
+  /* BI 소개 (디지털서비스개방 BI를 소개합니다) */
+  .section_bi .wrap_section_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 6rem;
+  }
+  .section_bi .wrap_section_contents > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) {
+    padding: 0 7rem;
+    height: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(1) {
+    width: 20rem;
+    height: 20rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(1) img {
+    width: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(2) {
+    width: 40rem;
+    height: auto;
+    margin-top: 3rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(2) img {
+    width: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) {
+    /*  width: 65rem; */
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div > p {
+    width: 42rem;
+  }
+  .section_bi .wrap_section_contents > div .wrap_btn {
+    margin-top: 3rem;
+  }
+}
+/* 작은 태블릿 가로 사이즈 ~ 모바일 기기 가로 사이즈 */
+@media all and (max-width: 768px) {
+  /* 메인페이지 공통 사항  */
+  .page_main {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    background-color: #fff;
+  }
+  .page_main .inner {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 10rem 1.4rem 8rem;
+  }
+  .page_main section {
+    width: 100vw;
+    height: auto;
+    min-height: initial;
+    max-height: initial;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .page_main section .wrap_section_title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .page_main section .wrap_section_title .wrap_title_text {
+    margin: 0;
+    padding: 0 3rem;
+    text-align: center;
+    position: relative;
+  }
+  .page_main section .wrap_section_title .wrap_title_text::before {
+    content: "";
+    position: absolute;
+    width: 4rem;
+    height: 0.6rem;
+    background-color: #005bff;
+    border-radius: 3px;
+    top: -2.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .page_main section .wrap_section_title .wrap_title_text h4 {
+    font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+  .page_main section .wrap_section_title .wrap_title_text p {
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.4rem;
+    color: #777;
+    line-height: 1.5;
+  }
+  .page_main section .wrap_section_title .btn_action {
+    position: relative;
+    width: 18rem;
+    margin-top: 1.8rem;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .page_main .only_pc {
+    display: none;
+  }
+  .page_main .only_mob {
+    display: block;
+  }
+  .page_main {
+    /* 메인 비주얼 */
+  }
+  .page_main .main_visual {
+    width: 100vw;
+    height: 100vh;
+    min-height: 48rem;
+    max-height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #111;
+  }
+  .page_main .main_visual .inner {
+    padding-top: 0;
+    width: 100%;
+  }
+  .page_main .main_visual .swiper_main_visual {
+    width: 100vw;
+    height: 100vh;
+    min-height: 48rem;
+    max-height: 100vh;
+    position: relative;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide {
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    position: relative;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide::after {
+    content: "";
+    background-color: #111;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide.main_visual_slide01 {
+    background-image: url("../img/main/bg_main_visual_01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 0 1.4rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article {
+    margin-left: 0;
+    text-align: center;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article h2 {
+    font-size: 3.6rem;
+    font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-bottom: 4rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article h3 {
+    font-size: 1.6rem;
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 5rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article .wrap_btn {
+    display: flex;
+    gap: 1.3rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article .wrap_btn a {
+    width: 14rem;
+  }
+  .page_main .main_visual .slide_controller {
+    width: auto;
+    height: 18px;
+    position: absolute;
+    z-index: 100;
+    color: #111;
+    left: 50%;
+    top: initial;
+    transform: translateX(-50%);
+    bottom: 10%;
+  }
+  .page_main .main_visual .slide_controller .controller_btns {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state {
+    position: static;
+    position: relative;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-current,
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-total {
+    position: static;
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-total {
+    margin-left: 0;
+    position: static;
+    top: 0;
+    left: 20rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination {
+    position: static;
+    width: 17rem;
+    height: 0.2rem;
+    margin: 0 1rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: #005bff;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn {
+    display: flex;
+    position: static;
+    align-items: center;
+    margin-left: 2.4rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_prev {
+    position: relative;
+    width: 10px;
+    height: 18px;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_prev::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon/icon_chevron_left_white.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_next {
+    position: relative;
+    width: 10px;
+    height: 18px;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_next::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon/icon_chevron_right_white.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_pause {
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    margin: 0 10px;
+  }
+  .page_main .main_visual .slide_controller .swiper-button-next,
+  .page_main .main_visual .slide_controller .swiper-button-prev {
+    visibility: hidden;
+  }
+  .page_main .main_visual .scroll_down {
+    display: none;
+  }
+  /* 최신적용사례 소개 (더 빠르게, 더 간편하게) */
+  .section_app .inner {
+    padding: 0;
+    padding: 8rem 0 0;
+  }
+  .section_app .wrap_section_contents {
+    width: 100%;
+    height: auto;
+    min-height: 64rem;
+    max-height: initial;
+    background-image: url("../img/main/bg_main_02.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: bottom 0 center;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide {
+    width: 100%;
+    padding: 0 1.4rem 8rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    height: 100%;
+    gap: 0rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 4rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_img img {
+    width: 80%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt .wrap_app_logo {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    box-shadow: 10px 10px 20px 0 rgba(37, 53, 121, 0.14);
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt .wrap_app_logo img {
+    width: 9rem;
+    height: 9rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt h5 {
+    font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #777;
+    margin-bottom: 2.4rem;
+  }
+  .section_app .swiper-button-next {
+    right: 11rem;
+    bottom: 3rem;
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+  .section_app .swiper-button-prev {
+    left: 11rem;
+    bottom: 3rem;
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+  .section_app .swiper-pagination {
+    width: calc(100% - 30rem);
+    height: 0.2rem;
+    bottom: 4rem;
+  }
+  /* 활용 예시 소개 (새로운 가치 창출을 위해) */
+  .section_example .wrap_section_contents {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    margin-top: 4.6rem;
+  }
+  .section_example .wrap_section_contents > div {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    min-height: 23.5rem;
+    padding: 3rem 2rem;
+    box-shadow: 0px 0px 20px 0 rgba(37, 53, 121, 0.1);
+  }
+  .section_example .wrap_section_contents > div p {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #777;
+    margin-top: 2.5rem;
+  }
+  .section_example .wrap_section_contents > div .wrap_img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .section_example .wrap_section_contents > div .wrap_img img {
+    width: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  /* BI 소개 (디지털서비스개방 BI를 소개합니다) */
+  .section_bi .wrap_section_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 4.6rem;
+  }
+  .section_bi .wrap_section_contents > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) {
+    padding: 0 7rem;
+    height: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(1) {
+    width: 14rem;
+    height: 14rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(1) img {
+    width: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(2) {
+    width: 30rem;
+    height: auto;
+    margin-top: 2.4rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(2) img {
+    width: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) {
+    /*  width: 65rem; */
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div:last-of-type {
+    margin-bottom: 0;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div .wrap_img {
+    height: 3.6rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div .wrap_img img {
+    height: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div > div div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    min-width: 14rem;
+    margin-right: 1.5rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div > div div:nth-of-type(2) img {
+    height: 1.2rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div > div div:nth-of-type(2) {
+    margin-top: 1.2rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div p, .section_bi .wrap_section_contents > div:nth-of-type(2) > div span {
+    font-size: 1.2rem;
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div span {
+    color: #777;
+    margin: 0 2px;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 28rem;
+    min-height: 7rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+    color: #777;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  .section_bi .wrap_section_contents > div .wrap_btn {
+    margin-top: 3rem;
+  }
+}
+/* mobile 규격  ( 모바일 기기 _ 실 사이즈 480px 미만의 모든 디바이스 ) */
+@media all and (max-width: 480px) {
+  /* 메인페이지 공통 사항  */
+  .page_main {
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    background-color: #fff;
+  }
+  .page_main .inner {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    padding: 8rem 1.4rem 5rem;
+  }
+  .page_main section {
+    width: 100vw;
+    height: auto;
+    min-height: initial;
+    max-height: initial;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  .page_main section .wrap_section_title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .page_main section .wrap_section_title .wrap_title_text {
+    padding: 0;
+  }
+  .page_main section .wrap_section_title .btn_action {
+    position: relative;
+    width: 18rem;
+    margin-top: 1.8rem;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
+  .page_main {
+    /* 메인 비주얼 */
+  }
+  .page_main .main_visual {
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+  .page_main .main_visual .swiper_main_visual {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    position: relative;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide {
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    position: relative;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide::after {
+    content: "";
+    background-color: #111;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 0;
+  }
+  .page_main .main_visual .swiper_main_visual .swiper-slide.main_visual_slide01 {
+    background-image: url("../img/main/bg_main_visual_01.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner {
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 0 1.4rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article {
+    margin-left: 0;
+    text-align: center;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article h2 {
+    font-size: 3.6rem;
+    font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin-bottom: 4rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article h3 {
+    font-size: 1.6rem;
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 5rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article .wrap_btn {
+    display: flex;
+    gap: 1.3rem;
+  }
+  .page_main .main_visual .swiper_main_visual .main_visual_slide01 .inner article .wrap_btn a {
+    width: 14rem;
+  }
+  .page_main .main_visual .slide_controller {
+    width: auto;
+    height: 18px;
+    position: absolute;
+    z-index: 100;
+    color: #111;
+    left: 50%;
+    top: initial;
+    transform: translateX(-50%);
+    bottom: 10%;
+  }
+  .page_main .main_visual .slide_controller .controller_btns {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state {
+    position: static;
+    position: relative;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-current,
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-total {
+    position: static;
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination-total {
+    margin-left: 0;
+    position: static;
+    top: 0;
+    left: 20rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination {
+    position: static;
+    width: 17rem;
+    height: 0.2rem;
+    margin: 0 1rem;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_state .swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: #005bff;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn {
+    display: flex;
+    position: static;
+    align-items: center;
+    margin-left: 2.4rem;
+    /*  position: absolute;
+     right: 0; */
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_prev {
+    position: relative;
+    width: 10px;
+    height: 18px;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_prev::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon/icon_chevron_left_white.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_next {
+    position: relative;
+    width: 10px;
+    height: 18px;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_next::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/icon/icon_chevron_right_white.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+  }
+  .page_main .main_visual .slide_controller .controller_btns .controller_box_btn .controller_btn_pause {
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    margin: 0 10px;
+  }
+  .page_main .main_visual .slide_controller .swiper-button-next,
+  .page_main .main_visual .slide_controller .swiper-button-prev {
+    visibility: hidden;
+  }
+  .page_main .main_visual .scroll_down {
+    display: none;
+  }
+  /* 최신적용사례 소개 (더 빠르게, 더 간편하게) */
+  .section_app .inner {
+    padding: 0;
+    padding: 8rem 0 0;
+  }
+  .section_app .wrap_section_contents {
+    width: 100%;
+    height: calc(100vh + 10rem);
+    background-image: url("../img/main/bg_main_mo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom -36% center;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide {
+    width: 100%;
+    padding: 0 1.4rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    height: 100%;
+    gap: 0rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 1.6rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_img img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt .wrap_app_logo {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    box-shadow: 10px 10px 20px 0 rgba(37, 53, 121, 0.14);
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt .wrap_app_logo img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt h5 {
+    font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+  }
+  .section_app .wrap_section_contents .swiper_main_contents01 .swiper-slide article .wrap_txt p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #777;
+    margin-bottom: 2.4rem;
+  }
+  .section_app .swiper-button-next {
+    right: 8rem;
+    bottom: 3rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 50%;
+  }
+  .section_app .swiper-button-next::after {
+    content: "";
+    position: absolute;
+    height: 2.4rem;
+    width: 2.4rem;
+    background-image: url("../img/icon/icon_chevron_up_gray.svg");
+    background-repeat: no-repeat;
+    background-position: top 0.6rem center;
+    background-size: auto;
+    transform: rotate(90deg);
+  }
+  .section_app .swiper-button-prev {
+    left: 8rem;
+    bottom: 3rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 50%;
+  }
+  .section_app .swiper-button-prev::after {
+    content: "";
+    position: absolute;
+    height: 2.4rem;
+    width: 2.4rem;
+    background-image: url("../img/icon/icon_chevron_up_gray.svg");
+    background-repeat: no-repeat;
+    background-position: top 0.6rem center;
+    background-size: auto;
+    transform: rotate(270deg);
+  }
+  .section_app .swiper-pagination {
+    width: calc(100% - 25rem);
+    height: 0.2rem;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ccc;
+    z-index: 100;
+  }
+  .section_app .swiper-pagination .swiper-pagination-progressbar-fill {
+    background-color: #005bff;
+  }
+  /* 활용 예시 소개 (새로운 가치 창출을 위해) */
+  .section_example .wrap_section_contents {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    margin-top: 4.6rem;
+  }
+  .section_example .wrap_section_contents > div {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    min-height: 23.5rem;
+    padding: 3rem 2rem;
+    box-shadow: 0px 0px 20px 0 rgba(37, 53, 121, 0.1);
+  }
+  .section_example .wrap_section_contents > div p {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #777;
+    margin-top: 2.5rem;
+  }
+  .section_example .wrap_section_contents > div .wrap_img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .section_example .wrap_section_contents > div .wrap_img img {
+    width: 50%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  /* BI 소개 (디지털서비스개방 BI를 소개합니다) */
+  .section_bi .wrap_section_contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  .section_bi .wrap_section_contents > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) {
+    padding: 0 7rem;
+    height: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(1) {
+    width: 10rem;
+    height: 10rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(1) img {
+    width: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(2) {
+    width: 100%;
+    height: auto;
+    margin-top: 1.8rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(1) .wrap_img:nth-of-type(2) img {
+    width: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) {
+    /*  width: 65rem; */
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div:last-of-type {
+    margin-bottom: 0;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div .wrap_img {
+    height: 3.6rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div .wrap_img img {
+    height: 100%;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div > div div {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    min-width: 10rem;
+    margin-right: 1.5rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div > div div:nth-of-type(2) img {
+    height: 1.2rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div > div div:nth-of-type(2) {
+    margin-top: 1.2rem;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div p, .section_bi .wrap_section_contents > div:nth-of-type(2) > div span {
+    font-size: 0.9rem;
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div span {
+    color: #777;
+    margin: 0 2px;
+  }
+  .section_bi .wrap_section_contents > div:nth-of-type(2) > div > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 21rem;
+    min-height: 7rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-family: "NotoSansRegular", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.5;
+    color: #777;
+    background-color: #f7f7f7;
+    text-align: center;
+  }
+  .section_bi .wrap_section_contents > div .wrap_btn {
+    margin-top: 3rem;
+  }
+}
