@@ -24,7 +24,7 @@ header +=        '<div class="area_menu">';
 header +=            '<div class="area_menu_inner">';
 header +=                '<h1 class="logo">';
 header +=                 '<span class="sr_only">디지털서비스개방 로고</span>';
-header +=                    '<a href="00_대외홍보포털_메인.html" target="_self" class="logo_anchor" title="디지털서비스개방 메인 페이지 이동"></a>';
+header +=                    '<a href="00_대외홍보포털_메인.html" target="_self" class="logo_anchor" title=" 이동"></a>';
 header +=                '</h1>';
 header +=                '<div class="wrap_menus">';
 header +=                    '<!-- 모바일 상단 로그인 상태창 -->';
