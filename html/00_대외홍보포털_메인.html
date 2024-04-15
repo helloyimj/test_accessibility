@@ -56,9 +56,10 @@
         <header id="header" class="header main_header"></header>
         <!-- 본문 콘텐츠 시작 -->
         <main id="page_main" class="page_main"> 
-            <div id="contents" class="contents">
+            <div id="content" class="content">
                 <!-- 메인 비주얼 영역 -->
                 <section id="main_visual" class="main_visual">
+                    <h3 class="sr_only">메인 비주얼</h3>
                     <div class="swiper swiper_main_visual">
                         <!-- 모든 슬라이드 삽입 문구가 같을 경우 -->
                         <div class="inner main_visual_inner">   
@@ -93,12 +94,12 @@
                             <div class="main_visual_slide01 swiper-slide" data-swiper-autoplay="16500">     
                                 <div class="inner">
                                     <!-- PC 영상 -->                                       
-                                <video type="video/mp4" class="none_768"  autoplay muted loop playsinline> 
+                                <video class="none_768"  autoplay muted loop playsinline aria-label="배경 동영상"> 
                                         <source type="video/mp4" src="http://121.128.108.74:8882/video/api_pc_V01.mp4">                               
                                     </video>
                                     <!-- 모바일 영상 -->                                     
-                                <video type="video/mp4" class="block_768" autoplay muted loop playsinline> 
-                                        <source  type="video/mp4" src="http://121.128.108.74:8882/video/api_mobile_V01.mp4">        
+                                <video class="block_768" autoplay muted loop playsinline aria-label="배경 동영상"> 
+                                        <source type="video/mp4" src="http://121.128.108.74:8882/video/api_mobile_V01.mp4">        
                                     </video> 
                                 </div>
                             </div>
@@ -118,13 +119,13 @@
                             <div class="main_visual_slide03 swiper-slide" data-swiper-autoplay="18400">
                                 <div class="inner">                                         
                                     <!-- PC 영상 -->                                        
-                                <!--     <video type="video/mp4" class="none_768" preload="metadata"autoplay muted playsinline> -->
-                                <video type="video/mp4" class="none_768"   autoplay muted loop playsinline> 
+                                <!--     <video class="none_768" preload="metadata"autoplay muted playsinline aria-label="배경 동영상"> -->
+                                <video class="none_768"   autoplay muted loop playsinline aria-label="배경 동영상"> 
                                         <source type="video/mp4" src="http://121.128.108.74:8882/video/main_video.mp4">                   
                                     </video>
                                     <!-- 모바일 영상 -->                                     
-                                    <!--  <video type="video/mp4" class="block_768" preload="metadata"autoplay muted playsinline> -->
-                                    <video type="video/mp4" class="block_768" autoplay muted loop playsinline> 
+                                    <!--  <video class="block_768" preload="metadata"autoplay muted playsinline aria-label="배경 동영상"> -->
+                                    <video class="block_768" autoplay muted loop playsinline aria-label="배경 동영상"> 
                                         <source  type="video/mp4" src="http://121.128.108.74:8882/video/main_mobile.mp4">                 
                                     </video>
                                 </div>   

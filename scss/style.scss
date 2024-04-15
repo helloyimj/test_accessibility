@@ -5073,3 +5073,14 @@ input[type=number]::-webkit-inner-spin-button {
 //     // }
 
 // }
+
+
+/* 2024-04-15 접근성 관련 수정 */
+
+.btn:focus-visible, a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible, tr:focus-visible, td:focus-visible, [role="button"]:focus-visible {
+    outline-color: #000;
+    outline-offset: -2px;
+    outline-style: dotted !important;
+    outline-width: initial !important;
+    border: 1px solid #fff !important;
+}
