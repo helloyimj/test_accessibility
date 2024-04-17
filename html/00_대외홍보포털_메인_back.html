@@ -91,16 +91,16 @@
                             </article>
                         </div>
                         <div class="swiper-wrapper">
-                            <div class="main_visual_slide01 swiper-slide">
+                            <div class="main_visual_slide01 swiper-slide" data-swiper-autoplay="16500">
                                 <div class="inner">
                                     <!-- PC 영상 -->
-                                    <video autoplay muted loop playsinline aria-label="배경 동영상">
-                                        <source class="none_768" type="video/mp4" src="https://pulmuonevideo.com/230202.mp4">
-																				<!-- <source class="block_768" type="video/mp4" src="http://121.128.108.74:8882/video/api_mobile_V01.mp4"> -->
+                                    <video class="none_768" autoplay muted loop playsinline aria-label="배경 동영상">
+                                        <source type="video/mp4" src="http://121.128.108.74:8882/video/api_pc_V01.mp4">
                                     </video>
                                     <!-- 모바일 영상 -->
-                                    <!-- <video class="block_768" autoplay muted loop playsinline aria-label="배경 동영상">
-                                    </video> -->
+                                    <video class="block_768" autoplay muted loop playsinline aria-label="배경 동영상">
+                                        <source type="video/mp4" src="http://121.128.108.74:8882/video/api_mobile_V01.mp4">
+                                    </video>
                                 </div>
                             </div>
                             <div class="main_visual_slide02 swiper-slide" data-swiper-autoplay="5000">
@@ -490,224 +490,183 @@
     <div class="prepare_alertPop"></div>
 
     <script>
-			AOS.init();
+        AOS.init();
 
-			$(document).ready(function() {
+        $(document).ready(function() {
 
-					var mainVisualSwiper;
+            var mainVisualSwiper;
 
-					/* 메인 비주얼 슬라이드 */
-					mainVisualSwiper = new Swiper(".swiper_main_visual", {
-							// initialSlide: 0, // 첫 번째 슬라이드부터 시작
-							// initialSlide: initialSlideIndex,
-							// spaceBetween: 0,
-							loop: true,
-							parallax: true,
-							autoplay: {
-									// delay: 5000,                
-									disableOnInteraction: false,
-							},
-							observer: true, // tab 키로 링크 전환 가능 
-							observeParents: true,
-							pagination: {
-									el: ".swiper-pagination",
-									type: "progressbar",
-									clickable: true,
-							},
+            /* 메인 비주얼 슬라이드 */
+            mainVisualSwiper = new Swiper(".swiper_main_visual", {
+                // initialSlide: 0, // 첫 번째 슬라이드부터 시작
+                // initialSlide: initialSlideIndex,
+                // spaceBetween: 0,
+                loop: true,
+                parallax: true,
+                autoplay: {
+                    // delay: 5000,                
+                    disableOnInteraction: false,
+                },
+                observer: true, // tab 키로 링크 전환 가능 
+                observeParents: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                    clickable: true,
+                },
 
-							navigation: {
-									prevEl: ".controller_btn_prev",
-									nextEl: ".controller_btn_next",
-							},
+                navigation: {
+                    prevEl: ".controller_btn_prev",
+                    nextEl: ".controller_btn_next",
+                },
 
-							// 웹접근성  추가
-							// Enable keyboard navigation
-							keyboard: {
-									enabled: true,
-									onlyInViewport: false,
-							},
-							// Enable ARIA support
-							a11y: {
-									prevSlideMessage: '이전 슬라이드',
-									nextSlideMessage: '다음 슬라이드',
-									firstSlideMessage: '처음 슬라이드',
-									lastSlideMessage: '마지막 슬라이드',
-									paginationBulletMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
-							},
-					});
-
-
-					$(window).on('resize', function() {
-							const windowWidth = $(window).width();
-							const mainVideo = $('.main_visual_slide01 video');
-
-							if (windowWidth >= 768) {
-									// Mobile resolution
-									mainVideo.find('source').attr('src', 'http://121.128.108.74:8882/video/main_video.mp4');
-							} else {
-									// Desktop resolution
-									mainVideo.find('source').attr('src', 'http://121.128.108.74:8882/video/main_mobile.mp4');
-							}
-
-							// 비디오 소스 변경 후 비디오를 다시 로드해야 함
-							mainVideo[0].load();
-					});
-
-					// Function to reset and play video
-			function resetAndPlayVideo(slide) {
-					var video = slide.querySelector('video');
-					if (video) {
-							video.pause();
-							video.currentTime = 0;
-							video.play();
-					}
-			}
-
-			// Event listener for next slide button
-			$(".controller_btn_next").on("click", function() {
-					var nextIndex = mainVisualSwiper.activeIndex + 1;
-					var nextSlide = mainVisualSwiper.slides[nextIndex];
-					resetAndPlayVideo(nextSlide);
-			});
-
-			// Event listener for previous slide button
-			$(".controller_btn_prev").on("click", function() {
-					var prevIndex = mainVisualSwiper.activeIndex - 1;
-					var prevSlide = mainVisualSwiper.slides[prevIndex];
-					resetAndPlayVideo(prevSlide);
-			});
-
-					// 스와이퍼 컨트롤러 (일시정지/재생)
-					$(".slide_controller .controller_btn_pause").on("click", function() {
-					    $(this).toggleClass("pausing");
-					    if ($(this).hasClass("pausing") == true) {
-					        mainVisualSwiper.autoplay.stop();
-					        return false;
-					    } else {
-					        mainVisualSwiper.autoplay.start();
-					    }
-					});
-					// Event listener for stop button
-					// $(".slide_controller .controller_btn_pause").on("click", function() {
-					// 		$(this).toggleClass("pausing");
-					// 		if ($(this).hasClass("pausing")) {
-					// 				mainVisualSwiper.autoplay.stop();
-					// 		} else {
-					// 				mainVisualSwiper.autoplay.start();
-					// 		}
-					// });
-
-                //     $(".slide_controller .controller_btn_pause").on("click", function() {
-                //     // Find the currently active slide
-                //     var currentSlide = mainVisualSwiper.slides[mainVisualSwiper.activeIndex];
-                //     var video = currentSlide.querySelector('video');
-
-                //     // Stop the video playback if there is a video
-                //     if (video) {
-                //         video.pause(); // Pause video
-                //         video.currentTime = 0; // Rewind the video to the beginning
-                //     }
-                // });
-                $('.slide_controller .controller_btn_pause').on('click', function() {
-                    // Toggle the 'pausing' class to pause/resume autoplay
-                    $(this).toggleClass("pausing");
-                    
-                    // Find all slides with videos
-                    var videoSlides = $('.swiper-slide video');
-                    
-                    // Pause all videos and reset their playback
-                    videoSlides.each(function() {
-                        this.pause();
-                        this.currentTime = 0;
-                    });
-                });
-
-					// 이전 슬라이드의 애니메이션 클래스 제거 함수
-					function removeAnimationClass() {
-							const prevSlideIndex = mainVisualSwiper.previousIndex;
-							const prevSlide = mainVisualSwiper.slides[prevSlideIndex];
-							$(prevSlide).removeClass('zooming');
-					}
-
-					// Swiper 슬라이드 변경 시 이벤트 처리
-					mainVisualSwiper.on('slideChange', function() {
-							// 현재 활성화된 슬라이드 찾기
-							var currentSlide = mainVisualSwiper.slides[mainVisualSwiper.activeIndex];
-							var video = currentSlide.querySelector('video');
-
-							// 이전 슬라이드의 애니메이션 클래스 제거
-							removeAnimationClass();
-							// 비디오를 재생하기 전에 이전 재생을 중지하고 처음부터 재생
-							if (video) {
-									video.pause(); // 비디오 일시정지
-									video.currentTime = 0; // 비디오를 처음으로 되감기
-									video.play(); // 비디오 재생
-
-									// 비디오의 재생이 종료되면 슬라이드를 변경
-									video.onended = function() {
-                                        mainVisualSwiper.slideNext();
-									};
-							}
-
-							// 현재 슬라이드에 애니메이션 클래스 추가
-							$(currentSlide).addClass('zooming');
-					});
+                // 웹접근성  추가
+                // Enable keyboard navigation
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: false,
+                },
+                // Enable ARIA support
+                a11y: {
+                    prevSlideMessage: '이전 슬라이드',
+                    nextSlideMessage: '다음 슬라이드',
+                    firstSlideMessage: '처음 슬라이드',
+                    lastSlideMessage: '마지막 슬라이드',
+                    paginationBulletMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+                },
+            });
 
 
+            $(window).on('resize', function() {
+                const windowWidth = $(window).width();
+                const mainVideo = $('.main_visual_slide01 video');
+
+                if (windowWidth >= 768) {
+                    // Mobile resolution
+                    mainVideo.find('source').attr('src', 'http://121.128.108.74:8882/video/main_video.mp4');
+                } else {
+                    // Desktop resolution
+                    mainVideo.find('source').attr('src', 'http://121.128.108.74:8882/video/main_mobile.mp4');
+                }
+
+                // 비디오 소스 변경 후 비디오를 다시 로드해야 함
+                mainVideo[0].load();
+            });
+
+            // Function to reset and play video
+        function resetAndPlayVideo(slide) {
+            var video = slide.querySelector('video');
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+                video.play();
+            }
+        }
+
+        // Event listener for next slide button
+        $(".controller_btn_next").on("click", function() {
+            var nextIndex = mainVisualSwiper.activeIndex + 1;
+            var nextSlide = mainVisualSwiper.slides[nextIndex];
+            resetAndPlayVideo(nextSlide);
+        });
+
+        // Event listener for previous slide button
+        $(".controller_btn_prev").on("click", function() {
+            var prevIndex = mainVisualSwiper.activeIndex - 1;
+            var prevSlide = mainVisualSwiper.slides[prevIndex];
+            resetAndPlayVideo(prevSlide);
+        });
+
+            // 스와이퍼 컨트롤러 (일시정지/재생)
+            // $(".slide_controller .controller_btn_pause").on("click", function() {
+            //     $(this).toggleClass("pausing");
+            //     if ($(this).hasClass("pausing") == true) {
+            //         mainVisualSwiper.autoplay.stop();
+            //         return false;
+            //     } else {
+            //         mainVisualSwiper.autoplay.start();
+            //     }
+            // });
+            // Event listener for stop button
+            $(".slide_controller .controller_btn_pause").on("click", function() {
+                $(this).toggleClass("pausing");
+                if ($(this).hasClass("pausing")) {
+                    mainVisualSwiper.autoplay.stop();
+                } else {
+                    mainVisualSwiper.autoplay.start();
+                }
+            });
+
+            // 이전 슬라이드의 애니메이션 클래스 제거 함수
+            function removeAnimationClass() {
+                const prevSlideIndex = mainVisualSwiper.previousIndex;
+                const prevSlide = mainVisualSwiper.slides[prevSlideIndex];
+                $(prevSlide).removeClass('zooming');
+            }
+
+            // Swiper 슬라이드 변경 시 이벤트 처리
+            mainVisualSwiper.on('slideChange', function() {
+                // 현재 활성화된 슬라이드 찾기
+                var currentSlide = mainVisualSwiper.slides[mainVisualSwiper.activeIndex];
+                var video = currentSlide.querySelector('video');
+
+                // 이전 슬라이드의 애니메이션 클래스 제거
+                removeAnimationClass();
+                // 비디오를 재생하기 전에 이전 재생을 중지하고 처음부터 재생
+                if (video) {
+                    video.pause(); // 비디오 일시정지
+                    video.currentTime = 0; // 비디오를 처음으로 되감기
+                    video.play(); // 비디오 재생
+
+                    // 비디오의 재생이 종료되면 슬라이드를 변경
+                    video.onended = function() {
+                        mainVisualSwiper.slideNext();
+                    };
+                }
+
+                // 현재 슬라이드에 애니메이션 클래스 추가
+                $(currentSlide).addClass('zooming');
+            });
 
 
+            /* 서비스 사례(더 빠르게, 더 간편하게) 소개 슬라이드 */
+            var mainConSwiper01 = new Swiper(".swiper_main_contents01", {
+                loop: true,
+                parallax: true,
+                autoplay: false,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                // 웹접근성  추가
+                // Enable keyboard navigation
+                keyboard: {
+                    enabled: true,
+                },
+                // Enable ARIA support
+                a11y: {
+                    prevSlideMessage: '이전 슬라이드',
+                    nextSlideMessage: '다음 슬라이드',
+                    firstSlideMessage: '처음 슬라이드',
+                    lastSlideMessage: '마지막 슬라이드',
+                    paginationBulletMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+                },
+            });
 
-
-
-
-
-
-
-
-
-
-
-
-
-					/* 서비스 사례(더 빠르게, 더 간편하게) 소개 슬라이드 */
-					var mainConSwiper01 = new Swiper(".swiper_main_contents01", {
-							loop: true,
-							parallax: true,
-							autoplay: false,
-							pagination: {
-									el: ".swiper-pagination",
-									type: "progressbar",
-									clickable: true,
-							},
-							navigation: {
-									nextEl: ".swiper-button-next",
-									prevEl: ".swiper-button-prev",
-							},
-							// 웹접근성  추가
-							// Enable keyboard navigation
-							keyboard: {
-									enabled: true,
-							},
-							// Enable ARIA support
-							a11y: {
-									prevSlideMessage: '이전 슬라이드',
-									nextSlideMessage: '다음 슬라이드',
-									firstSlideMessage: '처음 슬라이드',
-									lastSlideMessage: '마지막 슬라이드',
-									paginationBulletMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
-							},
-					});
-
-					// 마우스 호버 시 슬라이드 일시정지 
-					/*            $(".main_visual .swiper_main_visual").hover(function() {
-													mainVisualSwiper.autoplay.stop();
-											}, function() {
-													mainVisualSwiper.autoplay.start();            
-											});
-					 */
-			});
-	</script>
-
+            // 마우스 호버 시 슬라이드 일시정지 
+            /*            $(".main_visual .swiper_main_visual").hover(function() {
+                            mainVisualSwiper.autoplay.stop();
+                        }, function() {
+                            mainVisualSwiper.autoplay.start();            
+                        });
+             */
+        });
+    </script>
 </body>
 
 </html>
