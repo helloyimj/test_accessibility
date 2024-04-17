@@ -39,7 +39,7 @@ header +=                                '<div class="user_info">';
 header +=                                    '<p class="greeting">디지털서비스개방에 <br /> 오신 것을 환영합니다.</p>';
 header +=                                '</div>';
 /* header +=                                '<div class="wrap_gnb_btn">';
-header +=                                    '<a href="javascript:;" target="_blank" class="btn_action in_gnb filled_brand link_related_white" title="기관지원센터 포털 새창 열림">기관지원센터 포털</a>';
+header +=                                    '<a href="javascript:;" target="_blank" class="btn_action in_gnb filled_brand link_related_white" title="새 창 열림- 기관지원센터 포털">기관지원센터 포털</a>';
 header +=                                '</div>'; */
 header +=                            '</div>';
 header +=                        '</div>';
@@ -124,7 +124,7 @@ header +=                        '<a href="javascript:;" target="_self" class="b
 header +=                    '</div>';
 header +=                '</div>';
 /* header +=                '<div class="wrap_gnb_btn none_1150">';
-header +=                    '<a href="javascript:;" target="_blank" class="btn_action in_gnb filled_brand link_related_white boundfor_dev" title="기관지원센터 포털 새창 열림">기관지원센터 포털</a>';
+header +=                    '<a href="javascript:;" target="_blank" class="btn_action in_gnb filled_brand link_related_white boundfor_dev" title="새 창 열림- 기관지원센터 포털">기관지원센터 포털</a>';
 header +=                '</div>'; */
 header +=            '</div>';
 header +=        '<div class="lnb_drop_menu_back"></div>';
@@ -148,11 +148,11 @@ footer +=  				'<div class="area_links">'
 footer +=  			    	'<div class="wrap_select_family">'
 footer +=  			    		'<a href="javascript:;" class="rel_link_sel" title="관련사이트 목록 열기">관련기관 누리집</a>'
 footer +=                        '<ul>'
-footer +=                            '<li><a href="https://www.gov.kr/portal/main/nologin" target="_blank" title="정부24 새창 열림">정부24</a></li>'
-footer +=                            '<li><a href="https://www.ips.go.kr/pot/forwardMain.do" target="_blank" title="국민비서 새창 열림">국민비서</a></li>'
-footer +=                            '<li><a href="https://www.nia.or.kr/site/nia_kor/main.do" target="_blank" title="한국지능정보사회진흥원 새창 열림">한국지능정보사회진흥원</a></li>'
-footer +=                            '<li><a href="https://www.dpg.go.kr/DPG/main/index.do" target="_blank" title="디지털플랫폼정부위원회 새창 열림">디지털플랫폼정부위원회</a></li>'
-footer +=                            '<li><a href="https://www.mois.go.kr/frt/a01/frtMain.do" target="_blank" title="행정안전부 새창 열림">행정안전부</a></li>'
+footer +=                            '<li><a href="https://www.gov.kr/portal/main/nologin" target="_blank" title="새 창 열림- 정부24">정부24</a></li>'
+footer +=                            '<li><a href="https://www.ips.go.kr/pot/forwardMain.do" target="_blank" title="새 창 열림- 국민비서">국민비서</a></li>'
+footer +=                            '<li><a href="https://www.nia.or.kr/site/nia_kor/main.do" target="_blank" title="새 창 열림- 한국지능정보사회진흥원">한국지능정보사회진흥원</a></li>'
+footer +=                            '<li><a href="https://www.dpg.go.kr/DPG/main/index.do" target="_blank" title="새 창 열림- 디지털플랫폼정부위원회">디지털플랫폼정부위원회</a></li>'
+footer +=                            '<li><a href="https://www.mois.go.kr/frt/a01/frtMain.do" target="_blank" title="새 창 열림- 행정안전부">행정안전부</a></li>'
 footer +=  			             '</ul>'
 footer +=  		    		     '</div>'
 footer +=  						 '<div class="area_other_logo only_pc">'

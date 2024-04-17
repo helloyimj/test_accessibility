@@ -3712,7 +3712,7 @@ img {
   padding: 0 4rem;
   height: 5rem;
   border-bottom: 1px solid #ddd;
-  cursor: move;
+  /* cursor: move; */
 }
 .popup_inner .popup_statusbar .popup_title {
   font-size: 1.8rem;
