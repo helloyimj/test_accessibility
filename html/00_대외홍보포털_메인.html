@@ -503,6 +503,43 @@
 
             var mainVisualSwiper;
 
+
+
+            
+            // 이전 슬라이드의 애니메이션 클래스 제거 함수
+            function removeAnimationClass() {
+                const prevSlideIndex = mainVisualSwiper.previousIndex;
+                const prevSlide = mainVisualSwiper.slides[prevSlideIndex];
+                $(prevSlide).removeClass('zooming');
+            }
+
+            // // Swiper 슬라이드 변경 시 이벤트 처리
+            // mainVisual, function() {
+            //     // 현재 활성화된 슬라이드 찾기
+            //     var currentSlide = mainVisualSwiper.slides[mainVisualSwiper.activeIndex];
+            //     var currentVideo = $(currentSlide).find('video').get(0); // Get the native video element
+
+            //     // 이전 슬라이드의 애니메이션 클래스 제거
+            //     removeAnimationClass();
+            //     // 비디오를 재생하기 전에 이전 재생을 중지하고 처음부터 재생
+            //     if (currentVideo) {
+            //         currentVideo.pause(); // 비디오 일시정지
+            //         // video.stop(); // 비디오 정지
+            //         currentVideo.currentTime = 0; // 비디오를 처음으로 되감기
+            //         currentVideo.play(); // 비디오 재생
+
+            //         // 비디오의 재생이 종료되면 슬라이드를 변경
+            //         currentVideo.on('ended', function() {
+            //             mainVisualSwiper.slideNext();
+            //         });
+            //     }
+
+            //     // 현재 슬라이드에 애니메이션 클래스 추가
+            //     $(currentSlide).addClass('zooming');
+            // });
+
+
+
             /* 메인 비주얼 슬라이드 */
             mainVisualSwiper = new Swiper(".swiper_main_visual", {
                 // initialSlide: 0, // 첫 번째 슬라이드부터 시작
@@ -540,6 +577,12 @@
                     firstSlideMessage: '처음 슬라이드',
                     lastSlideMessage: '마지막 슬라이드',
                     paginationBulletMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+               },
+               on: {
+                   slideChange : function() {
+                    console.log(windowWidth);
+
+                    },
                 },
             });
 
@@ -587,46 +630,14 @@
                 }
             });
 
-            // 이전 슬라이드의 애니메이션 클래스 제거 함수
-            function removeAnimationClass() {
-                const prevSlideIndex = mainVisualSwiper.previousIndex;
-                const prevSlide = mainVisualSwiper.slides[prevSlideIndex];
-                $(prevSlide).removeClass('zooming');
-            }
-
-            // Swiper 슬라이드 변경 시 이벤트 처리
-            mainVisualSwiper.on('slideChange', function() {
-                // 현재 활성화된 슬라이드 찾기
-                var currentSlide = mainVisualSwiper.slides[mainVisualSwiper.activeIndex];
-                var currentVideo = $(currentSlide).find('video').get(0); // Get the native video element
-
-                // 이전 슬라이드의 애니메이션 클래스 제거
-                removeAnimationClass();
-                // 비디오를 재생하기 전에 이전 재생을 중지하고 처음부터 재생
-                if (currentVideo) {
-                    currentVideo.pause(); // 비디오 일시정지
-                    // video.stop(); // 비디오 정지
-                    currentVideo.currentTime = 0; // 비디오를 처음으로 되감기
-                    currentVideo.play(); // 비디오 재생
-
-                    // 비디오의 재생이 종료되면 슬라이드를 변경
-                    currentVideo.on('ended', function() {
-                        mainVisualSwiper.slideNext();
-                    });
-                }
-
-                // 현재 슬라이드에 애니메이션 클래스 추가
-                $(currentSlide).addClass('zooming');
-            });
-
 
 
 
 
     // Function to load appropriate video based on device width
+    var windowWidth = $(window).width();
+    console.log(windowWidth);
     function loadVideo() {
-        var windowWidth = $(window).width();
-        console.log(windowWidth);
         var $videoBox = $('.main_visual_slide01 video');
      
         if (windowWidth >= 768) {
