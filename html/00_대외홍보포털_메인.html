@@ -96,17 +96,18 @@
                                     <!-- PC 영상 -->
                                     <video autoplay muted loop playsinline aria-label="배경 동영상"  data-swiper-autoplay="18400">
                                         <source class="none_768" type="video/mp4" src="../img/video/main_video_03.mp4">
-                                        <source  class="block_768" src="./img/video/main_mobile_03.mp4" type="video/mp4">
+                                        
+                                        <!-- <source  class="block_768" src="./img/video/main_mobile_03.mp4" type="video/mp4"> -->
 
                                         <!-- <source class="block_768" type="video/mp4" src="http://121.128.108.74:8882/video/api_mobile_V01.mp4"> -->
                                         <!-- <source class="block_768" src="http" typs://ak.picdn.net/shutterstock/videos/1052687960/preview/stock-footage-beautiful-gold-shimmering-particles-with-lens-flare-on-black-background-in-slow-motion-d.webme="video/mp4"> -->
 
                                     </video>
                                     <!-- 모바일 영상 -->
-                                    <!-- <video class="block_768" autoplay muted loop playsinline aria-label="배경 동영상"> -->
+                                    <video class="block_768" autoplay muted loop playsinline aria-label="배경 동영상">
                                         <!-- <source src="https://ak.picdn.net/shutterstock/videos/1052687960/preview/stock-footage-beautiful-gold-shimmering-particles-with-lens-flare-on-black-background-in-slow-motion-d.webm" type="video/mp4"> -->
-                                        <!-- <source src="./img/video/main_mobile.mp4" type="video/mp4"> -->
-                                    <!-- </video> -->
+                                        <source src="./img/video/main_mobile.mp4" type="video/mp4">
+                                    </video>
                                 </div>
                             </div>
                             <div class="main_visual_slide02 swiper-slide" data-swiper-autoplay="5000">
@@ -578,20 +579,20 @@
             mainVisualSwiper.on('slideChange', function() {
                 // 현재 활성화된 슬라이드 찾기
                 var currentSlide = mainVisualSwiper.slides[mainVisualSwiper.activeIndex];
-                var currentVideo = $(currentSlide).find('video').get(0); // Get the native video element
+                var video = $(currentSlide).find('video').get(0); // Get the native video element
 
 
                 // 이전 슬라이드의 애니메이션 클래스 제거
                 removeAnimationClass();
                 // 비디오를 재생하기 전에 이전 재생을 중지하고 처음부터 재생
-                if (currentVideo) {
-                    currentVideo.pause(); // 비디오 일시정지
+                if (video) {
+                    video.pause(); // 비디오 일시정지
                     // video.stop(); // 비디오 정지
-                    currentVideo.currentTime = 0; // 비디오를 처음으로 되감기
-                    currentVideo.play(); // 비디오 재생
+                    video.currentTime = 0; // 비디오를 처음으로 되감기
+                    video.play(); // 비디오 재생
 
                     // 비디오의 재생이 종료되면 슬라이드를 변경
-                    currentVideo.onended = function() {
+                    video.onended = function() {
                         mainVisualSwiper.slideNext();
                     };
                 }
