@@ -660,26 +660,28 @@
         
     // Function to load appropriate video based on device width
     var windowWidth = $(window).width();
-    console.log(windowWidth);
-    function loadVideo() {
-        var $videoBox = $('.main_visual_slide01 video');
-     
-        if (windowWidth >= 768) {
-            // Load PC video
-            $videoBox.find('source').attr('src', '../img/video/main_video_03.mp4');
-            $videoBox.parent()[0].load(); // Reload the video element
-        } else {
-            // Load mobile video
-            $videoBox.find('source').attr('src', '../img/video/main_mobile_03.mp4');
-            $videoBox.parent()[0].load(); // Reload the video element
-        }
-    }
+    
 
+    function loadVideo() {
+    var $videoBox = $('.main_visual_slide01 video');
+    var videoElement = $videoBox[0]; // Get the native video element
+    
+    if (windowWidth >= 768) {
+        // Load PC video
+        $videoBox.find('source').attr('src', '../img/video/main_video_03.mp4');
+        videoElement.load(); // Reload the video element
+    } else {
+        // Load mobile video
+        $videoBox.find('source').attr('src', '../img/video/main_mobile_03.mp4');
+        videoElement.load(); // Reload the video element
+    }
+}
     // Call loadVideo() initially
     loadVideo();
 
     // Call loadVideo() on window resize
     $(window).resize(function() {
+        console.log(windowWidth);
         loadVideo();
 
     });
