@@ -94,7 +94,7 @@
                             <div class="main_visual_slide01 swiper-slide" data-swiper-autoplay="18400">
                                 <div class="inner">
                                     <!-- PC 영상 -->
-                                    <video class="none_768" autoplay muted playsinline aria-label="배경 동영상">
+                                    <video autoplay muted playsinline aria-label="배경 동영상">
                                         <source type="video/mp4" src="../img/video/main_video_03.mp4">
                                         
                                         <!-- <source  class="block_768" src="./img/video/main_mobile_03.mp4" type="video/mp4"> -->
@@ -634,33 +634,6 @@
 
 
 
-    // Function to load appropriate video based on device width
-    var windowWidth = $(window).width();
-    console.log(windowWidth);
-    function loadVideo() {
-        var $videoBox = $('.main_visual_slide01 video');
-     
-        if (windowWidth >= 768) {
-            // Load PC video
-            $videoBox.find('source').attr('src', '../img/video/main_video_03.mp4');
-            // $videoBox.parent()[0].load(); // Reload the video element
-        } else {
-            // Load mobile video
-            $videoBox.find('source').attr('src', '../img/video/main_mobile_03.mp4');
-            // $videoBox.parent()[0].load(); // Reload the video element
-        }
-    }
-
-    // Call loadVideo() initially
-    loadVideo();
-
-    // Call loadVideo() on window resize
-    $(window).resize(function() {
-        loadVideo();
-
-    });
-
-
 
 
 
@@ -722,6 +695,37 @@
                 });
              */
         });
+
+        
+    // Function to load appropriate video based on device width
+    var windowWidth = $(window).width();
+    console.log(windowWidth);
+    function loadVideo() {
+        var $videoBox = $('.main_visual_slide01 video');
+     
+        if (windowWidth >= 768) {
+            // Load PC video
+            $videoBox.find('source').attr('src', '../img/video/main_video_03.mp4');
+            // $videoBox.parent()[0].load(); // Reload the video element
+        } else {
+            // Load mobile video
+            $videoBox.find('source').attr('src', '../img/video/main_mobile_03.mp4');
+            // $videoBox.parent()[0].load(); // Reload the video element
+        }
+    }
+
+    // Call loadVideo() initially
+    loadVideo();
+
+    // Call loadVideo() on window resize
+    $(window).resize(function() {
+        loadVideo();
+
+    });
+
+
+
+
     </script>
 
 </body>
