@@ -632,9 +632,11 @@
         if (windowWidth >= 768) {
             // Load PC video
             $videoBox.find('source').attr('src', '../img/video/main_video_03.mp4');
+            $videoBox.parent()[0].load(); // Reload the video element
         } else {
             // Load mobile video
             $videoBox.find('source').attr('src', '../img/video/main_mobile_03.mp4');
+            $videoBox.parent()[0].load(); // Reload the video element
         }
     }
 
