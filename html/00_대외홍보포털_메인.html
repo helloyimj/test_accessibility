@@ -543,6 +543,17 @@
                 },
             });
 
+            // Function to reset and play video
+            function resetAndPlayVideo(slide) {
+                var video = $(".main_visual_slide01").find('video').get(0);
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                    video.play();
+                }
+            }
+
+
             // Event listener for next slide button
             $(".controller_btn_next").on("click", function() {
                 var nextIndex = mainVisualSwiper.activeIndex + 1;
@@ -558,11 +569,19 @@
             });
 
             // 스와이퍼 컨트롤러 (일시정지/재생)
+            // $(".slide_controller .controller_btn_pause").on("click", function() {
+            //     $(this).toggleClass("pausing");
+            //     if ($(this).hasClass("pausing") == true) {
+            //         mainVisualSwiper.autoplay.stop();
+            //         return false;
+            //     } else {
+            //         mainVisualSwiper.autoplay.start();
+            //     }
+            // });
             $(".slide_controller .controller_btn_pause").on("click", function() {
                 $(this).toggleClass("pausing");
-                if ($(this).hasClass("pausing") == true) {
+                if ($(this).hasClass("pausing")) {
                     mainVisualSwiper.autoplay.stop();
-                    return false;
                 } else {
                     mainVisualSwiper.autoplay.start();
                 }
@@ -579,22 +598,21 @@
             mainVisualSwiper.on('slideChange', function() {
                 // 현재 활성화된 슬라이드 찾기
                 var currentSlide = mainVisualSwiper.slides[mainVisualSwiper.activeIndex];
-                var video = $(currentSlide).find('video').get(0); // Get the native video element
-
+                var currentVideo = $(currentSlide).find('video').get(0); // Get the native video element
 
                 // 이전 슬라이드의 애니메이션 클래스 제거
                 removeAnimationClass();
                 // 비디오를 재생하기 전에 이전 재생을 중지하고 처음부터 재생
-                if (video) {
-                    video.pause(); // 비디오 일시정지
+                if (currentVideo) {
+                    currentVideo.pause(); // 비디오 일시정지
                     // video.stop(); // 비디오 정지
-                    video.currentTime = 0; // 비디오를 처음으로 되감기
-                    video.play(); // 비디오 재생
+                    currentVideo.currentTime = 0; // 비디오를 처음으로 되감기
+                    currentVideo.play(); // 비디오 재생
 
                     // 비디오의 재생이 종료되면 슬라이드를 변경
-                    video.onended = function() {
+                    currentVideo.on('ended', function() {
                         mainVisualSwiper.slideNext();
-                    };
+                    });
                 }
 
                 // 현재 슬라이드에 애니메이션 클래스 추가
