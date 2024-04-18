@@ -581,10 +581,12 @@
                on: {
                    slideChange : function() {
                     console.log("change");
+                    resetAndPlayVideo()
 
                     },
                 },
             });
+
 
             // Function to reset and play video
             // function resetAndPlayVideo(slide) {
@@ -596,21 +598,21 @@
             //     }
             // }
             function resetAndPlayVideo(slide) {
-    var video = $(slide).find('video').get(0);
-    if (video) {
-        video.pause();
-        video.currentTime = 0;
-        var promise = video.play();
-        if (promise !== undefined) {
-            promise.then(() => {
-                // Autoplay started successfully
-            }).catch(error => {
-                // Autoplay failed, handle it here
-                // For iOS devices, you might want to show a play button or provide some user interaction to start video playback
-            });
-        }
-    }
-}
+                var video = $(slide).find('video').get(0);
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                    var promise = video.play();
+                    if (promise !== undefined) {
+                        promise.then(() => {
+                            // Autoplay started successfully
+                        }).catch(error => {
+                            // Autoplay failed, handle it here
+                            // For iOS devices, you might want to show a play button or provide some user interaction to start video playback
+                        });
+                    }
+                }
+            }
 
 
             // Event listener for next slide button
