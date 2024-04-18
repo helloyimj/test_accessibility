@@ -94,7 +94,7 @@
                             <div class="main_visual_slide01 swiper-slide" data-swiper-autoplay="16500">
                                 <div class="inner">
                                     <!-- PC 영상 -->
-                                    <video class="none_768" autoplay muted loop playsinline aria-label="배경 동영상">
+                                    <video class="none_768" autoplay muted playsinline aria-label="배경 동영상">
                                         <source type="video/mp4" src="../img/video/main_video_03.mp4">
                                         
                                         <!-- <source  class="block_768" src="./img/video/main_mobile_03.mp4" type="video/mp4"> -->
@@ -104,10 +104,10 @@
 
                                     </video>
                                     <!-- 모바일 영상 -->
-                                    <video class="block_768" autoplay muted loop playsinline aria-label="배경 동영상">
+                                    <!-- <video class="block_768" autoplay muted playsinline aria-label="배경 동영상"> -->
                                         <!-- <source src="https://ak.picdn.net/shutterstock/videos/1052687960/preview/stock-footage-beautiful-gold-shimmering-particles-with-lens-flare-on-black-background-in-slow-motion-d.webm" type="video/mp4"> -->
-                                        <source src="../img/video/main_mobile_03.mp4" type="video/mp4">
-                                    </video>
+                                        <!-- <source src="../img/video/main_mobile_03.mp4" type="video/mp4"> -->
+                                    <!-- </video> -->
                                 </div>
                             </div>
                             <div class="main_visual_slide02 swiper-slide" data-swiper-autoplay="5000">
@@ -511,7 +511,7 @@
                 loop: true,
                 parallax: true,
                 autoplay: {
-                    // delay: 5000,                
+                    delay: 5000,                
                     disableOnInteraction: false,
                 },
                 observer: true, // tab 키로 링크 전환 가능 
@@ -623,11 +623,29 @@
 
 
 
+    // Function to load appropriate video based on device width
+    function loadVideo() {
+        var windowWidth = $(window).width();
+        console.log(windowWidth);
+        var $videoBox = $('.main_visual_slide01 .none_768');
+     
+        if (windowWidth >= 768) {
+            // Load PC video
+            $videoBox.find('source').attr('src', '../img/video/main_video_03.mp4');
+        } else {
+            // Load mobile video
+            $videoBox.find('source').attr('src', '../img/video/main_mobile_03.mp4');
+        }
+    }
 
+    // Call loadVideo() initially
+    loadVideo();
 
+    // Call loadVideo() on window resize
+    $(window).resize(function() {
+        loadVideo();
 
-
-
+    });
 
 
 
