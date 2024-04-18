@@ -678,14 +678,12 @@
 }
     // Call loadVideo() initially
     loadVideo();
-
+    
     // Call loadVideo() on window resize
     $(window).resize(function() {
         console.log(windowWidth);
         loadVideo();
-
-    });
-
+    }).resize(); // Trigger resize event initially
 
 
     
