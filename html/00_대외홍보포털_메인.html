@@ -542,13 +542,13 @@
 
             /* 메인 비주얼 슬라이드 */
             mainVisualSwiper = new Swiper(".swiper_main_visual", {
-                // initialSlide: 0, // 첫 번째 슬라이드부터 시작
+                initialSlide: 0, // 첫 번째 슬라이드부터 시작
                 // initialSlide: initialSlideIndex,
                 // spaceBetween: 0,
                 loop: true,
                 parallax: true,
                 autoplay: {
-                    delay: 5000,                
+                    // delay: 5000,                
                     disableOnInteraction: false,
                 },
                 observer: true, // tab 키로 링크 전환 가능 
@@ -639,6 +639,42 @@
 
 
 
+
+            
+        
+    // Function to load appropriate video based on device width
+    var windowWidth = $(window).width();
+    console.log(windowWidth);
+    function loadVideo() {
+        var $videoBox = $('.main_visual_slide01 video');
+     
+        if (windowWidth >= 768) {
+            // Load PC video
+            $videoBox.find('source').attr('src', '../img/video/main_video_03.mp4');
+            // $videoBox.parent()[0].load(); // Reload the video element
+        } else {
+            // Load mobile video
+            $videoBox.find('source').attr('src', '../img/video/main_mobile_03.mp4');
+            // $videoBox.parent()[0].load(); // Reload the video element
+        }
+    }
+
+    // Call loadVideo() initially
+    loadVideo();
+
+    // Call loadVideo() on window resize
+    $(window).resize(function() {
+        loadVideo();
+
+    });
+
+
+
+    
+
+
+
+
             // $(window).on('resize', function() {
             //     const windowWidth = $(window).width();
             //     const mainVideo = $('.main_visual_slide01 video');
@@ -695,34 +731,6 @@
                 });
              */
         });
-
-        
-    // Function to load appropriate video based on device width
-    var windowWidth = $(window).width();
-    console.log(windowWidth);
-    function loadVideo() {
-        var $videoBox = $('.main_visual_slide01 video');
-     
-        if (windowWidth >= 768) {
-            // Load PC video
-            $videoBox.find('source').attr('src', '../img/video/main_video_03.mp4');
-            // $videoBox.parent()[0].load(); // Reload the video element
-        } else {
-            // Load mobile video
-            $videoBox.find('source').attr('src', '../img/video/main_mobile_03.mp4');
-            // $videoBox.parent()[0].load(); // Reload the video element
-        }
-    }
-
-    // Call loadVideo() initially
-    loadVideo();
-
-    // Call loadVideo() on window resize
-    $(window).resize(function() {
-        loadVideo();
-
-    });
-
 
 
 
