@@ -587,14 +587,30 @@
             });
 
             // Function to reset and play video
+            // function resetAndPlayVideo(slide) {
+            //     var video = $(".main_visual_slide01").find('video').get(0);
+            //     if (video) {
+            //         video.pause();
+            //         video.currentTime = 0;
+            //         video.play();
+            //     }
+            // }
             function resetAndPlayVideo(slide) {
-                var video = $(".main_visual_slide01").find('video').get(0);
-                if (video) {
-                    video.pause();
-                    video.currentTime = 0;
-                    video.play();
-                }
-            }
+    var video = $(slide).find('video').get(0);
+    if (video) {
+        video.pause();
+        video.currentTime = 0;
+        var promise = video.play();
+        if (promise !== undefined) {
+            promise.then(() => {
+                // Autoplay started successfully
+            }).catch(error => {
+                // Autoplay failed, handle it here
+                // For iOS devices, you might want to show a play button or provide some user interaction to start video playback
+            });
+        }
+    }
+}
 
 
             // Event listener for next slide button
@@ -651,11 +667,11 @@
         if (windowWidth >= 768) {
             // Load PC video
             $videoBox.find('source').attr('src', '../img/video/main_video_03.mp4');
-            // $videoBox.parent()[0].load(); // Reload the video element
+            $videoBox.parent()[0].load(); // Reload the video element
         } else {
             // Load mobile video
             $videoBox.find('source').attr('src', '../img/video/main_mobile_03.mp4');
-            // $videoBox.parent()[0].load(); // Reload the video element
+            $videoBox.parent()[0].load(); // Reload the video element
         }
     }
 
