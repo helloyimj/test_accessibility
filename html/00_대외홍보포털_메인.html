@@ -627,16 +627,16 @@
     function loadVideo() {
         var windowWidth = $(window).width();
         console.log(windowWidth);
-        var $videoBox = $('.main_visual_slide01 .none_768');
+        var $videoBox = $('.main_visual_slide01 video');
      
         if (windowWidth >= 768) {
             // Load PC video
-            $videoBox.find('source').attr('src', '../img/video/main_mobile_03.mp4');
-            $videoBox.parent()[0].load(); // Reload the video element
+            $videoBox.find('source').attr('src', '../img/video/main_video_03.mp4');
+            // $videoBox.parent()[0].load(); // Reload the video element
         } else {
             // Load mobile video
-            $videoBox.find('source').attr('src', '../img/video/main_video_03.mp4');
-            $videoBox.parent()[0].load(); // Reload the video element
+            $videoBox.find('source').attr('src', '../img/video/main_mobile_03.mp4');
+            // $videoBox.parent()[0].load(); // Reload the video element
         }
     }
 
