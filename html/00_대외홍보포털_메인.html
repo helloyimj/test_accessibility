@@ -508,11 +508,11 @@
 
             
             // 이전 슬라이드의 애니메이션 클래스 제거 함수
-            function removeAnimationClass() {
-                const prevSlideIndex = mainVisualSwiper.previousIndex;
-                const prevSlide = mainVisualSwiper.slides[prevSlideIndex];
-                $(prevSlide).removeClass('zooming');
-            }
+            // function removeAnimationClass() {
+            //     const prevSlideIndex = mainVisualSwiper.previousIndex;
+            //     const prevSlide = mainVisualSwiper.slides[prevSlideIndex];
+            //     $(prevSlide).removeClass('zooming');
+            // }
 
             // // Swiper 슬라이드 변경 시 이벤트 처리
             // mainVisual, function() {
@@ -583,6 +583,15 @@
                    slideChange : function() {
                     // console.log("change");
                     resetAndPlayVideo()
+
+                    // 현재 슬라이드에 애니메이션 클래스 추가
+                    // addClass('zooming');
+
+                    // Remove 'zooming' class from all slides
+                    swiper.slides.removeClass('zooming');
+
+                    // Add 'zooming' class to current slide
+                    swiper.slides.eq(swiper.activeIndex).addClass('zooming');
 
                     },
                 },
