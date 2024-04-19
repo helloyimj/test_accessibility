@@ -576,59 +576,59 @@
                     lastSlideMessage: '마지막 슬라이드',
                     paginationBulletMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
                },
-               on: {
-                   slideChange : function() {
-                    // console.log("change");
+            //    on: {
+            //        slideChange : function() {
+            //         // console.log("change");
 
-                    resetAndPlayVideo()
+            //         // resetAndPlayVideo()
 
-                    // 현재 슬라이드에 애니메이션 클래스 추가
-                    // addClass('zooming');
+            //         // 현재 슬라이드에 애니메이션 클래스 추가
+            //         // addClass('zooming');
 
-                    // Remove 'zooming' class from all slides
-                    swiper.slides.removeClass('zooming');
+            //         // Remove 'zooming' class from all slides
+            //         swiper.slides.removeClass('zooming');
 
-                    // Add 'zooming' class to current slide
-                    swiper.slides.eq(swiper.activeIndex).addClass('zooming');
+            //         // Add 'zooming' class to current slide
+            //         swiper.slides.eq(swiper.activeIndex).addClass('zooming');
 
-                    },
-                },
+            //         },
+            //     },
             });
 
             // Assuming your video element has an id of 'video1'
-$('#video1').on('ended', function() {
-    // Move to slide 2
-    swiper.slideTo(1); // Index 1 represents the second slide
-});
+// $('#video1').on('ended', function() {
+//     // Move to slide 2
+//     swiper.slideTo(1); // Index 1 represents the second slide
+// });
 
 
             // Function to reset and play video
-            // function resetAndPlayVideo(slide) {
-            //     var video = $(".main_visual_slide01").find('video').get(0);
-            //     if (video) {
-            //         video.pause();
-            //         video.currentTime = 0;
-            //         video.play();
-            //     }
-            // }
-
-
             function resetAndPlayVideo(slide) {
-                var video = $(slide).find('video').get(0);
+                var video = $(".main_visual_slide01").find('video').get(0);
                 if (video) {
                     video.pause();
                     video.currentTime = 0;
-                    var promise = video.play();
-                    // if (promise !== undefined) {
-                    //     promise.then(() => {
-                    //         // Autoplay started successfully
-                    //     }).catch(error => {
-                    //         // Autoplay failed, handle it here
-                    //         // For iOS devices, you might want to show a play button or provide some user interaction to start video playback
-                    //     });
-                    // }
+                    video.play();
                 }
             }
+
+
+            // function resetAndPlayVideo(slide) {
+            //     var video = $(slide).find('video').get(0);
+            //     if (video) {
+            //         video.pause();
+            //         video.currentTime = 0;
+            //         var promise = video.play();
+            //         // if (promise !== undefined) {
+            //         //     promise.then(() => {
+            //         //         // Autoplay started successfully
+            //         //     }).catch(error => {
+            //         //         // Autoplay failed, handle it here
+            //         //         // For iOS devices, you might want to show a play button or provide some user interaction to start video playback
+            //         //     });
+            //         // }
+            //     }
+            // }
 
 
 
