@@ -92,7 +92,7 @@
                         </div>
                         <div class="swiper-wrapper">
                             <!-- <div class="main_visual_slide01 swiper-slide" data-swiper-autoplay="18400"> -->
-                            <div class="main_visual_slide01 swiper-slide" data-swiper-autoplay="16230">
+                            <div class="main_visual_slide01 swiper-slide">
                                 <div class="inner">
                                     <!-- PC 영상 -->
                                     <video class="none_768" autoplay muted loop playsinline aria-label="배경 동영상">
@@ -111,7 +111,7 @@
                                     </video>
                                 </div>
                             </div>
-                            <div class="main_visual_slide02 swiper-slide" data-swiper-autoplay="5000">
+                            <div class="main_visual_slide02 swiper-slide">
                                 <div class="inner">
                                     <article class="sub_text">
                                         <div>
@@ -503,9 +503,6 @@
         $(document).ready(function() {
 
             var mainVisualSwiper;
-
-
-
             
             // 이전 슬라이드의 애니메이션 클래스 제거 함수
             // function removeAnimationClass() {
@@ -549,7 +546,7 @@
                 loop: true,
                 parallax: true,
                 autoplay: {
-                    // delay: 5000,                
+                    delays: [162300, 5000], 
                     disableOnInteraction: false,
                 },
                 observer: true, // tab 키로 링크 전환 가능 
@@ -582,6 +579,7 @@
                on: {
                    slideChange : function() {
                     // console.log("change");
+
                     resetAndPlayVideo()
 
                     // 현재 슬라이드에 애니메이션 클래스 추가
@@ -597,34 +595,40 @@
                 },
             });
 
+            // Assuming your video element has an id of 'video1'
+$('#video1').on('ended', function() {
+    // Move to slide 2
+    swiper.slideTo(1); // Index 1 represents the second slide
+});
+
 
             // Function to reset and play video
-            function resetAndPlayVideo(slide) {
-                var video = $(".main_visual_slide01").find('video').get(0);
-                if (video) {
-                    video.pause();
-                    video.currentTime = 0;
-                    video.play();
-                }
-            }
-
-
             // function resetAndPlayVideo(slide) {
-            //     var video = $(slide).find('video').get(0);
+            //     var video = $(".main_visual_slide01").find('video').get(0);
             //     if (video) {
             //         video.pause();
             //         video.currentTime = 0;
-            //         var promise = video.play();
-            //         if (promise !== undefined) {
-            //             promise.then(() => {
-            //                 // Autoplay started successfully
-            //             }).catch(error => {
-            //                 // Autoplay failed, handle it here
-            //                 // For iOS devices, you might want to show a play button or provide some user interaction to start video playback
-            //             });
-            //         }
+            //         video.play();
             //     }
             // }
+
+
+            function resetAndPlayVideo(slide) {
+                var video = $(slide).find('video').get(0);
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                    var promise = video.play();
+                    if (promise !== undefined) {
+                        promise.then(() => {
+                            // Autoplay started successfully
+                        }).catch(error => {
+                            // Autoplay failed, handle it here
+                            // For iOS devices, you might want to show a play button or provide some user interaction to start video playback
+                        });
+                    }
+                }
+            }
 
 
 
