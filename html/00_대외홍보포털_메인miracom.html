@@ -63,7 +63,7 @@
                     <h3 class="sr_only">메인 비주얼</h3>
                     <div class="swiper swiper_main_visual">
 
-											<div class="swiper-container">
+                    <div class="swiper-container">
                         <!-- 모든 슬라이드 삽입 문구가 같을 경우 -->
                         <div class="inner main_visual_inner">
                             <article>
@@ -85,7 +85,7 @@
                                         <div class="controller_btn_item controller_box_btn">
                                             <button type="button" class="controller_btn_prev" title="슬라이드 이전 보기"></button>
                                             <button type="button" id="controller_btn_pause" class="controller_btn_pause" title="슬라이드 일시정지"></button>
-                                            <!--   <button type="button" id="controller_btn_start" class="controller_btn_start" title="슬라이드 재생"></button> -->
+                                            <!--   <button type="button" id="controller_btn_play" class="controller_btn_play" title="슬라이드 재생"></button> -->
                                             <button type="button" class="controller_btn_next" title="슬라이드 다음 보기"></button>
                                         </div>
                                     </div>
@@ -98,7 +98,7 @@
                             <div class="main_visual_slide01 swiper-slide">
                                 <div class="inner">
                                     <!-- PC 영상 -->
-																			                        <video autoplay muted loop playsinline aria-label="배경 동영상">
+																			                        <video autoplay muted playsinline preload="auto" aria-label="배경 동영상">
                                         <source type="video/mp4" src="../img/video/main_video_03.mp4">
                                     </video>
                                 </div>
@@ -111,9 +111,14 @@
                                             <h3>선도서비스 개통식 SRT 수서역사</h3>
                                         </div>
                                     </article>
-                                    <div class="wrap_img">
+                                    <!-- <div class="wrap_img">
                                         <img src="../img/main/bg_main_visual_02.png" alt="디지털서비스개방 개통식 현장 모습">
-                                    </div>
+                                    </div> -->
+
+                                     <!-- PC 영상 -->
+                                     <video autoplay muted playsinline preload="auto" aria-label="배경 동영상">
+                                        <source type="video/mp4" src="../img/video/main_video_01.mp4">
+                                    </video>
                                 </div>
                             </div>
                         </div>
@@ -154,111 +159,14 @@
 		
 		
 		
-		<script>
+<script>
+
 	AOS.init();
-	const playTime = [162300, 5000];
-	// const playSpeed = 1000;
-	const toggle = document.querySelector('.swiper_main_visual .slide_controller .controller_btn_pause');
-	const circle = document.querySelector('#path');
-
-	const video = document.querySelectorAll('.swiper_main_visual .swiper-slide video');
-	var mainAutoplay = '';
-	var mainSlider = new Swiper('.swiper_main_visual', {
-
-		// 추가
-		parallax: true,
-		navigation: {
-								prevEl: ".controller_btn_prev",
-								nextEl: ".controller_btn_next",
-						},
-
-		// 추가end
 
 
 
-		// speed: playSpeed,
-		// effect:'fade',
-		// simulateTouch: true,
-		autoplay: {
-			delay: playTime,
-			disableOnInteraction: false
-		},
-		loop: true,
-		// loopedSlides: 1,
-		pagination: {
-			el: '.swiper_main_visual .swiper-pagination',
-			type: "progressbar",
-			clickable: true
-		},
-		// watchSlidesProgress: true,
-		// observer: true, // 슬라이더 리사이징 문제 해결용
-		// observeParents: true, // 슬라이더 리사이징 문제 해결용
-		on: {
-			beforeTransitionStart: function() {
-				// video.pause();
-				// video.currentTime = 0;
-				// video.play();
-				video[this.realIndex].pause();
-				video[this.realIndex].currentTime = 0;
-				video[this.realIndex].play();
-				// video[this.realIndex].load();
-				// circle.removeAttribute('style');
-				toggle.removeAttribute('data-play');
-			},
-			transitionStart: function(){
-				mainAutoplay = setTimeout(function(){
-					circle.style.animationFillMode = 'forwards';
-					// circle.style.animationName = 'circle-progress';
-					circle.style.animationTimingFunction = 'linear';
-					circle.style.animationDuration = (playTime + playSpeed + 1000) + 'ms';
 
-					toggle.setAttribute('data-play', 'running');
-					toggle.setAttribute('data-state', 'play');
-				}, 10);
-			}
-		}
-	});
-
-	toggle.addEventListener('click', function(){
-		let state = this.getAttribute('data-state');
-		if(state === 'play'){
-			this.setAttribute('data-state', 'pause');
-			mainSlider.autoplay.pause();
-		}else{
-			this.setAttribute('data-state', 'play');
-			mainSlider.autoplay.start();
-		}
-	});
-
-
-
-	//  // Function to reset and play video
-	//  function resetAndPlayVideo(slide) {
-  //               $(slide).find('video').each(function() {
-  //                   var video = $(this)[0]; // Get the native video element
-  //                   if (video) {
-  //                       video.pause();
-  //                       video.currentTime = 0;
-  //                       video.play();
-  //                   }
-  //               });
-  //           }
-
-
-	//         // Event listener for next slide button
-	// 				$(".controller_btn_next").on("click", function() {
-  //           var nextIndex = mainVisualSwiper.activeIndex + 1;
-  //           var nextSlide = mainVisualSwiper.slides[nextIndex];
-  //           resetAndPlayVideo(nextSlide);
-  //       });
-
-  //       // Event listener for previous slide button
-  //       $(".controller_btn_prev").on("click", function() {
-  //           var prevIndex = mainVisualSwiper.activeIndex - 1;
-  //           var prevSlide = mainVisualSwiper.slides[prevIndex];
-  //           resetAndPlayVideo(prevSlide);
-  //       });
-
+    
 	</script>
 
 </body>

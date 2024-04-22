@@ -555,6 +555,21 @@ img {
                             }
                         }
                     }
+                    
+                    .controller_btn_play {
+                        height: 14px;
+                        width: 14px;                     
+                        margin: 0 8px;
+                        position: relative;
+                        // display: none;
+
+                        &::after {
+                            @include bg_after;                        
+                            height: 14px;
+                            width: 14px;                             
+                            background-image: url("../img/icon/icon_play.svg");                         
+                        }
+                    }
                 }             
             }
 

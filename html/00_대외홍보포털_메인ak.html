@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <title>디지털서비스개방 메인</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../js/jquery-ui-1.13.2/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/swiper-5.4.3.css">
+    <link rel="stylesheet" type="text/css" href="../css/aos.css">
+    <link rel="stylesheet" type="text/css" href="../css/fontset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css" />
+    <link rel="stylesheet" type="text/css" href="../css/ak.css" />
+    <!--  <link rel="stylesheet" type="text/css" href="../css/style_promotion.css" /> -->
+
+    <!-- 파비콘 적용 -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- JS -->
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+    <script src="../js/jquery-ui-1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/swiper-5.4.3.min.js"></script>
+    <!-- <script src="../js/swiper-7.4.1.bundle.min.js"></script> -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/service.js"></script>
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <!-- 바로가기 메뉴 -->
+        <nav id="skip"></nav>
+        <!-- 헤더 GNB -->
+        <header id="header" class="header main_header"></header>
+				
+        <!-- 본문 콘텐츠 시작 -->
+        <main id="page_main" class="page_main">
+            <div id="content" class="content">
+                <!-- 메인 비주얼 영역 -->
+                <section class="section py-0 main-visual main_visual"
+								id="main_visual"
+								>
+									<h1 class="sr_only">메인 비주얼 영역</h1>
+
+									<div class="swiper swiper_main_visual">
+										<!-- 모든 슬라이드 삽입 문구가 같을 경우 -->
+										<div class="inner main_visual_inner">
+												<article>
+														<h2>공공서비스를 <br>민간플랫폼에서 한 번에</h2>
+														<p>공공앱∙웹으로만 사용가능했던 공공서비스를<br>민간에 개방하여 융합서비스를 창출하고 <br class="block_480"> 국민 편의를 높입니다.</p>
+														<div class="wrap_btn">
+																<a href="01_디지털서비스개방소개_정책소개.html" target="_self" class="btn_action filled_brand_lined link_in_white" title="디지털서비스개방 정책 소개 페이지로 이동">더 알아보기</a>
+																<a href="https://dpg.go.kr/DPG/main/index.do" target="_blank" class="btn_action filled_white_lined link_out_blue" title="새 창 열림- 디지털플랫폼정부위원회 누리집으로 외부 이동">DPG 바로가기</a>
+														</div>
+														<!-- 슬라이드 자동재생, 일시정지 버튼 -->
+														<div class="slide_controller">
+																<div class="controller_btns">
+																		<div class="controller_btn_item controller_box_state">
+																				<span class="swiper-pagination-current">01</span>
+																				<div class="swiper-pagination"></div>
+																				<span class="swiper-pagination-total">02</span>
+																		</div>
+																		<div class="controller_btn_item controller_box_btn">
+																				<button type="button" class="controller_btn_prev" title="슬라이드 이전 보기"></button>
+																				<button type="button" id="controller_btn_play" class="controller_btn_play" style="display: none;" title="슬라이드 재생"></button>
+																				<button type="button" id="controller_btn_pause" class="controller_btn_pause" title="슬라이드 일시정지"></button>
+																				<button type="button" class="controller_btn_next" title="슬라이드 다음 보기"></button>
+																		</div>
+																</div>
+																<div class="swiper-button-next"></div>
+																<div class="swiper-button-prev"></div>
+														</div>
+												</article>
+										</div>
+
+									<div class="swiper-container">
+
+
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="img-bx">
+													<!-- <video class="video" data-autoplay src="https://ak.picdn.net/shutterstock/videos/1052687960/preview/stock-footage-beautiful-gold-shimmering-particles-with-lens-flare-on-black-background-in-slow-motion-d.webm" autoplay loop muted playsinline poster="../img/main/bg_main_visual_01.png"></video> -->
+													<video class="video" data-autoplay src="../img/video/main_video_03.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_01.png"></video>
+												</div>
+												<!-- <div class="txt-bx">
+													<div class="container">
+														<h2 class="title">
+															<br class="d-lg-block d-none" />
+														</h2>
+													</div>
+												</div> -->
+											</div>
+											<div class="swiper-slide">
+												<div class="img-bx">
+													<!-- <video class="video" data-autoplay src="https://ak.picdn.net/shutterstock/videos/1059077006/preview/stock-footage-abstract-digital-particle-wave-and-light-abstract-background-animation-cyber-or-technology.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_02.png"></video> -->
+													<video class="video" data-autoplay src="../img/video/main_video_01.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_02.png"></video>
+												</div>
+												<!-- <div class="txt-bx">
+													<div class="container">
+														<h2 class="title">2024</h2>
+														<p class="text"></p>
+													</div>
+												</div> -->
+											</div>
+										</div>
+					
+										<!-- <div class="swiper-ctrl">
+											<div class="container swiper-ctrl__wrap">
+												<div class="swiper-pagination"></div>
+					
+												<button type="button" class="swiper-button swiper-button--prev">
+													<i class="xi-angle-left"></i>
+												</button>
+					
+												<div class="swiper-toggle">
+													<button type="button" title="재생" class="btn swiper-play" style="display: none"><i class="xi-play"></i></button>
+													<button type="button" title="정지" class="btn swiper-pause"><i class="xi-pause"></i></button>
+												</div>
+					
+												<button type="button" class="swiper-button swiper-button--next">
+													<i class="xi-angle-right"></i>
+												</button>
+											</div>
+										</div> -->
+									</div>
+									<!-- <div class="scroll-down">
+										<img src="../../assets/images/main/mv-scroll.png" alt="SCROLL DOWN" />
+									</div> -->
+
+									<!-- 페이지 아래로 이동 버튼 -->
+									<div class="scroll_down">
+										<a class="scroll_down_btn" href="#section_app" title="페이지 아래로 이동">
+												<div class="scroll_motion_frame">
+														<div class="scroll_mouse"></div>
+														<div class="arrow_move">
+																<span></span>
+																<span></span>
+																<span></span>
+														</div>
+												</div>
+										</a>
+								</div>
+								
+								</section>
+               
+            </div>
+
+
+            </div>
+            </div>
+
+
+
+        </main>
+        <!-- 본문 콘텐츠 끝-->
+        <!-- 탑버튼 -->
+        <div id="top_btn" class="tBtn top_btn"></div>
+        <!-- 푸터 -->
+        <footer id="footer" class="footer"></footer>
+
+    </div>
+
+    <!-- 팝업 배경 dim 처리 -->
+    <div class="popup_mask"></div>
+
+    <!-- 팝업 본문 :  콘텐츠 준비중 알림 팝업 -->
+    <div class="prepare_alertPop"></div>
+		
+		
+		
+<script>
+
+	AOS.init();
+
+    
+
+
+			// 메인비주얼 SWIPER
+			var visualSwiper = new Swiper('.main-visual  .swiper-container', {
+				loop: true,
+				slidesPerView: 1,
+				observer: true, // tab 키로 링크 전환 가능 
+				observeParents: true,
+				speed: 1000,
+				// simulateTouch: false,
+				autoplay: {
+					delays: [5000, 2000], // 1번 동영상 길이, 2번 동영상 길이, 
+					// delays: [162300, 5000], // 1번 동영상 길이, 2번 동영상 길이, 
+					waitForTransition: false,
+					// disableOnInteraction: false,
+				},
+
+				pagination: {
+							el: ".main-visual .swiper-pagination",
+							type: "progressbar",
+							clickable: true,
+					},
+						navigation: {
+                    prevEl: ".main-visual .controller_btn_prev",
+                    nextEl: ".main-visual .controller_btn_next",
+                },
+
+				on: {
+					slideChange: function (swiper) {
+						//console.log('swiper initialized');
+						//var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
+						var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
+						//prevVideo.trigger('pause');
+						currentVideo.trigger('play');
+					},
+				},
+
+
+
+							// 웹접근성  추가
+                // Enable keyboard navigation
+                keyboard: {
+                    enabled: true,
+                },
+							// Enable ARIA support
+							a11y: {
+                    prevSlideMessage: '이전 슬라이드',
+                    nextSlideMessage: '다음 슬라이드',
+                    firstSlideMessage: '처음 슬라이드',
+                    lastSlideMessage: '마지막 슬라이드',
+                    paginationBulletMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+                },
+
+			});
+
+			/* GET ALL VIDEOS */
+			var sliderVideos = $('.main-visual .swiper-slide video');
+
+			/* SWIPER API - Event will be fired after animation to other slide (next or previous) */
+			visualSwiper.on('slideChange', function () {
+				// console.log('slide changed');
+				/* stop all videos (currentTime buggy without this loop idea) */
+				sliderVideos.each(function (index) {
+					this.currentTime = 0;
+				});
+
+				/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
+				var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
+				var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
+				prevVideo.trigger('stop');
+				currentVideo.trigger('play');
+			});
+
+			// SWIPER CTRL: 일시정지/재생
+			// $('.main-visual .swiper-play').hide();
+			// $('.main-visual .swiper-pause').on('click', function () {
+			// 	visualSwiper.autoplay.stop();
+			// 	$('.main-visual .swiper-play').show();
+			// 	$(this).hide();
+			// });
+			// $('.main-visual .swiper-play').on('click', function () {
+			// 	visualSwiper.autoplay.start();
+			// 	$('.main-visual .swiper-pause').show();
+			// 	$(this).hide();
+			// });
+
+			// SWIPER CTRL: 일시정지/재생
+			$('.main-visual .controller_btn_play').hide();
+			$('.main-visual .controller_btn_pause').on('click', function () {
+				visualSwiper.autoplay.stop();
+				$('.main-visual .controller_btn_play').show();
+				$(this).hide();
+			});
+			$('.main-visual .controller_btn_play').on('click', function () {
+				visualSwiper.autoplay.start();
+				$('.main-visual .controller_btn_pause').show();
+				$(this).hide();
+			});
+
+    
+	</script>
+
+</body>
+
+</html>
