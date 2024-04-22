@@ -116,8 +116,18 @@
 											</div>
 											<div class="swiper-slide">
 												<div class="img-bx">
-													<!-- <video class="video" data-autoplay src="https://ak.picdn.net/shutterstock/videos/1059077006/preview/stock-footage-abstract-digital-particle-wave-and-light-abstract-background-animation-cyber-or-technology.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_02.png"></video> -->
-													<video class="video" data-autoplay src="../img/video/main_video_01.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_02.png"></video>
+													<!-- <video class="video" data-autoplay src="../img/video/main_video_01.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_02.png"></video> -->
+													<div class="inner">
+																<article class="sub_text">
+																		<div>
+																				<h2>23. 6. 27. (화)</h2>
+																				<h3>선도서비스 개통식 SRT 수서역사</h3>
+																		</div>
+																</article>
+																<div class="wrap_img">
+																		<img src="../img/main/bg_main_visual_02.png" alt="디지털서비스개방 개통식 현장 모습">
+																</div>
+														</div>
 												</div>
 												<!-- <div class="txt-bx">
 													<div class="container">
@@ -127,29 +137,7 @@
 												</div> -->
 											</div>
 										</div>
-					
-										<!-- <div class="swiper-ctrl">
-											<div class="container swiper-ctrl__wrap">
-												<div class="swiper-pagination"></div>
-					
-												<button type="button" class="swiper-button swiper-button--prev">
-													<i class="xi-angle-left"></i>
-												</button>
-					
-												<div class="swiper-toggle">
-													<button type="button" title="재생" class="btn swiper-play" style="display: none"><i class="xi-play"></i></button>
-													<button type="button" title="정지" class="btn swiper-pause"><i class="xi-pause"></i></button>
-												</div>
-					
-												<button type="button" class="swiper-button swiper-button--next">
-													<i class="xi-angle-right"></i>
-												</button>
-											</div>
-										</div> -->
 									</div>
-									<!-- <div class="scroll-down">
-										<img src="../../assets/images/main/mv-scroll.png" alt="SCROLL DOWN" />
-									</div> -->
 
 									<!-- 페이지 아래로 이동 버튼 -->
 									<div class="scroll_down">
@@ -225,16 +213,24 @@
                 },
 
 				on: {
-					slideChange: function (swiper) {
+					slideChange: function (swiper) {				
+
 						//console.log('swiper initialized');
 						//var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
 						var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
 						//prevVideo.trigger('pause');
 						currentVideo.trigger('play');
+						
+						// // 현재 슬라이드에 애니메이션 클래스 추가 ( 사진 줌 )
+						// // swiper.removeClass('zooming');
+						// // currentVideo.addClass('zooming');
+
+
+						$('.swiper-slide').removeClass('zooming');
+
+
 					},
 				},
-
-
 
 							// 웹접근성  추가
                 // Enable keyboard navigation
@@ -252,38 +248,62 @@
 
 			});
 
+
+
+			// /* GET ALL VIDEOS */
+			// var sliderVideos = $('.main-visual .swiper-slide video');
+
+			// /* SWIPER API - Event will be fired after animation to other slide (next or previous) */
+			// visualSwiper.on('slideChange', function () {
+			// 	// console.log('slide changed');
+			// 	/* stop all videos (currentTime buggy without this loop idea) */
+			// 	sliderVideos.each(function (index) {
+			// 		this.currentTime = 0;
+			// 	});
+
+			// 	/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
+			// 	var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
+			// 	var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
+			// 	prevVideo.trigger('stop');
+			// 	currentVideo.trigger('play');
+			// });
+
+
+
+
 			/* GET ALL VIDEOS */
-			var sliderVideos = $('.main-visual .swiper-slide video');
+var sliderVideos = $('.main-visual .swiper-slide video');
 
-			/* SWIPER API - Event will be fired after animation to other slide (next or previous) */
-			visualSwiper.on('slideChange', function () {
-				// console.log('slide changed');
-				/* stop all videos (currentTime buggy without this loop idea) */
-				sliderVideos.each(function (index) {
-					this.currentTime = 0;
-				});
+/* SWIPER API - Event will be fired after animation to other slide (next or previous) */
+visualSwiper.on('slideChange', function () {
+    // console.log('slide changed');
+    
+    /* stop all videos (currentTime buggy without this loop idea) */
+    sliderVideos.each(function (index) {
+        this.currentTime = 0;
+        // $(this).trigger('pause'); // Ensure all videos are paused
+    });
 
-				/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
-				var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
-				var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
-				prevVideo.trigger('stop');
-				currentVideo.trigger('play');
-			});
+    /* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
+    var currentSlide = $('[data-swiper-slide-index=' + this.realIndex + ']');
+    var prevSlide = $('[data-swiper-slide-index=' + this.previousIndex + ']');
 
-			// SWIPER CTRL: 일시정지/재생
-			// $('.main-visual .swiper-play').hide();
-			// $('.main-visual .swiper-pause').on('click', function () {
-			// 	visualSwiper.autoplay.stop();
-			// 	$('.main-visual .swiper-play').show();
-			// 	$(this).hide();
-			// });
-			// $('.main-visual .swiper-play').on('click', function () {
-			// 	visualSwiper.autoplay.start();
-			// 	$('.main-visual .swiper-pause').show();
-			// 	$(this).hide();
-			// });
+    // Remove 'zooming' class from previous slide
+    // prevSlide.removeClass('zooming');
+    // Add 'zooming' class to current slide
+    currentSlide.addClass('zooming');
 
-			// SWIPER CTRL: 일시정지/재생
+    var prevVideo = prevSlide.find('video');
+    var currentVideo = currentSlide.find('video');
+    
+    // Stop previous video and play current video
+    prevVideo.trigger('pause');
+    currentVideo.trigger('play');
+});
+
+
+
+			// SWIPER 정지/재생
 			$('.main-visual .controller_btn_play').hide();
 			$('.main-visual .controller_btn_pause').on('click', function () {
 				visualSwiper.autoplay.stop();
