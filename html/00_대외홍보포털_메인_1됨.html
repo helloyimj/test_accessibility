@@ -101,13 +101,10 @@
 
 
 										<div class="swiper-wrapper">
-											<!-- <div class="swiper-slide"> -->
-												<div class="swiper-slide" data-swiper-autoplay="16500">
-
+											<div class="swiper-slide">
 												<div class="slide_inner">
 													<!-- <video class="video" data-autoplay src="https://ak.picdn.net/shutterstock/videos/1052687960/preview/stock-footage-beautiful-gold-shimmering-particles-with-lens-flare-on-black-background-in-slow-motion-d.webm" autoplay loop muted playsinline poster="../img/main/bg_main_visual_01.png"></video> -->
-													<video class="video none_768" data-autoplay src="../img/video/main_video_03.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_01.png"></video>
-													<video class="video block_768" data-autoplay src="../img/video/main_video_03.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_01.png"></video>
+													<video class="video" data-autoplay src="../img/video/main_video_03.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_01.png"></video>
 												</div>
 												<!-- <div class="txt-bx">
 													<div class="container">
@@ -117,8 +114,7 @@
 													</div>
 												</div> -->
 											</div>
-											<!-- <div class="swiper-slide "> -->
-												<div class="swiper-slide" data-swiper-autoplay="5000">
+											<div class="swiper-slide">
 												<div class="slide_inner">
 													<!-- <video class="video" data-autoplay src="../img/video/main_video_01.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_02.png"></video> -->
 													<div class="inner">
@@ -203,7 +199,7 @@
 					delays: [165000, 5000], // 1번 동영상 길이, 2번 동영상 길이, 
 					// delays: [162300, 5000], // 1번 동영상 길이, 2번 동영상 길이, 
 					waitForTransition: false,
-					disableOnInteraction: false, // 
+					// disableOnInteraction: false,
 				},
 
 				pagination: {
@@ -254,28 +250,56 @@
 
 
 
+			// /* GET ALL VIDEOS */
+			// var sliderVideos = $('.main-visual .swiper-slide video');
+
+			// /* SWIPER API - Event will be fired after animation to other slide (next or previous) */
+			// visualSwiper.on('slideChange', function () {
+			// 	// console.log('slide changed');
+			// 	/* stop all videos (currentTime buggy without this loop idea) */
+			// 	sliderVideos.each(function (index) {
+			// 		this.currentTime = 0;
+			// 	});
+
+			// 	/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
+			// 	var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
+			// 	var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
+			// 	prevVideo.trigger('stop');
+			// 	currentVideo.trigger('play');
+			// });
+
+
+
+
 			/* GET ALL VIDEOS */
-			var sliderVideos = $('.main-visual .swiper-slide video');
+var sliderVideos = $('.main-visual .swiper-slide video');
 
-			/* SWIPER API - Event will be fired after animation to other slide (next or previous) */
-			visualSwiper.on('slideChange', function () {
-				// console.log('slide changed');
-				/* stop all videos (currentTime buggy without this loop idea) */
-				sliderVideos.each(function (index) {
-					this.currentTime = 0;
-				});
+/* SWIPER API - Event will be fired after animation to other slide (next or previous) */
+visualSwiper.on('slideChange', function () {
+    // console.log('slide changed');
+    
+    /* stop all videos (currentTime buggy without this loop idea) */
+    sliderVideos.each(function (index) {
+        this.currentTime = 0;
+        // $(this).trigger('pause'); // Ensure all videos are paused
+    });
 
-				/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
-				var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
-				var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
-				prevVideo.trigger('stop');
-				currentVideo.trigger('play');
+    /* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
+    var currentSlide = $('[data-swiper-slide-index=' + this.realIndex + ']');
+    var prevSlide = $('[data-swiper-slide-index=' + this.previousIndex + ']');
 
-				/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
-				var currentSlide = $('[data-swiper-slide-index=' + this.realIndex + ']');
+    // Remove 'zooming' class from previous slide
+    // prevSlide.removeClass('zooming');
+    // Add 'zooming' class to current slide
     currentSlide.addClass('zooming');
 
-			});
+    var prevVideo = prevSlide.find('video');
+    var currentVideo = currentSlide.find('video');
+    
+    // Stop previous video and play current video
+    prevVideo.trigger('pause');
+    currentVideo.trigger('play');
+});
 
 
 

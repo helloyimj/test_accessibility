@@ -87,7 +87,7 @@
 
 .main-visual {
 	
-	.img-bx {
+	.slide_inner {
 		display: block;
 		position: relative;
 		overflow: hidden;
@@ -168,7 +168,7 @@
 	// }
 
 	// @include mdq-max(xl) {
-	//   .img-bx {
+	//   .slide_inner {
 	//     &::after {
 	//       padding-bottom: percentage(800/1200);
 	//     }
@@ -176,14 +176,14 @@
 	// }
 
 	// @include mdq-max(lg) {
-	//   .img-bx {
+	//   .slide_inner {
 	//     &::after {
 	//       padding-bottom: percentage(800/1200);
 	//     }
 	//   }
 	// }
 	// @include mdq-max(sm) {
-	// 	// .img-bx {
+	// 	// .slide_inner {
 	// 	//   &::after {
 	// 	//     padding-bottom: percentage(1200/1440);
 	// 	//   }
