@@ -98,7 +98,7 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                <!-- <div class="swiper-slide" data-swiper-autoplay="16500"> -->
+                                <div class="swiper-slide" data-swiper-autoplay="16600">
                                     <div class="slide_inner">
                                         <!-- <video class="video" data-autoplay src="https://ak.picdn.net/shutterstock/videos/1052687960/preview/stock-footage-beautiful-gold-shimmering-particles-with-lens-flare-on-black-background-in-slow-motion-d.webm" autoplay loop muted playsinline poster="../img/main/bg_main_visual_01.png"></video> -->
                                         <video class="video none_768" data-autoplay src="../img/video/main_video_03.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_01.png"></video>
@@ -106,7 +106,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                <!-- <div class="swiper-slide" data-swiper-autoplay="5000"> -->
+                                <div class="swiper-slide" data-swiper-autoplay="5000">
                                     <div class="slide_inner">
                                         <div class="inner">
                                             <article class="sub_text">
@@ -516,10 +516,10 @@
             on: {
                 slideChange: function(swiper) {
                     //console.log('swiper initialized');
-                    // var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
+                    var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
                     var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
                     // prevVideo.trigger('pause');
-                    // prevVideo.trigger('stop');
+                    prevVideo.trigger('stop');
                     currentVideo.trigger('play');
 
                     // 현재 슬라이드에 애니메이션 클래스 추가
