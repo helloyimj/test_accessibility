@@ -105,8 +105,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide" data-swiper-autoplay="5000">
-                                    <div class="slide_inner">
-                                        <!-- <video class="video" data-autoplay src="../img/video/main_video_01.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_02.png"></video> -->
+                                    <!-- <div class="slide_inner">
                                         <div class="inner">
                                             <article class="sub_text">
                                                 <div>
@@ -118,7 +117,13 @@
                                                 <img src="../img/main/bg_main_visual_02.png" alt="디지털서비스개방 개통식 현장 모습">
                                             </div>
                                         </div>
+                                    </div> -->
+
+                                    <div class="slide_inner">
+                                        <video class="video none_768" data-autoplay src="../img/video/main_video_01.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_01.png"></video>
+                                        <video class="video block_768" data-autoplay src="../img/video/main_mobile_01.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_m_01.png"></video>
                                     </div>
+
                                     <!-- <div class="txt-bx">
 													<div class="container">
 														<h2 class="title">2024</h2>
@@ -501,7 +506,8 @@
             speed: 1000,
             // simulateTouch: false,
             autoplay: {
-                delays: [166000, 5000], // 1번 동영상 길이, 2번 동영상 길이, 
+                // delays: [166000, 5000], // 1번 동영상 길이, 2번 동영상 길이, 
+                delays: [166000, 18400], // 1번 동영상 길이, 2번 동영상 길이, 
                 // delays: [162300, 5000], // 1번 동영상 길이, 2번 동영상 길이, 
                 waitForTransition: false,
                 disableOnInteraction: false, // 
@@ -520,10 +526,10 @@
             on: {
                 slideChange: function(swiper) {
                     //console.log('swiper initialized');
-                    var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
+                    // var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
                     var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
                     // prevVideo.trigger('pause');
-                    prevVideo.trigger('stop');
+                    // prevVideo.trigger('stop');
                     currentVideo.trigger('play');
 
                     // 현재 슬라이드에 애니메이션 클래스 추가
