@@ -514,10 +514,10 @@
             on: {
                 slideChange: function(swiper) {
                     //console.log('swiper initialized');
-                    // var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
+                    var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
                     var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
                     // prevVideo.trigger('pause');
-                    // prevVideo.trigger('stop');
+                    prevVideo.trigger('stop');
                     currentVideo.trigger('play');
 
                     // 현재 슬라이드에 애니메이션 클래스 추가
