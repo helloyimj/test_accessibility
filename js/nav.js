@@ -330,9 +330,9 @@ $(document).ready(function() {
         if ( !$(e.target).is(".header .gnb_mo .wrap_menus") && $(e.target).is(".nav_dim") ) {
 			    e.stopPropagation();
             $("html").removeClass("open_lnb");
-            $(".header .gnb_mo").removeClass("on");
             $(".header .gnb_mo .btn_util_ham").removeClass("on");
             $(".header .menu_search").removeClass("on");
+            $(".header .gnb_mo").removeClass("on");
             $(".header .gnb_mo").removeClass("open_search");
         }
     });
