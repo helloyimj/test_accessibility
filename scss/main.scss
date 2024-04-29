@@ -1,21 +1,12 @@
 @charset "utf=8";
 @import "mixset.scss";
 
-// width: calc(( 1200px - ( 2.4rem * 2 ) ) / 3 );
-// width: 11.5%;
-//  layout.scss end
-
 :root {
     --swiper-theme-color: $color_ft_777;
 }
 
 // .swiper-pagination-progressbar {
 //     background: $color_ddd;
-// }
-
-
-// .header {
-//     background-color: transparent;
 // }
 
 html,
@@ -60,7 +51,6 @@ img {
 .none_768 {
     /*     display: block; */
     }
-    
 
 /* 메인페이지 공통 사항  */
 
@@ -140,7 +130,6 @@ img {
         }
     }
 
-    // .btn_lin
     .btn_round {
         text-align: center;
         display: flex;
@@ -151,7 +140,6 @@ img {
         font-size: 1.8rem;
         border-radius: 2.5rem;
         font-family: $font_medium;
-
     }
 
     .only_mob {
@@ -161,154 +149,213 @@ img {
     .only_pc {
         display: block;
     }
+
 }
 
+/* 메인 비주얼 */
 
+section.main_visual {
+    min-height: unset;
+  }
+  
+.main_visual {
+    width: 100%;
+    height: 100vh;
+    min-height: unset;
+    max-height: 220rem;
+    color: $color_white; 
+    background-color: $color_111;
+    
+    .inner {
+        width: 100%;   
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        z-index: 100;
+        object-fit: cover; 
+        padding-top: 0;
 
-.page_main {
+        //모든 슬라이드 삽입 문구가 같을 경우
+        //     &.main_visual_inner {
+        // }
 
-    /* 메인 비주얼 */
-    .main_visual {
-        // margin-top: 12rem;
-        // margin-top: 11.2rem;
-
-        // margin-left: unset;
-        // width: 100%;
-        // position: relative;
-        // margin-bottom: 10rem;
-        // flex-wrap: wrap;
-
+        // 슬라이드별 삽입 문구가 다를 경우
+        //     &::after {
+        //     content: '';
+        //     background-color: $color_111;
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100%;
+        //     opacity: 0.6;
+        //     z-index: -1;
+        // }       
+    }
+    
+    .wrap_img {
         width: 100%;
-        height: 100vh;
-        max-height: 220rem;
-        //min-height: initial;
-        //max-height: initial;
-        color: $color_white; 
-        background-color: $color_111;
-        
-        .inner {
-            padding-top: 0;
-            width: 100%;   
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            object-fit: cover;
+            width: 100%;
             height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
+        }
+    }
+
+    .main_visual_inner {
+    // 슬라이드별 삽입 문구가 다를 경우
+        article {   
             display: flex;
-            align-items: center;
-            z-index: 100;
-            object-fit: cover; 
+            flex-direction: column;
+            position: absolute;
+            top: 26%; 
+            left: 25rem;     
+            z-index: 2;   
 
-            //모든 슬라이드 삽입 문구가 같을 경우
-/*             &.main_visual_inner {
-            } */
-
-            // 슬라이드별 삽입 문구가 다를 경우
-/*             &::after {
-                content: '';
-                background-color: $color_111;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                opacity: 0.6;
-                z-index: -1;
-            }  */      
-            
-            .wrap_img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                img {
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
-                }
+            h2 {
+                font-size: 4.8rem;
+                font-family: $font_bold;
+                margin-bottom: 3rem;
+                line-height: 1.1;
+                order: 2;
             }
 
-            &.main_visual_inner {
-            // 슬라이드별 삽입 문구가 다를 경우
-                article {   
-                 /*    width: 100%; */
-                    display: flex;
-                    flex-direction: column;
-                    position: absolute;
-                    top: 26%; 
-                    left: 25rem;     
-                    z-index: 2;   
+            // h3 {
+            //     font-size: 2rem;
+            //     font-family: $font_light;  
+            //     line-height: 1.5;  
+            //     margin-bottom: 4rem;                   
+            // }
 
+            p {
+                font-size: 2rem; 
+                font-family: $font_light;  
+                line-height: 1.5;  
+                margin-bottom: 4rem;   
+                order: 3;        
+            }
 
-                    h2 {
-                        font-size: 4.8rem;
-                        font-family: $font_bold;
-                        margin-bottom: 3rem;
-                        line-height: 1.1;
-                        order: 2;
-                    }
+            .wrap_btn {
+                display: flex;
+                gap: 1.8rem;
+                order: 4;
 
-/*                     h3 {
-                        font-size: 2rem;
-                        font-family: $font_light;  
-                        line-height: 1.5;  
-                        margin-bottom: 4rem;                   
-                    } */
-
-                    p {
-                        font-size: 2rem; 
-                        font-family: $font_light;  
-                        line-height: 1.5;  
-                        margin-bottom: 4rem;   
-                        order: 3;        
-                    }
-
-                    .wrap_btn {
-                        display: flex;
-                        gap: 1.8rem;
-                        order: 4;
-
-                        a {
-                            width: 18rem;
-                        }
-                    }
+                a {
+                    width: 18rem;
                 }
             }
         }
+    }
 
-    /*     iframe {
-            width: 100%;
-            height: 100%;
-        } */
+    // iframe {
+    //     width: 100%;
+    //     height: 100%;
+    // }
 
-        .swiper_main_visual {
-            width: 100%;
-            height: 100vh;
-            min-height: 96rem;
-            max-height: 220rem;
-            position: relative;       
-            overflow-x: hidden;
+    .swiper_main_visual {
+        width: 100%;
+        height: 100vh;
+        min-height: unset;
+        max-height: 220rem;
+        position: relative;       
+        overflow-x: hidden;
 
-            .swiper-slide {    
-                display: flex;           
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: auto;                
-                position: relative;   
-                overflow: hidden;   
-                
-                video {
-                    /*    position: fixed; right: 0; bottom: 0; */
-                    min-width: 100%; min-height: 100%;
-                    width: 100%; height: 100%; z-index: -100;
-                    object-fit: cover; 
-                }
+        .swiper-slide {    
+            display: flex;           
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;                
+            position: relative;   
+            overflow: hidden;   
             
-                .inner {
+            video {
+                //    position: fixed; right: 0; bottom: 0;
+                min-width: 100%; min-height: 100%;
+                width: 100%; height: 100%; z-index: -100;
+                object-fit: cover; 
+            }
+        
+            .inner {
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    background-color: $color_111;
+                    position: absolute;
                     width: 100%;
                     height: 100%;
-                    position: relative;
+                    opacity: 0.6;
+                    z-index: 5;                    
+                }
 
+                .sub_text {
+                    position: absolute;
+                    text-align: right;                           
+                    display: flex;
+                    justify-content: right;
+                    bottom: 16%;
+                    right: 10rem;
+                    z-index: 10;
+                    width: auto;
+
+                    > div {
+                        padding: 1.6rem 2.4rem;
+                        width: auto;
+                        background-color : rgb(0,0,0,0.6);
+                        border-radius: 1rem;
+                    }
+
+                    h2 {
+                        font-size: 2.6rem;
+                        font-family: $font_medium;
+                        margin-bottom: 1.2rem;
+                        line-height: 1;
+                        filter: drop-shadow(0,0,0,rgba(0,0,0,1));
+                        opacity: 0.7;
+                    }
+
+                    h3 {
+                        font-size: 3.2rem;
+                        font-family: $font_bold;
+                        margin: 0;
+                        padding: 0;
+                        line-height: 1;
+                        filter: drop-shadow(0,0,0,rgba(0,0,0,1));
+                        opacity: 0.7;
+                    }
+                }
+
+                .wrap_img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: -1;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: -1;
+                    }
+                }
+            }
+
+            &.main_visual_slide01 {
+                background-image: url("../img/main/bg_main_visual_01.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                .inner {
                     &::after {
                         content: '';
                         background-color: $color_111;
@@ -318,398 +365,318 @@ img {
                         opacity: 0.6;
                         z-index: 5;                    
                     }
+                }
+            }
 
-                    .sub_text {
+            &.main_visual_slide02 {
+                // background-image: url("../img/main/bg_main_visual_02.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;   
+                
+                .inner {
+                    &::after {
+                        content: '';
+                        background-color: $color_111;
                         position: absolute;
-                        text-align: right;                           
-                        display: flex;
-                        justify-content: right;
-                        bottom: 16%;
-                        right: 10rem;
-                        z-index: 10;
-                        width: auto;
-
-                        > div {
-                            padding: 1.6rem 2.4rem;
-                            width: auto;
-                            background-color : rgb(0,0,0,0.6);
-                            border-radius: 1rem;
-                        }
-
-                        h2 {
-                            font-size: 2.6rem;
-                            font-family: $font_medium;
-                            margin-bottom: 1.2rem;
-                            line-height: 1;
-                            filter: drop-shadow(0,0,0,rgba(0,0,0,1));
-                            opacity: 0.7;
-                        }
-
-                        h3 {
-                            font-size: 3.2rem;
-                            font-family: $font_bold;
-                            margin: 0;
-                            padding: 0;
-                            line-height: 1;
-                            filter: drop-shadow(0,0,0,rgba(0,0,0,1));
-                            opacity: 0.7;
-                        }
-                    }
-
-                    .wrap_img {
                         width: 100%;
                         height: 100%;
-                        object-fit: cover;
-                        z-index: -1;
+                        opacity: 0.6;
+                        z-index: 5;                    
+                    }
+                }
+            }
 
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            z-index: -1;
-                        }
+            &.zooming {
+                .wrap_img {   
+                    z-index: -1;
+                
+                    img {
+                        transform: scale(1.3, 1.3);
+                        transition: all 6s linear; // 애니메이션 적용                            
+                    }
+                }
+            }    
+
+            &.main_visual_slide03 {
+                background-image: url("../img/main/bg_main_visual_03.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                .inner {
+                    &::after {
+                        content: '';
+                        background-color: $color_111;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.6;
+                        z-index: 5;                    
+                    }
+                }
+            }
+        }   
+    }
+
+    // 슬라이드 컨트롤러 (재생/정지 버튼)
+    .slide_controller {
+        width: 100px;
+        height: 20px;       
+        z-index: 100;
+        color: $color_111;
+        margin-bottom: 3rem;
+        order: 1;
+
+        //컨트롤러의 위치가 절대값인 경우
+    //  width: 100px;
+    //     height: 20px;       
+    //     position: absolute;
+    //     z-index: 100;
+    //     color: $color_111;
+    //     left: 25rem;
+    //     top: 24%;
+
+        .controller_btns {
+            display: flex;
+            align-items: center; 
+
+            .controller_box_state {
+                display: flex;
+                align-items: center;           
+
+                .swiper-pagination-current,
+                .swiper-pagination-total {
+                    font-family: $font_regular;
+                    color: $color_white;
+                    font-size: 1.4rem;
+                }
+
+                .swiper-pagination-total {
+                    margin-left: 316px;
+                }
+
+                // 스와이퍼 프로그래스바
+                .swiper-pagination {
+                    width: 30rem;
+                    height: 0.2rem;   
+                    margin-left: 2.4rem;          
+                
+                    .swiper-pagination-progressbar-fill {
+                        background-color: $color_brand_main;
+                    }
+                } 
+            }
+
+            .controller_box_btn {
+                display: flex;
+                align-items: center;
+                margin-left: 1.6rem;
+
+                .controller_btn_prev {
+                    position: relative;
+                    width: 10px;
+                    height: 18px;                    
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 18px;
+                        top: 0;
+                        left: 0;
+                        background-image: url('../img/icon/icon_chevron_left_white.svg');
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        background-position: center;
                     }
                 }
 
-                &.main_visual_slide01 {
-                    background-image: url("../img/main/bg_main_visual_01.png");
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                .controller_btn_next {
+                    position: relative;
+                    width: 10px;
+                    height: 18px;                   
 
-                    .inner {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 18px;
+                        top: 0;
+                        left: 0;
+                        background-image: url('../img/icon/icon_chevron_right_white.svg');
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        background-position: center;
+                    }
+                }
+
+                .controller_btn_pause {
+                    height: 14px;
+                    width: 14px;                     
+                    margin: 0 8px;
+                    position: relative;
+
+                    &::after {
+                        @include bg_after;                        
+                        height: 14px;
+                        width: 14px;                             
+                        background-image: url("../img/icon/icon_stop.svg");                         
+                    }
+
+                    &.pausing {
                         &::after {
-                            content: '';
-                            background-color: $color_111;
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            opacity: 0.6;
-                            z-index: 5;                    
+                            @include bg_after;   
+                            height: 14px;
+                            width: 14px;                         
+                            background-image: url("../img/icon/icon_play.svg");
                         }
                     }
                 }
+                
+                .controller_btn_play {
+                    height: 14px;
+                    width: 14px;                     
+                    margin: 0 8px;
+                    position: relative;
+                    // display: none;
 
-                &.main_visual_slide02 {
-              /*       background-image: url("../img/main/bg_main_visual_02.png"); */
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;   
-                    
-                    .inner {
-                        &::after {
-                            content: '';
-                            background-color: $color_111;
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            opacity: 0.6;
-                            z-index: 5;                    
-                        }
+                    &::after {
+                        @include bg_after;                        
+                        height: 14px;
+                        width: 14px;                             
+                        background-image: url("../img/icon/icon_play.svg");                         
                     }
                 }
-
-                &.zooming {
-                    .wrap_img {   
-                        z-index: -1;
-                    
-                        img {
-                            transform: scale(1.3, 1.3);
-                            transition: all 6s linear; // 애니메이션 적용                            
-                        }
-                    }
-                }    
-
-                &.main_visual_slide03 {
-                    background-image: url("../img/main/bg_main_visual_03.png");
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-
-                    .inner {
-                        &::after {
-                            content: '';
-                            background-color: $color_111;
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            opacity: 0.6;
-                            z-index: 5;                    
-                        }
-                    }
-                }
-            }   
+            }             
         }
 
-        // 슬라이드 컨트롤러 (재생/정지 버튼)
-        .slide_controller {
-            width: 100px;
-            height: 20px;       
-            z-index: 100;
-            color: $color_111;
-            margin-bottom: 3rem;
-            order: 1;
+        .swiper-button-next, 
+        .swiper-button-prev {
+            visibility: hidden;
+        }
+    }        
+    
+    // 페이지 아래로 이동 버튼 & 애니메이션
+    .scroll_down {
+        position: absolute;
+        bottom: 11rem;
+        left: 50%;
+        transform: translateX(-50%);          
+        z-index: 100;
 
-            //컨트롤러의 위치가 절대값인 경우
-        /*  width: 100px;
-            height: 20px;       
-            position: absolute;
-            z-index: 100;
-            color: $color_111;
-            left: 25rem;
-            top: 24%; */
+        .scroll_down_btn {
 
-            .controller_btns {
+            .scroll_motion_frame {
                 display: flex;
-                align-items: center; 
+                flex-direction: column;         
+                align-items: center;      
 
-                .controller_box_state {
-                    display: flex;
-                    align-items: center;           
+                .scroll_mouse {
+                    position: relative;
+                    width: 2rem;
+                    height: 3rem;                   
 
-                    .swiper-pagination-current,
-                    .swiper-pagination-total {
-                        font-family: $font_regular;
-                        color: $color_white;
-                        font-size: 1.4rem;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 2rem;
+                        height: 3rem;
+                        background-image: url('../img/icon/icon_mouse.svg');
+                        background-position: center;
+                        background-size: cover;
+                        background-repeat: no-repeat;
                     }
 
-                    .swiper-pagination-total {
-                        margin-left: 316px;
+                    @include animation-mixin(move1){                                    
+                        0% {top: 0px;}
+                        5% {top: 4px;}
+                        12% {top: 0px;}
+                        17% {top: 4px;}
+                        22% {top: 0px;}                           
                     }
 
-                    // 스와이퍼 프로그래스바
-                    .swiper-pagination {
-                        width: 30rem;
-                        height: 0.2rem;   
-                        margin-left: 2.4rem;          
-                    
-                        .swiper-pagination-progressbar-fill {
-                            background-color: $color_brand_main;
-                        }
-                    } 
+                    animation: move1 4s ease-in-out infinite;
+                    animation-delay: 0.1s;
                 }
 
-                .controller_box_btn {
-                    display: flex;
+                .arrow_move {
+                    position: relative;
+                    width: 1.4rem;
+                    height: 0.8rem;
                     align-items: center;
-                    margin-left: 1.6rem;
+                    margin-top: 1rem;
 
-                    .controller_btn_prev {
+                    span {
                         position: relative;
-                        width: 10px;
-                        height: 18px;                    
-    
                         &::after {
                             content: '';
                             position: absolute;
-                            width: 10px;
-                            height: 18px;
+                            width: 1.4rem;
+                            height: 0.8rem;    
+                            background-image: url('../img/icon/icon_expandMore_white.svg');
+                            background-position: center;                            
+                            background-repeat: no-repeat;    
+                        }
+                        
+                        @include animation-mixin(move2){                                    
+                            0% {opacity: 100%;}
+                            25% {opacity: 50%;}
+                            50% {opacity: 0%;}
+                            75% {opacity: 50%;}
+                            100% {opacity: 100%;}
+                        }
+
+                        &:nth-of-type(1) {    
                             top: 0;
-                            left: 0;
-                            background-image: url('../img/icon/icon_chevron_left_white.svg');
-                            background-repeat: no-repeat;
-                            background-size: auto;
-                            background-position: center;
-                        }
-                    }
-    
-                    .controller_btn_next {
-                        position: relative;
-                        width: 10px;
-                        height: 18px;                   
-    
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            width: 10px;
-                            height: 18px;
-                            top: 0;
-                            left: 0;
-                            background-image: url('../img/icon/icon_chevron_right_white.svg');
-                            background-repeat: no-repeat;
-                            background-size: auto;
-                            background-position: center;
-                        }
-                    }
-    
-                    .controller_btn_pause {
-                        height: 14px;
-                        width: 14px;                     
-                        margin: 0 8px;
-                        position: relative;
-
-                        &::after {
-                            @include bg_after;                        
-                            height: 14px;
-                            width: 14px;                             
-                            background-image: url("../img/icon/icon_stop.svg");                         
+                            animation: move2 2s linear infinite;
+                            animation-delay: 0.1s;
                         }
 
-                        &.pausing {
-                            &::after {
-                                @include bg_after;   
-                                height: 14px;
-                                width: 14px;                         
-                                background-image: url("../img/icon/icon_play.svg");
-                            }
-                        }
-                    }
-                    
-                    .controller_btn_play {
-                        height: 14px;
-                        width: 14px;                     
-                        margin: 0 8px;
-                        position: relative;
-                        // display: none;
-
-                        &::after {
-                            @include bg_after;                        
-                            height: 14px;
-                            width: 14px;                             
-                            background-image: url("../img/icon/icon_play.svg");                         
-                        }
-                    }
-                }             
-            }
-
-            .swiper-button-next, 
-            .swiper-button-prev {
-                visibility: hidden;
-            }
-        }        
-        
-        // 페이지 아래로 이동 버튼 & 애니메이션
-        .scroll_down {
-            position: absolute;
-            bottom: 11rem;
-            left: 50%;
-            transform: translateX(-50%);          
-            z-index: 100;
-
-            .scroll_down_btn {
-
-                .scroll_motion_frame {
-                    display: flex;
-                    flex-direction: column;         
-                    align-items: center;      
-
-                    .scroll_mouse {
-                        position: relative;
-                        width: 2rem;
-                        height: 3rem;                   
-
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            width: 2rem;
-                            height: 3rem;
-                            background-image: url('../img/icon/icon_mouse.svg');
-                            background-position: center;
-                            background-size: cover;
-                            background-repeat: no-repeat;
+                        &:nth-of-type(2) {                               
+                            top: 1rem;    
+                            animation: move2 2s linear infinite;
+                            animation-delay: 0.4s;
                         }
 
-                        @include animation-mixin(move1){                                    
-                            0% {top: 0px;}
-                            5% {top: 4px;}
-                            12% {top: 0px;}
-                            17% {top: 4px;}
-                            22% {top: 0px;}                           
-                        }
-
-                        animation: move1 4s ease-in-out infinite;
-                        animation-delay: 0.1s;
-                    }
-
-                    .arrow_move {
-                        position: relative;
-                        width: 1.4rem;
-                        height: 0.8rem;
-                        align-items: center;
-                        margin-top: 1rem;
-
-                        span {
-                            position: relative;
-                            &::after {
-                                content: '';
-                                position: absolute;
-                                width: 1.4rem;
-                                height: 0.8rem;    
-                                background-image: url('../img/icon/icon_expandMore_white.svg');
-                                background-position: center;                            
-                                background-repeat: no-repeat;    
-                            }
-                            
-                            @include animation-mixin(move2){                                    
-                                0% {opacity: 100%;}
-                                25% {opacity: 50%;}
-                                50% {opacity: 0%;}
-                                75% {opacity: 50%;}
-                                100% {opacity: 100%;}
-                            }
-
-                            &:nth-of-type(1) {    
-                                top: 0;
-                                animation: move2 2s linear infinite;
-                                animation-delay: 0.1s;
-                            }
-
-                            &:nth-of-type(2) {                               
-                                top: 1rem;    
-                                animation: move2 2s linear infinite;
-                                animation-delay: 0.4s;
-                            }
-
-                            &:nth-of-type(3) {
-                                top: 2rem;    
-                                animation: move2 2s linear infinite;
-                                animation-delay: 0.6s;
-                            }
+                        &:nth-of-type(3) {
+                            top: 2rem;    
+                            animation: move2 2s linear infinite;
+                            animation-delay: 0.6s;
                         }
                     }
                 }
             }
         }
     }
-    /* 슬라이드 */
-    
-	.slide_inner {
-		display: block;
-		position: relative;
-		overflow: hidden;
-		height: 100vh;
-		width: 100%;
-		min-height: 500px;
-		.video {
-			// position: absolute;
-			// top: 0;
-			// left: 0;
-			// right: 0;
-			// bottom: 0;
-			// width: 100vmax;
-			// height: 100vmax;
-			// object-fit: cover;
-
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			width: auto;
-			height: auto;
-			max-height: none;
-			max-width: none;
-			min-height: 100%;
-			min-width: 100%;
-			transform: translate(-50%, -50%);
-			// @include mdq-max(lg) {
-			// 	object-fit: cover;
-			// 	max-height: 100%;
-			// 	max-width: 100%;
-			// }
-		}
-	}
 }
 
+/* 슬라이드 */
+.slide_inner {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    min-height: 500px;
+    .video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: auto;
+        height: auto;
+        max-height: none;
+        max-width: none;
+        min-height: 100%;
+        min-width: 100%;
+        transform: translate(-50%, -50%);
+        // @include mdq-max(lg) {
+        // 	object-fit: cover;
+        // 	max-height: 100%;
+        // 	max-width: 100%;
+        // }
+    }
+}
 
 @keyframes zooming {
     0% {
@@ -721,9 +688,7 @@ img {
 }
 
 /* 서비스 사례 소개 (더 빠르게, 더 간편하게) */
-
 .section_app {
-
     .wrap_section_contents {
         width: 100%;
         height: 100vh;
@@ -914,7 +879,6 @@ img {
 }
 
 /* 활용 예시 소개 (새로운 가치 창출을 위해) */
-
 .section_example {
     background-color: $color_bg_lightpurple;
 
@@ -924,19 +888,17 @@ img {
         width: 100%;         
         margin-top: 5rem;
     
-
         > div {            
             flex: 1;
             align-items: stretch;
             background-color: $color_white;
             border-radius: 2rem;
             width: 100%;
-            /*  height: 100%; */
+            //  height: 100%;
             min-height: 40.2rem;
             padding: 5rem 4rem;
             box-shadow: 7px 7px 21px 0 rgba($color: #102242, $alpha: 0.19);  
 
-            
             p {        
                 font-size: 2rem;
                 line-height: 1.5;               
@@ -959,7 +921,6 @@ img {
 }
 
 /* BI 소개 (디지털서비스개방 BI를 소개합니다) */
-
 .section_bi {
     .wrap_section_contents {
         height: auto;
@@ -974,11 +935,10 @@ img {
             flex-direction: column;        
             align-items: center;            
 
-
             // 좌측: 심볼 마크 및 로고타입
             &:nth-of-type(1) {
                 padding: 0 16rem;
-              /*   width: 61rem; */
+                // width: 61rem;
                 height: 100%;       
 
                 .wrap_img:nth-of-type(1) {
@@ -1004,7 +964,7 @@ img {
 
             // 우측: 로고에 대한 설명
             &:nth-of-type(2) {
-               /*  width: 65rem; */
+                // width: 65rem;
 
                 > div {
                     display: flex;
@@ -1081,7 +1041,6 @@ img {
     }
 }
 
-
 /* 팝업창 스타일 */
 .popup_mask {
     display: none; 
@@ -1096,7 +1055,7 @@ img {
 
 .popup_layer {
     display: none; 
-    /*  position: relative;     */
+    //  position: relative;    
     position: fixed;
     top: 0;
     left: 0; 
@@ -1122,7 +1081,7 @@ img {
     z-index: 1000;   
     overflow: hidden;
 
-    /* 알러트 팝업 등 작은 팝업창 */
+    // 알러트 팝업 등 작은 팝업창
     &.popup_small {
         width: 48rem;
         top: 50%;
@@ -1198,7 +1157,7 @@ img {
     }
     .popup_contents {
         position: relative;
-       /*  padding: 2rem;   */
+        // padding: 2rem;  
 
         .case_detail.shadow_box {
             border-radius: 0;
@@ -1225,13 +1184,11 @@ img {
 }
 
 
-
-///////////////////////////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////////////////////////////
-
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
 @media all and (max-width: 1421px) {
     
@@ -1245,45 +1202,66 @@ img {
     
         section {    
             height: auto;    
-            min-height: 96rem;
+            // min-height: 96rem;
             max-height: initial;       
             margin: 0;
             padding: 0;            
-
         }
     }
 
-
-    .page_main {
-
     /* 메인 비주얼 */
-        .main_visual {     
-            min-height: 76.8rem;
-            max-height: 120rem;
+    .main_visual {     
+        min-height: 76.8rem;
+        max-height: 120rem;
 
-            .inner {
-                &.iframe_wrap {
-                    position: relative;
-                    padding-bottom: 56.25%;
-                    height: 0;
-                    overflow: hidden;
-                    max-width: 100%;
-    
-                    iframe, object, embed {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
+        .inner {
+            &.iframe_wrap {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                max-width: 100%;
+
+                iframe, object, embed {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            // 모든 슬라이드 삽입 문구가 같을 경우
+            &.main_visual_inner {
+                padding: 0;
+
+                article {   
+                    left: 11rem;                               
+                
+                    h2 {
+                        font-size: 4.8rem;                          
+                    }   
+                
+                    .wrap_btn {    
+                        a {
+                            width: 17rem;
+                        }
                     }
                 }
-
-                // 모든 슬라이드 삽입 문구가 같을 경우
-                &.main_visual_inner {
+            }
+        }
+    
+        .swiper_main_visual {        
+            min-height: 76.8rem;
+            max-height: 120rem;   
+            
+            .swiper-slide {
+                .inner {
                     padding: 0;
 
                     article {   
-                        left: 11rem;                               
+                        left: 11rem; 
+                        padding-top: 5rem;                              
                     
                         h2 {
                             font-size: 4.8rem;                          
@@ -1295,79 +1273,48 @@ img {
                             }
                         }
                     }
-                }
-            }
-        
-            .swiper_main_visual {        
-                min-height: 76.8rem;
-                max-height: 120rem;   
-                
-                .swiper-slide {
-                    .inner {
-                        padding: 0;
 
-                        article {   
-                            left: 11rem; 
-                            padding-top: 5rem;                              
-                        
-                            h2 {
-                                font-size: 4.8rem;                          
-                            }   
-                        
-                            .wrap_btn {    
-                                a {
-                                    width: 17rem;
-                                }
-                            }
-                        }
-
-                        .sub_text {
-                            bottom: 18%;
-                            right: 5rem;
-                        }
+                    .sub_text {
+                        bottom: 18%;
+                        right: 5rem;
                     }
-                }  
-                
-                
-            }
-        
-            // 슬라이드 컨트롤러 (재생/정지 버튼)
-            .slide_controller {
-                left: 11rem;
-                top: 30%;
-            
-                .controller_btns {
-                
-                    .controller_box_state {        
-                    
-                        .swiper-pagination-total {
-                            margin-left: 216px;
-                        }
-                    
-                        // 스와이퍼 프로그래스바
-                        .swiper-pagination {
-                            width: 20rem;
-                        
-                        } 
-                    }        
                 }
-            }
+            }  
             
             
-            // 페이지 아래로 이동 버튼 & 애니메이션
-            .scroll_down {
-                position: absolute;
-                bottom: 8rem; 
+        }
+    
+        // 슬라이드 컨트롤러 (재생/정지 버튼)
+        .slide_controller {
+            left: 11rem;
+            top: 30%;
+        
+            .controller_btns {
+            
+                .controller_box_state {        
+                
+                    .swiper-pagination-total {
+                        margin-left: 216px;
+                    }
+                
+                    // 스와이퍼 프로그래스바
+                    .swiper-pagination {
+                        width: 20rem;
+                    
+                    } 
+                }        
             }
         }
         
-    }   
-
+        // 페이지 아래로 이동 버튼 & 애니메이션
+        .scroll_down {
+            position: absolute;
+            bottom: 8rem; 
+        }
+    }
 
     /* 최신적용사례 소개 (더 빠르게, 더 간편하게) */
-    
     .section_app {
-    
         .wrap_section_contents {
             min-height: 66rem;      
             max-height: 66rem;    
@@ -1508,11 +1455,8 @@ img {
         } 
     }
 
-    
     /* 활용 예시 소개 (새로운 가치 창출을 위해) */
-
     .section_example {  
-
         .wrap_section_contents {
             display: table;
             table-layout: fixed;
@@ -1536,26 +1480,21 @@ img {
     }
 
     /* BI 소개 (디지털서비스개방 BI를 소개합니다) */
-
     .section_bi {
         .wrap_section_contents {   
             margin-top: 6rem;
             min-height: 40rem;
             justify-content: center;
 
-            > div {          
-
+            > div {
                 // 좌측: 심볼 마크 및 로고타입
                 &:nth-of-type(1) {
                     padding: 0 10rem 0 5rem;            
 
-
                     .wrap_img:nth-of-type(2) {
                         width: 29rem;
                         height: 7rem;                 
-
                     }
-                
                 }
 
                 // 우측: 로고에 대한 설명
@@ -1574,6 +1513,7 @@ img {
         }
     }
 
+    /* 팝업 */
     .popup_layer {
         width: 100%;   
     }
@@ -1584,18 +1524,18 @@ img {
 
 }
 
-
-///////////////////////////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
 @media all and (max-width: 1025px) {
-.block_1024 {
-    display: block;
-}
+    .block_1024 {
+        display: block;
+    }
 
-
-/* 메인페이지 공통 사항  */
-
+    /* 메인페이지 공통 사항  */
     .page_main {
         width: 100%;
         padding: 0;
@@ -1608,30 +1548,30 @@ img {
             padding: 0 6% 10rem;
             padding-top: 18rem;   
         
-/*             &.main_visual_inner {
-                padding: 0;
-                display: flex;
-                justify-content: center;  
+            // &.main_visual_inner {
+            //     padding: 0;
+            //     display: flex;
+            //     justify-content: center;  
                 
-                article {   
-                    left: 50%;
-                    transform: translateX(-50%);
-                    text-align: center;             
+            //     article {   
+            //         left: 50%;
+            //         transform: translateX(-50%);
+            //         text-align: center;             
 
-                    h2 {
-                        font-size: 4.2rem;
-                        font-family: $font_bold;
-                        margin-bottom: 3rem;
-                    }
+            //         h2 {
+            //             font-size: 4.2rem;
+            //             font-family: $font_bold;
+            //             margin-bottom: 3rem;
+            //         }
 
-                    h3 {
-                        font-size: 1.8rem;
-                        font-family: $font_regular;  
-                        line-height: 1.5;  
-                        margin-bottom: 4rem;                   
-                    }   
-                }
-            } */
+            //         h3 {
+            //             font-size: 1.8rem;
+            //             font-family: $font_regular;  
+            //             line-height: 1.5;  
+            //             margin-bottom: 4rem;                   
+            //         }   
+            //     }
+            // }
         }
 
         section {       
@@ -1673,256 +1613,245 @@ img {
         }
     }
 
+    /* 메인 비주얼 */
+    .main_visual {
+        width: 100%;
+        height: 100vh;  
+        min-height: 48rem;    
+        max-height: 100vh;
+        margin: 0;
+        padding: 0;
+        color: $color_white; 
+        background-color: $color_111;
 
-    .page_main {
+        .inner {
+            // 모든 슬라이드 삽입 문구가 같을 경우
+            &.main_visual_inner {
+                padding-top: 5rem;
+                width: 100%;      
+                
+                article {
+                    text-align: left;
+                    transform: translate(0);
+                    left: 6rem;
+                    top: 32%;
 
-        /* 메인 비주얼 */
-        .main_visual {
-            width: 100%;
-            height: 100vh;  
-            min-height: 48rem;    
-            max-height: 100vh;
-            margin: 0;
-            padding: 0;
-            color: $color_white; 
-            background-color: $color_111;
+                    h2 {
+                        font-size: 3.6rem;
+                        order: 1;
+                        margin-bottom: 2rem;
+                    }
 
-            .inner {
-                // 모든 슬라이드 삽입 문구가 같을 경우
-                &.main_visual_inner {
-                    padding-top: 5rem;
-                    width: 100%;      
-                    
-                    article {
-                        text-align: left;
-                        transform: translate(0);
-                        left: 6rem;
-                        top: 32%;
-    
-                        h2 {
-                            font-size: 3.6rem;
-                            order: 1;
-                            margin-bottom: 2rem;
-                        }
-    
-                        p {
-                            order: 2;
-                            font-size: 1.8rem;
-                            margin-bottom: 3rem;
-                        }
-    
-                        .wrap_btn {
-                            order: 3;
-                            margin-bottom: 4rem;
-                        }
+                    p {
+                        order: 2;
+                        font-size: 1.8rem;
+                        margin-bottom: 3rem;
+                    }
+
+                    .wrap_btn {
+                        order: 3;
+                        margin-bottom: 4rem;
                     }
                 }
             }
-
-
-            .swiper_main_visual {
-                width: 100vw;
-                height: 100vh;
-                min-height: 48rem;      
-                max-height: 100vh;
-                position: relative;       
-
-            .swiper-slide {  
-                width: 100%;  
-                display: flex;           
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: auto;                
-                position: relative;     
-                
-                .inner {
-                    padding: 0;
-                    display: flex;
-                    justify-content: center;  
-                    
-                    article {   
-                        left: 50%;
-                        transform: translateX(-50%);
-                        padding-top: 5rem;
-                        text-align: center;             
-    
-                        h2 {
-                            font-size: 4.2rem;
-                            font-family: $font_bold;
-                            margin-bottom: 3rem;
-                        }
-    
-                        h3 {
-                            font-size: 1.8rem;
-                            font-family: $font_regular;  
-                            line-height: 1.5;  
-                            margin-bottom: 4rem;                   
-                        }   
-
-
-                    }
-
-                    .sub_text {
-                        bottom: 3rem;
-                        text-align: center;
-                        right: 0;
-                        justify-content: center;
-
-                        > div {
-                            width: 100%;
-                            padding: 1rem 2rem;
-                        }
-
-                        h2 {
-                            font-size: 1.6rem;
-                            margin-bottom: 0.8rem;
-                            font-family: $font_regular;
-                        }
-
-                        h3 {
-                            font-size: 2.0rem;
-                            font-family: $font_medium;
-                        }
-                    }
-                }   
-                
-                &::after {
-                    content: '';
-                    background-color: $color_111;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                    opacity: 0.5;
-                    z-index: 0;
-                }
-                
-
-                &.main_visual_slide01 {
-                    background-image: url("../img/main/bg_main_visual_01.png");
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                }
-            }               
         }
 
-        // 슬라이드 컨트롤러 (재생/정지 버튼)
-        .slide_controller {
-        /*    width: auto;
-            height: 18px;       
-            position: absolute;
-            z-index: 100;
-            color: $color_111;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 66%;    */
-            order: 4;
-            margin-bottom: 0;
+        .swiper_main_visual {
+            width: 100vw;
+            height: 100vh;
+            min-height: 48rem;      
+            max-height: 100vh;
+            position: relative;       
 
-            .controller_btns {
+        .swiper-slide {  
+            width: 100%;  
+            display: flex;           
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;                
+            position: relative;     
+            
+            .inner {
+                padding: 0;
                 display: flex;
-                align-items: center; 
-                position: relative;
+                justify-content: center;  
+                
+                article {   
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding-top: 5rem;
+                    text-align: center;             
 
-                .controller_box_state {
-                    position: static;              
-                    position: relative;                   
-
-                    .swiper-pagination-current,
-                    .swiper-pagination-total {
-                        position: static;
-                        font-family: $font_regular;
-                        color: $color_white;
-                        font-size: 1.2rem;
+                    h2 {
+                        font-size: 4.2rem;
+                        font-family: $font_bold;
+                        margin-bottom: 3rem;
                     }
 
-                    .swiper-pagination-total {                                               
-                        margin-left: 0;
-                        position: static;
-                        top: 0;
-                        left: 20rem;
-                    }
-
-                    // 스와이퍼 프로그래스바
-                    .swiper-pagination {   
-                        position: static;                  
-                        width: 17rem;
-                        height: 0.2rem;                       
-                        margin: 0 1rem;                       
-                    
-                        .swiper-pagination-progressbar-fill {
-                            background-color: $color_brand_main;
-                        }
-                    } 
+                    h3 {
+                        font-size: 1.8rem;
+                        font-family: $font_regular;  
+                        line-height: 1.5;  
+                        margin-bottom: 4rem;                   
+                    }   
                 }
 
-                .controller_box_btn {
-                    display: flex;
-                    position: static;
-                    align-items: center;
-                    margin-left: 2.4rem;          
-       
+                .sub_text {
+                    bottom: 3rem;
+                    text-align: center;
+                    right: 0;
+                    justify-content: center;
 
-                    .controller_btn_prev {
-                        position: relative;
-                        width: 10px;
-                        height: 18px;                                       
-    
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            width: 10px;
-                            height: 18px;
-                            top: 0;
-                            left: 0;
-                            background-image: url('../img/icon/icon_chevron_left_white.svg');
-                            background-repeat: no-repeat;
-                            background-size: auto;
-                            background-position: center;
-                        }
+                    > div {
+                        width: 100%;
+                        padding: 1rem 2rem;
                     }
-    
-                    .controller_btn_next {
-                        position: relative;
-                        width: 10px;
-                        height: 18px;                   
-    
-                        &::after {
-                            content: '';
-                            position: absolute;
-                            width: 10px;
-                            height: 18px;
-                            top: 0;
-                            left: 0;
-                            background-image: url('../img/icon/icon_chevron_right_white.svg');
-                            background-repeat: no-repeat;
-                            background-size: auto;
-                            background-position: center;
-                        }
-                    }   
 
-                }             
+                    h2 {
+                        font-size: 1.6rem;
+                        margin-bottom: 0.8rem;
+                        font-family: $font_regular;
+                    }
+
+                    h3 {
+                        font-size: 2.0rem;
+                        font-family: $font_medium;
+                    }
+                }
+            }   
+            
+            &::after {
+                content: '';
+                background-color: $color_111;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0.5;
+                z-index: 0;
             }
+            
+
+            &.main_visual_slide01 {
+                background-image: url("../img/main/bg_main_visual_01.png");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }               
+    }
+
+    // 슬라이드 컨트롤러 (재생/정지 버튼)
+    .slide_controller {
+    //    width: auto;
+    //     height: 18px;       
+    //     position: absolute;
+    //     z-index: 100;
+    //     color: $color_111;
+    //     left: 50%;
+    //     transform: translateX(-50%);
+    //     top: 66%;   
+        order: 4;
+        margin-bottom: 0;
+
+        .controller_btns {
+            display: flex;
+            align-items: center; 
+            position: relative;
+
+            .controller_box_state {
+                position: static;              
+                position: relative;                   
+
+                .swiper-pagination-current,
+                .swiper-pagination-total {
+                    position: static;
+                    font-family: $font_regular;
+                    color: $color_white;
+                    font-size: 1.2rem;
+                }
+
+                .swiper-pagination-total {                                               
+                    margin-left: 0;
+                    position: static;
+                    top: 0;
+                    left: 20rem;
+                }
+
+                // 스와이퍼 프로그래스바
+                .swiper-pagination {   
+                    position: static;                  
+                    width: 17rem;
+                    height: 0.2rem;                       
+                    margin: 0 1rem;                       
+                
+                    .swiper-pagination-progressbar-fill {
+                        background-color: $color_brand_main;
+                    }
+                } 
+            }
+
+            .controller_box_btn {
+                display: flex;
+                position: static;
+                align-items: center;
+                margin-left: 2.4rem;          
+
+                .controller_btn_prev {
+                    position: relative;
+                    width: 10px;
+                    height: 18px;                                       
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 18px;
+                        top: 0;
+                        left: 0;
+                        background-image: url('../img/icon/icon_chevron_left_white.svg');
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        background-position: center;
+                    }
+                }
+
+                .controller_btn_next {
+                    position: relative;
+                    width: 10px;
+                    height: 18px;                   
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 18px;
+                        top: 0;
+                        left: 0;
+                        background-image: url('../img/icon/icon_chevron_right_white.svg');
+                        background-repeat: no-repeat;
+                        background-size: auto;
+                        background-position: center;
+                    }
+                }   
+
+            }             
+        }
 
             .swiper-button-next, 
             .swiper-button-prev {
                 visibility: hidden;
             }
-            }
-
-
-            // 페이지 아래로 이동 버튼 & 애니메이션 
-            .scroll_down {
-            display: none;
-            }
         }
 
+        // 페이지 아래로 이동 버튼 & 애니메이션 
+        .scroll_down {
+            display: none;
+        }
     }
 
     /* 최신적용사례 소개 (더 빠르게, 더 간편하게) */
-
     .section_app {
 
         .inner {
@@ -2094,7 +2023,6 @@ img {
     }
 
     /* 활용 예시 소개 (새로운 가치 창출을 위해) */
-
     .section_example {   
 
         .wrap_section_contents {
@@ -2104,7 +2032,6 @@ img {
             width: 100%;         
             margin-top: 4.6rem;
             padding: 0 6em;
-
 
             > div {           
                 min-height: 23.5rem;
@@ -2133,7 +2060,6 @@ img {
     }
 
     /* BI 소개 (디지털서비스개방 BI를 소개합니다) */
-
     .section_bi {
 
         .wrap_section_contents {       
@@ -2147,7 +2073,6 @@ img {
                 display: flex;
                 flex-direction: column;        
                 align-items: center;            
-
 
                 // 좌측: 심볼 마크 및 로고타입
                 &:nth-of-type(1) {
@@ -2177,27 +2102,26 @@ img {
 
                 // 우측: 로고에 대한 설명
                 &:nth-of-type(2) {
-                   /*  width: 65rem; */
-
+                    // width: 65rem;
                     > div {
-
                         > p {
                             width: 42rem;  
                         }
                     }
                 }
-
                 .wrap_btn {           
                     margin-top: 3rem;
                 }
             }
         }
     }
-
 }
 
-///////////////////////////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
 /* 작은 태블릿 가로 사이즈 ~ 모바일 기기 가로 사이즈 */
 @media all and (max-width: 769px) {
@@ -2210,8 +2134,7 @@ img {
         display: block;
     }
 
-/* 메인페이지 공통 사항  */
-
+    /* 메인페이지 공통 사항  */
     .page_main {
         .inner {     
             margin: 0 auto;       
@@ -2261,75 +2184,83 @@ img {
         }
     }
 
-    .page_main {
-        /* 메인 비주얼 */
-        .main_visual {
-            .inner {
-                // 모든 슬라이드 삽입 문구가 같을 경우
-                &.main_visual_inner {
-                    article {   
-                        left: 3rem;  
-                        
-                        h2 {
-                            font-size: 2.8rem;
-                            margin-bottom: 2rem;
-                            line-height: 1.2;
-                        }
+    /* 메인 비주얼 */
+    .main_visual {
+        .inner {
+                // width: 100%;   
+                // height: 100%;
+                // position: absolute;
+                // left: 0;
+                // display: flex;
+                // align-items: center;
+                // z-index: 100;
+                // object-fit: cover; 
+                // padding-top: 0;
+                // position: relative;
+                top: unset;
+                height: inherit;
+
+
+            // 모든 슬라이드 삽입 문구가 같을 경우
+            &.main_visual_inner {
+                article {   
+                    left: 3rem;  
                     
-                        p {
-                            font-size: 1.6rem;
-                            margin-bottom: 2rem;                   
-                        }
+                    h2 {
+                        font-size: 2.8rem;
+                        margin-bottom: 2rem;
+                        line-height: 1.2;
+                    }
+                
+                    p {
+                        font-size: 1.6rem;
+                        margin-bottom: 2rem;                   
+                    }
+                
+                    .wrap_btn {
+                        display: flex;
+                        gap: 1.3rem;
                     
-                        .wrap_btn {
-                            display: flex;
-                            gap: 1.3rem;
-                        
-                            a {
-                                width: 14rem;
-                            }
+                        a {
+                            width: 14rem;
                         }
                     }
                 }
             }
+        }
 
-            .swiper_main_visual {
-                .swiper-slide {
-                    .inner {
+        .swiper_main_visual {
+            .swiper-slide {
+                .inner {
 
-                        .sub_text {
-                            width: calc(100% - 6rem);
-                            bottom: 2rem;
-    
-                            h2 {
-                                font-size: 1.4rem;      
-                                opacity: 0.6;      
-                            }
-    
-                            h3 {
-                                font-size: 1.4rem;
-                                font-family: $font_regular;
-                                opacity: 0.6; 
-                            }
+                    .sub_text {
+                        width: calc(100% - 6rem);
+                        bottom: 2rem;
+
+                        h2 {
+                            font-size: 1.4rem;      
+                            opacity: 0.6;      
+                        }
+
+                        h3 {
+                            font-size: 1.4rem;
+                            font-family: $font_regular;
+                            opacity: 0.6; 
                         }
                     }
-                }       
-            }
-        }           
-    }    
-
+                }
+            }       
+        }
+    }           
 
     /* 최신적용사례 소개 (더 빠르게, 더 간편하게) */
-
     .section_app {
-
         .inner {       
             padding: 8rem 0 0;
         }
-
         .wrap_section_contents {      
 
-                // 스와이퍼 콘텐츠
+            // 스와이퍼 콘텐츠
             .swiper_main_contents01 {
                 width: 100%;   
                 
@@ -2477,7 +2408,6 @@ img {
     }
 
     /* 활용 예시 소개 (새로운 가치 창출을 위해) */
-
     .section_example {   
 
         .wrap_section_contents {     
@@ -2520,7 +2450,7 @@ img {
 
                 // 우측: 로고에 대한 설명
                 &:nth-of-type(2) {
-                   /*  width: 65rem; */
+                    // width: 65rem;
 
                     > div {
                         display: flex;
@@ -2612,10 +2542,14 @@ img {
             }
         }
     }
+    
 }
 
-///////////////////////////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////// /////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
 /* mobile 규격  ( 모바일 기기 _ 실 사이즈 480px 미만의 모든 디바이스 ) */
 @media all and (max-width: 481px) {
@@ -2624,9 +2558,7 @@ img {
         display: block;
     }
 
-
-/* 메인페이지 공통 사항  */
-
+    /* 메인페이지 공통 사항  */
     .page_main {   
         .inner {      
             padding: 8rem 1.4rem 5rem;
@@ -2645,36 +2577,31 @@ img {
         }
     }
 
-    .page_main {
-        /* 메인 비주얼 */
-        .main_visual {   
-            .inner {
-                &.main_visual_inner {
-                    article {
-                        left: 3rem;
+    /* 메인 비주얼 */
+    .main_visual {   
+        .inner {
+            &.main_visual_inner {
+                article {
+                    left: 3rem;
 
-                        h2 {
-                            font-size: 3rem;
-                        }
+                    h2 {
+                        font-size: 3rem;
+                    }
 
-                        p {
-                            font-size: 1.4rem;
-                        }
+                    p {
+                        font-size: 1.4rem;
                     }
                 }
-            }                
+            }
+        }                
 
-            .swiper_main_visual {      
-                min-height: 100vh;   
-            }      
-        }    
-    }
-
+        .swiper_main_visual {      
+            min-height: 100vh;   
+        }      
+    }    
 
     /* 최신적용사례 소개 (더 빠르게, 더 간편하게) */
-
     .section_app {
-
         .inner {
             padding: 0;
             padding: 8rem 0 0;
@@ -2813,9 +2740,7 @@ img {
     }
 
     /* 활용 예시 소개 (새로운 가치 창출을 위해) */
-
     .section_example {   
-
         .wrap_section_contents {
             padding: 0 2rem;
 
@@ -2828,9 +2753,7 @@ img {
     }
 
     /* BI 소개 (디지털서비스개방 BI를 소개합니다) */
-
     .section_bi {
-
         .wrap_section_contents {     
             gap: 3rem;      
             margin-top: 3rem; 
@@ -2882,6 +2805,7 @@ img {
             }
         }
     }
+
 }
 
 

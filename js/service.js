@@ -2,23 +2,25 @@
 
 /* 개방서비스 페이지 최상단 페이지 타이틀 */
 
+/* 추후 '청년, 교통, 안전, 여행, 임신육아, 바우처·자격, 발급, 미환급금, 디지털지갑, 생활 등 10가지 분야' 로 변경   */
+
 // 교통
 $(document).ready(function () {
 
     var page_title_traffic = "";
     page_title_traffic +=    '<h2 class="page_title title_underline">교통</h2>'; 
-    page_title_traffic +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행·휴양, 임신·육아, 바우처·증명, 발급 등<br class="none_768"> 7가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
+    page_title_traffic +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행, 임신육아, 바우처·자격, 발급, 디지털지갑 등<br class="none_768"> 8가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
 
     $(".article01 .page_title_traffic").html(page_title_traffic);
 });
 
 
-// 바우처˙증명
+// 바우처˙자격
 $(document).ready(function () {
 
     var page_title_voucher = "";
-    page_title_voucher +=    '<h2 class="page_title title_underline">바우처˙증명</h2>'; 
-    page_title_voucher +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행·휴양, 임신·육아, 바우처·증명, 발급 등<br class="none_768"> 7가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
+    page_title_voucher +=    '<h2 class="page_title title_underline">바우처˙자격</h2>'; 
+    page_title_voucher +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행, 임신육아, 바우처·자격, 발급, 디지털지갑 등<br class="none_768"> 8가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
 
     $(".article01 .page_title_voucher").html(page_title_voucher);
 });
@@ -29,7 +31,7 @@ $(document).ready(function () {
 
     var page_title_issue = "";
     page_title_issue +=    '<h2 class="page_title title_underline">발급</h2>'; 
-    page_title_issue +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행·휴양, 임신·육아, 바우처·증명, 발급 등<br class="none_768"> 7가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
+    page_title_issue +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행, 임신육아, 바우처·자격, 발급, 디지털지갑 등<br class="none_768"> 8가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
 
     $(".article01 .page_title_issue").html(page_title_issue);
 });
@@ -40,29 +42,29 @@ $(document).ready(function () {
 
     var page_title_security = "";
     page_title_security +=    '<h2 class="page_title title_underline">안전</h2>'; 
-    page_title_security +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행·휴양, 임신·육아, 바우처·증명, 발급 등<br class="none_768"> 7가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
+    page_title_security +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행, 임신육아, 바우처·자격, 발급, 디지털지갑 등<br class="none_768"> 8가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
 
     $(".article01 .page_title_security").html(page_title_security);
 });
 
 
-// 여행˙휴양
+// 여행
 $(document).ready(function () {
 
     var page_title_vacation = "";
-    page_title_vacation +=    '<h2 class="page_title title_underline">여행˙휴양</h2>'; 
-    page_title_vacation +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행·휴양, 임신·육아, 바우처·증명, 발급 등<br class="none_768"> 7가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
+    page_title_vacation +=    '<h2 class="page_title title_underline">여행</h2>'; 
+    page_title_vacation +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행, 임신육아, 바우처·자격, 발급, 디지털지갑 등<br class="none_768"> 8가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
 
     $(".article01 .page_title_vacation").html(page_title_vacation);
 });
 
 
-// 임신·육아
+// 임신육아
 $(document).ready(function () {
 
     var page_title_parenting = "";
-    page_title_parenting +=    '<h2 class="page_title title_underline">임신·육아</h2>'; 
-    page_title_parenting +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행·휴양, 임신·육아, 바우처·증명, 발급 등<br class="none_768"> 7가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
+    page_title_parenting +=    '<h2 class="page_title title_underline">임신육아</h2>'; 
+    page_title_parenting +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행, 임신육아, 바우처·자격, 발급, 디지털지갑 등<br class="none_768"> 8가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
 
     $(".article01 .page_title_parenting").html(page_title_parenting);
 });
@@ -73,31 +75,42 @@ $(document).ready(function () {
 
     var page_title_young = "";
     page_title_young +=    '<h2 class="page_title title_underline">청년</h2>'; 
-    page_title_young +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행·휴양, 임신·육아, 바우처·증명, 발급 등<br class="none_768"> 7가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
+    page_title_young +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행, 임신육아, 바우처·자격, 발급, 디지털지갑 등<br class="none_768"> 8가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>'; 
 
     $(".article01 .page_title_young").html(page_title_young);
 });
 
 
-// 국민비서
+// 디지털지갑
 $(document).ready(function () {
 
-    var page_title_ntsecretary = "";
-    page_title_ntsecretary +=    '<h2 class="page_title title_underline">국민비서</h2>'; 
-    page_title_ntsecretary +=    '<h3>국민이 필요한 행정 정보를 미리 알려주고 국민의 질문 사항을 상담해주는<br class="none_768">온라인 개인비서 입니다.</h3>'; 
-
-    $(".article01 .page_title_ntsecretary").html(page_title_ntsecretary);
+    var page_title_eWallet = "";
+    page_title_eWallet +=    '<h2 class="page_title title_underline">디지털지갑</h2>'; 
+    page_title_eWallet +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행, 임신육아, 바우처·자격, 발급, 디지털지갑 등<br class="none_768"> 8가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>';
+    
+    $(".article01 .page_title_eWallet").html(page_title_eWallet);
 });
 
 
-// 전자증명서
+// 미환급금
 $(document).ready(function () {
 
-    var page_title_Ecertificate = "";
-    page_title_Ecertificate +=    '<h2 class="page_title title_underline">전자증명서</h2>'; 
-    page_title_Ecertificate +=    '<h3>필요한 공공문서가 있다면 모바일 앱을 통해 발급 열람 제출까지 한번에 이용하실 수 있습니다.</h3>'; 
+    var page_title_refund = "";
+    page_title_refund +=    '<h2 class="page_title title_underline">미환급금</h2>'; 
+    page_title_refund +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행, 임신육아, 바우처·자격, 발급, 미환급금, 디지털지갑, 생활 등<br class="none_768"> 10가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>';
 
-    $(".article01 .page_title_Ecertificate").html(page_title_Ecertificate);
+    $(".article01 .page_title_refund").html(page_title_refund);
+});
+
+
+// 생활
+$(document).ready(function () {
+
+    var page_title_living = "";
+    page_title_living +=    '<h2 class="page_title title_underline">생활</h2>'; 
+    page_title_living +=    '<h3>디지털서비스개방에서는 청년, 교통, 안전, 여행, 임신육아, 바우처·자격, 발급, 미환급금, 디지털지갑, 생활 등<br class="none_768"> 10가지 분야의 다양한 공공서비스를 제공하고 있습니다.</h3>';
+
+    $(".article01 .page_title_living").html(page_title_living);
 });
 
 
@@ -142,10 +155,12 @@ $(document).ready(function () {
     service_list_traffic +=        '<div class="service_list swiper-wrapper">'; 
     service_list_traffic +=            '<div class="swiper-slide">'; 
     service_list_traffic +=                '<a href="04_개방서비스_교통_벌점감경교육 예약.html" target="_self" class="service_item_ traffic_penaltyEdu">벌점감경교육 예약</a>'; 
+/*     service_list_traffic +=                '<a href=" target="_self" class="service_item_ traffic_DrvLicenseRenew">운전면허 적성검사 및 갱신</a>';  */
     service_list_traffic +=                '<a href="04_개방서비스_교통_자동차검사 예약.html" target="_self" class="service_item_ traffic_carcheck">자동차검사 예약</a>'; 
     service_list_traffic +=                '<a href="04_개방서비스_교통_자동차 통합이력 조회 서비스.html" target="_self" class="service_item_ traffic_carHistory">자동차 통합이력 조회 서비스</a>'; 
+    service_list_traffic +=                '<a href="04_개방서비스_교통_전기차 충전기 불편 신고.html" class="service_item_ traffic_eCharge">전기차 충전기 불편 신고</a>';   
     service_list_traffic +=                '<a href="javascript:void(0);" class="service_item_ traffic_tollFee" onclick="openPop(\'layer\', \'contents_alertPop\'); return false;">고속도로 미납통행료 조회 및 납부</a>'; 
-    service_list_traffic +=                '<a href="javascript:void(0);" class="service_item_ traffic_eCharge" onclick="openPop(\'layer\', \'contents_alertPop\'); return false;">전기차 충전기 불편 신고</a>';     
+/*     service_list_traffic +=                '<a href="" target="_self" class="service_item_ traffic_ChangwonBike">창원시 공공자전거</a>';  */
 /*     service_list_traffic +=                '<a href="04_개방서비스_교통_고속도로 미납통행료 조회 및 납부.html" target="_self" class="service_item_ traffic_tollFee">고속도로 미납통행료 조회 및 납부</a>'; 
     service_list_traffic +=                '<a href="04_개방서비스_교통_벌점감경교육 예약.html" target="_self" class="service_item_ traffic_penaltyEdu">벌점감경교육 예약</a>'; 
     service_list_traffic +=                '<a href="04_개방서비스_교통_자동차검사 예약.html" target="_self" class="service_item_ traffic_carcheck">자동차검사 예약</a>'; 
@@ -175,10 +190,12 @@ $(document).ready(function () {
     service_list_traffic_mob +=       '<label for="select_service_list_traffic_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
     service_list_traffic_mob +=       '<select id="select_service_list_traffic_mob" class="combo_box">';
     service_list_traffic_mob +=           '<option value="04_개방서비스_교통_벌점감경교육 예약.html" class="service_option traffic_penaltyEdu">벌점감경교육 예약</option>'; 
+/*     service_list_traffic_mob +=           '<option value="" class="service_option traffic_DrvLicenseRenew">운전면허 적성검사 및 갱신</option>';  */
     service_list_traffic_mob +=           '<option value="04_개방서비스_교통_자동차검사 예약.html" class="service_option traffic_carcheck">자동차검사 예약</option>'; 
     service_list_traffic_mob +=           '<option value="04_개방서비스_교통_자동차 통합이력 조회 서비스.html" class="service_option traffic_carHistory">자동차 통합이력 조회 서비스</option>'; 
+    service_list_traffic_mob +=           '<option value="04_개방서비스_교통_전기차 충전기 불편 신고.html" class="service_option traffic_eCharge">전기차 충전기 불편 신고</option>'; 
     service_list_traffic_mob +=           '<option value="prepare_alertPop" class="service_option traffic_tollFee">고속도로 미납통행료 조회 및 납부</option>'; 
-    service_list_traffic_mob +=           '<option value="prepare_alertPop" class="service_option traffic_eCharge">전기차 충전기 불편 신고</option>'; 
+/*     service_list_traffic_mob +=           '<option value="" class="service_option traffic_ChangwonBike">창원시 공공자전거</option>';  */
 /*     service_list_traffic_mob +=           '<option value="04_개방서비스_교통_고속도로 미납통행료 조회 및 납부.html" class="service_option traffic_tollFee">고속도로 미납통행료 조회 및 납부</option>'; 
     service_list_traffic_mob +=           '<option value="04_개방서비스_교통_벌점감경교육 예약.html" class="service_option traffic_penaltyEdu">벌점감경교육 예약</option>'; 
     service_list_traffic_mob +=           '<option value="04_개방서비스_교통_자동차검사 예약.html" class="service_option traffic_carcheck">자동차검사 예약</option>'; 
@@ -193,7 +210,7 @@ $(document).ready(function () {
 });
 
 
-/************************ 바우처˙증명 *************************/
+/************************ 바우처˙자격 *************************/
 // pc 버전
 $(document).ready(function () {
 
@@ -203,9 +220,14 @@ $(document).ready(function () {
     service_list_voucher +=      '<div class="swiper slide_service swiper-container">'; 
     service_list_voucher +=        '<div class="service_list swiper-wrapper">'; 
     service_list_voucher +=            '<div class="swiper-slide">'; 
-    service_list_voucher +=                '<a href="04_개방서비스_바우처·증명_문화누리카드이용.html" target="_self" class="service_item_ voucher_mnuriApi">문화누리카드 이용</a>'; 
-    service_list_voucher +=                '<a href="04_개방서비스_바우처·증명_세금포인트조회및사용.html" target="_self" class="service_item_ voucher_taxPoint">세금포인트 조회 및 사용</a>'; 
-    service_list_voucher +=                '<a href="04_개방서비스_바우처·증명_책이음서비스.html" target="_self" class="service_item_ voucher_bookConnect">책이음서비스</a>'; 
+/*     service_list_voucher +=                '<a href="" target="_self" class="service_item_ voucher_bookBada">국가상호대차서비스(책바다)</a>';  */
+/*     service_list_voucher +=                '<a href="" target="_self" class="service_item_ voucher_spprtPatriots">나만의 예우</a>';  */
+    service_list_voucher +=                '<a href="04_개방서비스_바우처·자격_문화누리카드이용.html" target="_self" class="service_item_ voucher_mnuriApi">문화누리카드 이용</a>'; 
+    service_list_voucher +=                '<a href="04_개방서비스_바우처·자격_세금포인트조회및사용.html" target="_self" class="service_item_ voucher_taxPoint">세금포인트 조회 및 사용</a>'; //국세청 세금 포인트
+  /*   service_list_voucher +=                '<a href="" target="_self" class="service_item_ voucher_AltMaterialforPWD">장애인 대체자료 서비스</a>'; */
+    service_list_voucher +=                '<a href="04_개방서비스_바우처·자격_책이음서비스.html" target="_self" class="service_item_ voucher_bookConnect">책이음서비스</a>'; //책이음서비스 이용증
+/*     service_list_voucher +=                '<a href="" target="_self" class="service_item_ voucher_RemoteAgrcltr">취약계층 비대면 농식품 바우처</a>';  */
+/*     service_list_voucher +=                '<a href="" target="_self" class="service_item_ voucher_CNtrlPoint">탄소중립 실천 포인트</a>';  */
     service_list_voucher +=             '</div>'; 
     service_list_voucher +=        '</div>'; 
     service_list_voucher +=      '</div>'; 
@@ -229,9 +251,14 @@ $(document).ready(function () {
     service_list_voucher_mob +=       '<h3>개방서비스를 찾아보세요!</h3>'; 
     service_list_voucher_mob +=       '<label for="select_service_list_voucher_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
     service_list_voucher_mob +=       '<select id="select_service_list_voucher_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">';
-    service_list_voucher_mob +=            '<option value="04_개방서비스_바우처·증명_문화누리카드이용.html" class="service_option voucher_mnuriApi">문화누리카드 이용</option>'; 
-    service_list_voucher_mob +=            '<option value="04_개방서비스_바우처·증명_세금포인트조회및사용.html" class="service_option voucher_taxPoint">세금포인트 조회 및 사용</option>'; 
-    service_list_voucher_mob +=            '<option value="04_개방서비스_바우처·증명_책이음서비스.html" class="service_option voucher_bookConnect">책이음서비스</option>'; 
+/*     service_list_voucher_mob +=            '<option value="" class="service_option voucher_bookBada">국가상호대차서비스(책바다)</option>';  */
+/*     service_list_voucher_mob +=            '<option value="" class="service_option voucher_spprtPatriots">나만의 예우</option>';  */
+    service_list_voucher_mob +=            '<option value="04_개방서비스_바우처·자격_문화누리카드이용.html" class="service_option voucher_mnuriApi">문화누리카드 이용</option>'; 
+    service_list_voucher_mob +=            '<option value="04_개방서비스_바우처·자격_세금포인트조회및사용.html" class="service_option voucher_taxPoint">세금포인트 조회 및 사용</option>'; 
+/*     service_list_voucher_mob +=            '<option value="" class="service_option voucher_AltMaterialforPWD">장애인 대체자료 서비스</option>';  */
+    service_list_voucher_mob +=            '<option value="04_개방서비스_바우처·자격_책이음서비스.html" class="service_option voucher_bookConnect">책이음서비스</option>'; 
+    /*     service_list_voucher_mob +=            '<option value="" class="service_option voucher_RemoteAgrcltr">취약계층 비대면 농식품 바우처</option>';  */
+    /*     service_list_voucher_mob +=            '<option value="" class="service_option voucher_CNtrlPoint">탄소중립 실천 포인트</option>';  */
     service_list_voucher_mob +=        '</select>';   
     service_list_voucher_mob +=      '</div>';   
     service_list_voucher_mob +=    '</div>'; 
@@ -251,9 +278,11 @@ $(document).ready(function () {
     service_list_issue +=      '<div class="swiper slide_service swiper-container">'; 
     service_list_issue +=        '<div class="service_list swiper-wrapper">'; 
     service_list_issue +=            '<div class="swiper-slide">'; 
+    service_list_issue +=                '<a href="04_개방서비스_발급_여권재발급온라인신청.html" target="_self" class="service_item_ issue_passportReissue">여권 재발급 온라인 신청</a>';
     service_list_issue +=                '<a href="javascript:void(0);" target="_self" class="service_item_ issue_healthInsurVer" onclick="openPop(\'layer\', \'contents_alertPop\'); return false;">건강보험자격득실확인서 발급</a>'; 
     service_list_issue +=                '<a href="javascript:void(0);" target="_self" class="service_item_ issue_incomeCert" onclick="openPop(\'layer\', \'contents_alertPop\'); return false;">소득금액 증명원 발급</a>'; 
     service_list_issue +=                '<a href="javascript:void(0);" target="_self" class="service_item_ issue_resiRegiCert" onclick="openPop(\'layer\', \'contents_alertPop\'); return false;">주민등록표등본(초본) 발급</a>';
+/*     service_list_issue +=                '<a href="javascript:void(0);" target="_self" class="service_item_ issue_LandRgstr">토지임야대장 발급</a>'; */
 /*     service_list_issue +=                '<a href="04_개방서비스_발급_건강보험자격득실확인서 발급.html" target="_self" class="service_item_ issue_healthInsurVer">건강보험자격득실확인서 발급</a>'; 
     service_list_issue +=                '<a href="04_개방서비스_발급_소득금액 증명원 발급.html" target="_self" class="service_item_ issue_incomeCert">소득금액 증명원 발급</a>'; 
     service_list_issue +=                '<a href="04_개방서비스_발급_주민등록표등본초본 발급.html" target="_self" class="service_item_ issue_resiRegiCert">주민등록표등본(초본) 발급</a>';  */
@@ -280,9 +309,11 @@ $(document).ready(function () {
     service_list_issue_mob +=       '<h3>개방서비스를 찾아보세요!</h3>'; 
     service_list_issue_mob +=       '<label for="service_list_issue_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
     service_list_issue_mob +=       '<select id="service_list_issue_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">';
+    service_list_issue_mob +=            '<option value="prepare_alertPop" class="service_option issue_passportReissue">여권 재발급 온라인 신청</option>'; 
     service_list_issue_mob +=            '<option value="prepare_alertPop" class="service_option issue_healthInsurVer">건강보험자격득실확인서 발급</option>'; 
     service_list_issue_mob +=            '<option value="prepare_alertPop" class="service_option issue_incomeCert">소득금액 증명원 발급</option>'; 
     service_list_issue_mob +=            '<option value="prepare_alertPop" class="service_option issue_resiRegiCert">주민등록표등본(초본) 발급</option>'; 
+/*     service_list_issue_mob +=            '<option value="prepare_alertPop" class="service_option issue_LandRgstr">토지임야대장 발급</option>';  */
   /*   service_list_issue_mob +=            '<option value="04_개방서비스_발급_건강보험자격득실확인서 발급.html" class="service_option issue_healthInsurVer">건강보험자격득실확인서 발급</option>'; 
     service_list_issue_mob +=            '<option value="04_개방서비스_발급_소득금액 증명원 발급.html" class="service_option issue_incomeCert">소득금액 증명원 발급</option>'; 
     service_list_issue_mob +=            '<option value="04_개방서비스_발급_주민등록표등본초본 발급.html" class="service_option issue_resiRegiCert">주민등록표등본(초본) 발급</option>';  */
@@ -305,9 +336,19 @@ $(document).ready(function () {
     service_list_security +=      '<div class="swiper slide_service swiper-container">'; 
     service_list_security +=        '<div class="service_list swiper-wrapper">'; 
     service_list_security +=            '<div class="swiper-slide">'; 
+    /* service_list_security +=                '<a href="" target="_self" class="service_item_ security_call112">112 신고</a>';  */   
+    /* service_list_security +=                '<a href="" target="_self" class="service_item_ security_call119">119 신고</a>';  */   
+    /* service_list_security +=                '<a href="" target="_self" class="service_item_ security_FishingBrdng">낚시어선 승선 서비스</a>';  */   
+    /* service_list_security +=                '<a href="" target="_self" class="service_item_ security_tPrice">눈속임제품신고 및 참가격 조회</a>';  */   
+    /* service_list_security +=                '<a href="" target="_self" class="service_item_ security_PetRgstr">반려동물 등록서비스</a>';  */   
+    /* service_list_security +=                '<a href="" target="_self" class="service_item_ security_RprtCnsmrSafety">소비생활 안전 긴급신고</a>';  */   
+    /* service_list_security +=                '<a href="" target="_self" class="service_item_ security_FirePrvntSystmPrtl">소방예방정보시스템 온라인 민원포털</a>';  */   
+    /* service_list_security +=                '<a href="" target="_self" class="service_item_ security_CnsmrCnslngCmpnstn">소비자 상담 및 피해보상 신청</a>';  */  
+    /* service_list_security +=                '<a href="" target="_self" class="service_item_ security_EmrgncyAlrt">장애상황 알림서비스</a>';  */  
     service_list_security +=                '<a href="javascript:void(0);" target="_self" class="service_item_ security_noTeleSale" onclick="openPop(\'layer\', \'contents_alertPop\'); return false;">전화권유판매 수신거부 등록</a>'; 
     /* service_list_security +=                '<a href="04_개방서비스_안전_전화권유판매 수신거부 등록.html" target="_self" class="service_item_ security_noTeleSale">전화권유판매 수신거부 등록</a>';  */
-    service_list_security +=             '</div>'; 
+    /* service_list_security +=                '<a href="" target="_self" class="service_item_ security_rghtFrgtFrt">지우개 서비스</a>';  */  
+    service_list_security +=            '</div>'; 
     service_list_security +=        '</div>'; 
     service_list_security +=      '</div>'; 
     service_list_security +=      '<div class="wrap-slide-box">'; 
@@ -329,10 +370,20 @@ $(document).ready(function () {
     service_list_security_mob +=    '<div class="combo_box_wrap">';  
     service_list_security_mob +=        '<h3>개방서비스를 찾아보세요!</h3>'; 
     service_list_security_mob +=       '<label for="service_list_security_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
-    service_list_security_mob +=       '<select id="service_list_security_mob" onchange="if(this.value) location.href=(this.value);"  class="combo_box">';
+    service_list_security_mob +=        '<select id="service_list_security_mob" onchange="if(this.value) location.href=(this.value);"  class="combo_box">';
+/*     service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_call112">112 신고</option>';  */
+/*     service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_call119">119 신고</option>';  */
+    /* service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_FishingBrdng">낚시어선 승선 서비스</option>';  */
+    /* service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_tPrice">눈속임제품신고 및 참가격 조회</option>';  */
+    /* service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_PetRgstr">반려동물 등록서비스</option>';  */
+    /* service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_RprtCnsmrSafety">소비생활 안전 긴급신고</option>'; */ 
+    /* service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_FirePrvntSystmPrtl">소방예방정보시스템 온라인 민원포털</option>'; */ 
+    /* service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_CnsmrCnslngCmpnstn">소비자 상담 및 피해보상 신청</option>';  */
+    /* service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_EmrgncyAlrt">장애상황 알림서비스</option>';  */
     service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_noTeleSale">전화권유판매 수신거부 등록</option>'; 
     /* service_list_security_mob +=            '<option value="04_개방서비스_안전_전화권유판매 수신거부 등록.html" class="service_option security_noTeleSale">전화권유판매 수신거부 등록</option>';  */
-    service_list_security_mob +=        '</select>';   
+    /* service_list_security_mob +=            '<option value="prepare_alertPop" class="service_option security_rghtFrgtFrt">지우개 서비스</option>';  */
+    service_list_security_mob += '</select>';   
     service_list_security_mob +=      '</div>';   
     service_list_security_mob +=    '</div>'; 
 
@@ -341,7 +392,7 @@ $(document).ready(function () {
 
 
 
-/************************ 여행˙휴양 *************************/
+/************************ 여행 *************************/
 // pc 버전
 $(document).ready(function () {
 
@@ -351,18 +402,22 @@ $(document).ready(function () {
     service_list_vacation +=      '<div class="swiper slide_service swiper-container">'; 
     service_list_vacation +=        '<div class="service_list swiper-wrapper">'; 
     service_list_vacation +=        '<div class="swiper-slide">'; 
-    service_list_vacation +=                '<a href="04_개방서비스_여행·휴양_KTX승차권예매.html" target="_self" class="service_item_ vacation_korail">KTX 승차권 예매</a>'; 
-    service_list_vacation +=                '<a href="04_개방서비스_여행·휴양_SRT승차권 예매.html" target="_self" class="service_item_ vacation_srt">SRT 승차권 예매</a>'; 
-    service_list_vacation +=                '<a href="04_개방서비스_여행·휴양_국립생태원 예약.html" target="_self" class="service_item_ vacation_ntEcoResBook">국립생태원 예약</a>'; 
-    service_list_vacation +=                '<a href="04_개방서비스_여행·휴양_국립수목원 예약.html" target="_self" class="service_item_ vacation_ntArbor">국립수목원 예약</a>'; 
-    service_list_vacation +=                '<a href="04_개방서비스_여행·휴양_산림복지시설예약.html" target="_self" class="service_item_ vacation_sooperang">산림복지시설 예약</a>'; 
-    service_list_vacation +=                '<a href="04_개방서비스_여행·휴양_세종˙백두대간수목원 예약.html" target="_self" class="service_item_ vacation_sjbd">세종·백두대간 수목원 예약</a>'; 
-    service_list_vacation +=                '<a href="04_개방서비스_여행·휴양_여권재발급온라인신청.html" target="_self" class="service_item_ vacation_passportReissue">여권 재발급 온라인 신청</a>'; 
+    service_list_vacation +=                '<a href="04_개방서비스_여행_KTX승차권예매.html" target="_self" class="service_item_ vacation_korail">KTX 승차권 예매</a>'; 
+    service_list_vacation +=                '<a href="04_개방서비스_여행_SRT승차권 예매.html" target="_self" class="service_item_ vacation_srt">SRT 승차권 예매</a>'; 
+    service_list_vacation +=                '<a href="04_개방서비스_여행_국립생태원 예약.html" target="_self" class="service_item_ vacation_ntEcoResBook">국립생태원 예약</a>'; 
+    service_list_vacation +=                '<a href="04_개방서비스_여행_국립수목원 예약.html" target="_self" class="service_item_ vacation_ntArbor">국립수목원 예약</a>'; 
+/*     service_list_vacation +=                '<a href="" target="_self" class="service_item_ vacation_nmk">국립중앙박물관 관람 예약</a>';  */
+/*     service_list_vacation +=                '<a href="" target="_self" class="service_item_ vacation_LeisureCrftSfty">동력수상레저기구 안전교육 접수</a>';  */
+/*     service_list_vacation +=                '<a href="" target="_self" class="service_item_ vacation_LeisureCrftOprtrLcns">동력수상레저기구 조정 면허시험 접수</a>';  */
+    /*     service_list_vacation +=                '<a href="" target="_self" class="service_item_ vacation_digtCard">디지털 관광 주민증</a>';  */
+    service_list_vacation +=                '<a href="04_개방서비스_여행_분실 신고, 습득물 조회.html" target="_self" class="service_item_ vacation_lostReport">분실 신고 / 습득물 조회</a>'; 
+    service_list_vacation +=                '<a href="04_개방서비스_여행_산림복지시설예약.html" target="_self" class="service_item_ vacation_sooperang">산림복지시설 예약</a>'; 
+    service_list_vacation +=                '<a href="04_개방서비스_여행_세종˙백두대간수목원 예약.html" target="_self" class="service_item_ vacation_sjbd">세종·백두대간 수목원 예약</a>'; 
     service_list_vacation +=            '</div>'; 
     service_list_vacation +=            '<div class="swiper-slide">'; 
-    service_list_vacation +=                '<a href="04_개방서비스_여행·휴양_인천공항 지도 서비스.html" target="_self" class="service_item_ vacation_hta">인천공항 지도 서비스</a>'; 
-    service_list_vacation +=                '<a href="04_개방서비스_여행·휴양_휴양림 예약.html" target="_self" class="service_item_ vacation_forest">휴양림 예약</a>'; 
-    service_list_vacation +=                '<a href="javascript:void(0);" target="_self" class="service_item_ vacation_lostReport" onclick="openPop(\'layer\', \'contents_alertPop\'); return false;">분실물 신고</a>'; 
+    service_list_vacation +=                '<a href="04_개방서비스_여행_인천공항 지도 서비스.html" target="_self" class="service_item_ vacation_hta">인천공항 지도 서비스</a>'; 
+/*     service_list_vacation +=                '<a href="" target="_self" class="service_item_ vacation_nbgk">한국자생식물원 입장권 및 교육 예약</a>';  */
+    service_list_vacation +=                '<a href="04_개방서비스_여행_휴양림 예약.html" target="_self" class="service_item_ vacation_forest">휴양림 예약</a>'; 
     service_list_vacation +=            '</div>'; 
     service_list_vacation +=        '</div>'; 
     service_list_vacation +=      '</div>'; 
@@ -386,16 +441,20 @@ $(document).ready(function () {
     service_list_vacation_mob +=      '<h3>개방서비스를 찾아보세요!</h3>'; 
     service_list_vacation_mob +=       '<label for="service_list_vacation_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
     service_list_vacation_mob +=       '<select id="service_list_vacation_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">';
-    service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_KTX승차권예매.html" class="service_option vacation_korail">KTX 승차권 예매</option>'; 
-    service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_SRT승차권 예매.html" class="service_option vacation_srt">SRT 승차권 예매</option>'; 
-    service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_국립생태원 예약.html" class="service_option vacation_ntEcoResBook">국립생태원 예약</option>'; 
-    service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_국립수목원 예약.html" class="service_option vacation_ntArbor">국립수목원 예약</option>'; 
-    service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_산림복지시설예약.html" class="service_option vacation_sooperang">산림복지시설 예약</option>'; 
-    service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_세종˙백두대간수목원 예약.html" class="service_option vacation_sjbd">세종·백두대간 수목원 예약</option>'; 
-    service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_여권재발급온라인신청.html" class="service_option vacation_passportReissue">여권 재발급 온라인 신청</option>';
-    service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_인천공항 지도 서비스.html" class="service_option vacation_hta">인천공항 지도 서비스</option>'; 
-    service_list_vacation_mob +=               '<option value="04_개방서비스_여행·휴양_휴양림 예약.html" class="service_option vacation_forest">휴양림 예약</option>';  
-    service_list_vacation_mob +=               '<option value="prepare_alertPop" class="service_option vacation_lostReport">분실물 신고</option>'; 
+    service_list_vacation_mob +=               '<option value="04_개방서비스_여행_KTX승차권예매.html" class="service_option vacation_korail">KTX 승차권 예매</option>'; 
+    service_list_vacation_mob +=               '<option value="04_개방서비스_여행_SRT승차권 예매.html" class="service_option vacation_srt">SRT 승차권 예매</option>'; 
+    service_list_vacation_mob +=               '<option value="04_개방서비스_여행_국립생태원 예약.html" class="service_option vacation_ntEcoResBook">국립생태원 예약</option>'; 
+    service_list_vacation_mob +=               '<option value="04_개방서비스_여행_국립수목원 예약.html" class="service_option vacation_ntArbor">국립수목원 예약</option>'; 
+/*     service_list_vacation_mob +=               '<option value="" class="service_option vacation_nmk">국립중앙박물관 관람 예약</option>';  */
+/*     service_list_vacation_mob +=               '<option value="" class="service_option vacation_LeisureCrftSfty">동력수상레저기구 안전교육 접수</option>';  */
+/*     service_list_vacation_mob +=               '<option value="" class="service_option vacation_LeisureCrftOprtrLcns">동력수상레저기구 조정 면허시험 접수</option>';  */
+    /*     service_list_vacation_mob +=               '<option value="" class="service_option vacation_digtCard">디지털 관광 주민증</option>';  */
+    service_list_vacation_mob +=               '<option value="04_개방서비스_여행_분실 신고, 습득물 조회.html" class="service_option vacation_lostReport">분실 신고 / 습득물 조회</option>'; 
+    service_list_vacation_mob +=               '<option value="04_개방서비스_여행_산림복지시설예약.html" class="service_option vacation_sooperang">산림복지시설 예약</option>'; 
+    service_list_vacation_mob +=               '<option value="04_개방서비스_여행_세종˙백두대간수목원 예약.html" class="service_option vacation_sjbd">세종·백두대간 수목원 예약</option>'; 
+    service_list_vacation_mob +=               '<option value="04_개방서비스_여행_인천공항 지도 서비스.html" class="service_option vacation_hta">인천공항 지도 서비스</option>'; 
+/*     service_list_vacation_mob +=               '<option value="" class="service_option vacation_nbgk">한국자생식물원 입장권 및 교육 예약</option>';  */
+    service_list_vacation_mob +=               '<option value="04_개방서비스_여행_휴양림 예약.html" class="service_option vacation_forest">휴양림 예약</option>';  
     service_list_vacation_mob +=           '</select>';   
     service_list_vacation_mob +=      '</div>';   
     service_list_vacation_mob +=    '</div>'; 
@@ -406,7 +465,7 @@ $(document).ready(function () {
 
 
 
-/************************ 임신˙육아 *************************/
+/************************ 임신육아 *************************/
 // pc 버전
 $(document).ready(function () {
 
@@ -460,10 +519,14 @@ $(document).ready(function () {
     service_list_young +=      '<div class="swiper slide_service swiper-container">'; 
     service_list_young +=        '<div class="service_list swiper-wrapper">'; 
     service_list_young +=            '<div class="swiper-slide">'; 
-    service_list_young +=                '<a href="04_개방서비스_청년_동원훈련 일정조회.html" target="_self" class="service_item_ young_inqRsrvForceTrn">동원훈련 일정조회</a>'; 
+/*     service_list_young +=                '<a href="" target="_self" class="service_item_ young_v1365">1365자원봉사</a>';  */
+    service_list_young +=                '<a href="04_개방서비스_청년_동원훈련 일정조회.html" target="_self" class="service_item_ young_inqRsrvForceTrn">동원훈련 일정조회</a>'; //예비군 동원훈련 조회
     service_list_young +=                '<a href="04_개방서비스_청년_병역판정검사본인선택.html" target="_self" class="service_item_ young_applyMilSrvExam">병역판정검사 본인선택</a>'; 
-    service_list_young +=                '<a href="04_개방서비스_청년_취업후상환학자금대출채무자신고.html" target="_self" class="service_item_ young_stdLoanDebtorRprt">취업 후 상환 학자금대출 채무자신고</a>'; 
-    service_list_young +=             '</div>'; 
+/*     service_list_young +=                '<a href="" target="_self" class="service_item_ young_vms">사회복지자원봉사 인증관리(VMS)</a>';  */
+/*     service_list_young +=                '<a href="" target="_self" class="service_item_ young_YouthVlntrApply">청소년 자원봉사신청</a>';  */
+    service_list_young +=                '<a href="04_개방서비스_청년_취업후상환학자금대출채무자신고.html" target="_self" class="service_item_ young_stdLoanDebtorRprt">취업 후 상환 학자금대출 채무자신고</a>';  //학자금 대출 채무자 신고
+/*     service_list_young +=                '<a href="" target="_self" class="service_item_ young_ConsentInfoStdntLoan">학자금 지원구간 가구원 정보 제공 동의 서비스</a>';  */
+    service_list_young +=        '</div>'; 
     service_list_young +=        '</div>'; 
     service_list_young +=      '</div>'; 
     service_list_young +=      '<div class="wrap-slide-box">'; 
@@ -486,10 +549,14 @@ $(document).ready(function () {
     service_list_young_mob +=        '<h3>개방서비스를 찾아보세요!</h3>'; 
     service_list_young_mob +=       '<label for="service_list_young_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
     service_list_young_mob +=         '<select id="service_list_young_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">';
+/*     service_list_young_mob +=            '<option value="" class="service_option young_v1365">1365자원봉사</option>';  */
     service_list_young_mob +=            '<option value="04_개방서비스_청년_동원훈련 일정조회.html" class="service_option young_inqRsrvForceTrn">동원훈련 일정조회</option>'; 
     service_list_young_mob +=            '<option value="04_개방서비스_청년_병역판정검사본인선택.html" class="service_option young_applyMilSrvExam">병역판정검사 본인선택</option>'; 
+/*     service_list_young_mob +=            '<option value="" class="service_option young_vms">사회복지자원봉사 인증관리(VMS)</option>';  */
+/*     service_list_young_mob +=            '<option value="" class="service_option young_YouthVlntrApply">청소년 자원봉사신청</option>';  */
     service_list_young_mob +=            '<option value="04_개방서비스_청년_취업후상환학자금대출채무자신고.html" class="service_option young_stdLoanDebtorRprt">취업 후 상환 학자금대출 채무자신고</option>'; 
-    service_list_young_mob +=        '</selectclass=>';   
+/*     service_list_young_mob +=            '<option value="" class="service_option young_ConsentInfoStdntLoan">학자금 지원구간 가구원 정보 제공 동의 서비스</option>';  */
+    service_list_young_mob +=        '</select>';   
     service_list_young_mob +=      '</div>';   
     service_list_young_mob +=    '</div>'; 
 
@@ -498,41 +565,156 @@ $(document).ready(function () {
 
 
 
-/* 적용사례_서비스별 사례 상단 페이지 이동 */
+/************************ 디지털지갑 *************************/
+// pc 버전
 $(document).ready(function () {
 
-    var page_rep_case_list = "";
-    page_rep_case_list +=   '<!-- 서비스별 선택 영역 PC 버전 -->'; 
-    page_rep_case_list +=   '<div class="only_pc">'; 
-    page_rep_case_list +=       '<ul class="wrap_select_link">'; 
-    page_rep_case_list +=           '<li><a href="03_적용사례_서비스별 사례_KTX승차권예매.html" target="_self" class="service_item item_korail" title="KTX 승차권 예매 서비스별 사례 소개 부분으로 이동">KTX 승차권 예매</a></li>'; 
-    page_rep_case_list +=           '<li><a href="03_적용사례_서비스별 사례_SRT승차권 예매.html" target="_self" class="service_item item_srt" title="SRT 승차권 예매 서비스별 사례 소개 부분으로 이동">SRT 승차권 예매</a></li>'; 
-    page_rep_case_list +=           '<li><a href="03_적용사례_서비스별 사례_국립수목원 예약.html" target="_self" class="service_item item_ntarboretum" title="국립수목원 예약 서비스별 사례 소개 부분으로 이동">국립수목원 예약</a></li>'; 
-    page_rep_case_list +=           '<li><a href="03_적용사례_서비스별 사례_세종·백두대간 수목원 예약.html" target="_self" class="service_item item_sjbdarboretum" title="세종·백두대간 수목원 예약 서비스별 사례 소개 부분으로 이동">세종·백두대간수목원 예약</a></li>'; 
-    page_rep_case_list +=           '<li><a href="03_적용사례_서비스별 사례_인천공항 지도 서비스.html" target="_self" class="service_item item_hta" title="인천공항 지도 서비스 서비스별 사례 소개 부분으로 이동">인천공항 지도 서비스</a></li>'; 
-    page_rep_case_list +=           '<li><a href="03_적용사례_서비스별 사례_자동차 검사 예약.html" target="_self" class="service_item item_carcheck" title="자동차 검사 예약 서비스별 사례 소개 부분으로 이동">자동차 검사 예약</a></li>'; 
-    page_rep_case_list +=           '<li><a href="03_적용사례_서비스별 사례_휴양림 예약.html" target="_self" class="service_item item_forest" title="휴양림 예약 서비스별 사례 소개 부분으로 이동">휴양림 예약</a></li>'; 
-    page_rep_case_list +=       '</ul>'; 
-    page_rep_case_list +=   '</div>'; 
-    page_rep_case_list +=   '<!-- 서비스별 선택 콤보 박스 모바일 버전 -->';  
-    page_rep_case_list +=   '<div class="only_mob">'; 
-    page_rep_case_list +=       '<div class="combo_box_wrap">'; 
-    page_rep_case_list +=           '<h3>서비스별 사례를 찾아보세요!</h3>'; 
-    page_rep_case_list +=           '<label for="select_case" class="sr_only">서비스별 사례 선택 목록 열기 : </label>';
-    page_rep_case_list +=               '<select onchange="if(this.value) location.href=(this.value);" id="select_case" class="combo_box">'; 
-    page_rep_case_list +=                   '<option value="03_적용사례_서비스별 사례_KTX승차권예매.html" class="service_option">KTX 승차권 예매</option>'; 
-    page_rep_case_list +=                   '<option value="03_적용사례_서비스별 사례_SRT승차권 예매.html" class="service_option">SRT 승차권 예매</option>'; 
-    page_rep_case_list +=                   '<option value="03_적용사례_서비스별 사례_국립수목원 예약.html" class="service_option">국립수목원 예약</option>'; 
-    page_rep_case_list +=                   '<option value="03_적용사례_서비스별 사례_세종·백두대간 수목원 예약.html" class="service_option">세종·백두대간수목원 예약</option>'; 
-    page_rep_case_list +=                   '<option value="03_적용사례_서비스별 사례_인천공항 지도 서비스.html" class="service_option">인천공항 지도 서비스</option>'; 
-    page_rep_case_list +=                   '<option value="03_적용사례_서비스별 사례_자동차 검사 예약.html" class="service_option">자동차 검사 예약</option>'; 
-    page_rep_case_list +=                   '<option value="03_적용사례_서비스별 사례_휴양림 예약.html" class="service_option">휴양림 예약</option>';     
-    page_rep_case_list +=               '</select>';     
-    page_rep_case_list +=       '</div>'; 
-    page_rep_case_list +=   '</div>'; 
+    var service_list_eWallet = "";
+    service_list_eWallet +=    '<div class="slide_box">'; 
+    service_list_eWallet +=      '<!-- slide -->'; 
+    service_list_eWallet +=      '<div class="swiper slide_service swiper-container">'; 
+    service_list_eWallet +=        '<div class="service_list swiper-wrapper">'; 
+    service_list_eWallet +=            '<div class="swiper-slide">'; 
+/*     service_list_eWallet +=                '<a href="" target="_self" class="service_item_ eWallet_kCredit">공공마이데이터</a>';  */
+    service_list_eWallet +=                '<a href="04_개방서비스_디지털지갑_국민비서.html" target="_self" class="service_item_ eWallet_ntsecretary">국민비서</a>'; 
+    service_list_eWallet +=                '<a href="04_개방서비스_디지털지갑_전자증명서.html" target="_self" class="service_item_ eWallet_dpaper">전자증명서</a>'; //전자문서지갑
+/*     service_list_eWallet +=                '<a href="" target="_self" class="service_item_ eWallet_BenefitNoti">혜택알리미</a>';  */
+    service_list_eWallet +=             '</div>'; 
+    service_list_eWallet +=         '</div>'; 
+    service_list_eWallet +=      '</div>'; 
+    service_list_eWallet +=      '<div class="wrap-slide-box">'; 
+    service_list_eWallet +=        '<div class="swiper-button-prev"></div>'; 
+    service_list_eWallet +=        '<div class="swiper-button-next"></div>';
+    service_list_eWallet +=      '</div>'; 
+    service_list_eWallet +=      '<div class="swiper-pagination"></div>'; 
+    service_list_eWallet +=    '</div>'; 
 
-    $(".article02 .page_rep_case_list").html(page_rep_case_list);
+    $(".article01 .service_list_eWallet").html(service_list_eWallet);
 });
+
+// 모바일 버전
+$(document).ready(function () {
+
+    var service_list_eWallet_mob = "";
+    service_list_eWallet_mob += '<div class="select_area">'; 
+    service_list_eWallet_mob +=    '<!-- combo box -->'; 
+    service_list_eWallet_mob +=    '<div class="combo_box_wrap">';  
+    service_list_eWallet_mob +=        '<h3>개방서비스를 찾아보세요!</h3>'; 
+    service_list_eWallet_mob +=       '<label for="service_list_young_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
+    service_list_eWallet_mob +=         '<select id="service_list_young_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">';
+/*     service_list_eWallet_mob +=            '<option value="" class="service_option eWallet_kCredit">공공마이데이터</option>';  */
+    service_list_eWallet_mob +=            '<option value="04_개방서비스_디지털지갑_국민비서.html" class="service_option eWallet_ntsecretary">국민비서</option>'; 
+    service_list_eWallet_mob +=            '<option value="04_개방서비스_디지털지갑_전자증명서.html" class="service_option eWallet_dpaper">전자증명서</option>'; 
+/*     service_list_eWallet_mob +=            '<option value="" class="service_option eWallet_BenefitNoti">혜택알리미</option>';  */
+    service_list_eWallet_mob +=        '</select>';   
+    service_list_eWallet_mob +=      '</div>';   
+    service_list_eWallet_mob +=    '</div>'; 
+
+    $(".article01 .service_list_eWallet_mob").html(service_list_eWallet_mob);
+});
+
+
+
+/************************ 미환급금 *************************/
+// pc 버전
+$(document).ready(function () {
+
+    var service_list_refund = "";
+    service_list_refund +=    '<div class="slide_box">'; 
+    service_list_refund +=      '<!-- slide -->'; 
+    service_list_refund +=      '<div class="swiper slide_service swiper-container">'; 
+    service_list_refund +=        '<div class="service_list swiper-wrapper">'; 
+    service_list_refund +=            '<div class="swiper-slide">'; 
+/*     service_list_refund +=                '<a href="" target="_self" class="service_item_ refund_UnclaimedTax">국세 미수령 환급금 찾기 서비스</a>';  */
+/*     service_list_refund +=                '<a href="" target="_self" class="service_item_ refund_EmplyInjryInsrnc">고용산재보험료 미환급액 조회 및 신청</a>';  */
+    service_list_refund +=             '</div>'; 
+    service_list_refund +=         '</div>'; 
+    service_list_refund +=      '</div>'; 
+    service_list_refund +=      '<div class="wrap-slide-box">'; 
+    service_list_refund +=        '<div class="swiper-button-prev"></div>'; 
+    service_list_refund +=        '<div class="swiper-button-next"></div>';
+    service_list_refund +=      '</div>'; 
+    service_list_refund +=      '<div class="swiper-pagination"></div>'; 
+    service_list_refund +=    '</div>'; 
+
+    $(".article01 .service_list_refund").html(service_list_refund);
+});
+
+// 모바일 버전
+$(document).ready(function () {
+
+    var service_list_refund_mob = "";
+    service_list_refund_mob += '<div class="select_area">'; 
+    service_list_refund_mob +=    '<!-- combo box -->'; 
+    service_list_refund_mob +=    '<div class="combo_box_wrap">';  
+    service_list_refund_mob +=        '<h3>개방서비스를 찾아보세요!</h3>'; 
+    service_list_refund_mob +=       '<label for="service_list_young_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
+    service_list_refund_mob +=         '<select id="service_list_young_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">';
+/*     service_list_refund_mob +=            '<option value="" class="service_option refund_UnclaimedTax">국세 미수령 환급금 찾기 서비스</option>';  */
+/*     service_list_refund_mob +=            '<option value="" class="service_option refund_EmplyInjryInsrnc">고용산재보험료 미환급액 조회 및 신청</option>';  */
+    service_list_refund_mob +=        '</select>';   
+    service_list_refund_mob +=      '</div>';   
+    service_list_refund_mob +=    '</div>'; 
+
+    $(".article01 .service_list_refund_mob").html(service_list_refund_mob);
+});
+
+
+
+
+/************************ 생활 *************************/
+// pc 버전
+$(document).ready(function () {
+
+    var service_list_living= "";
+    service_list_living +=    '<div class="slide_box">'; 
+    service_list_living +=      '<!-- slide -->'; 
+    service_list_living +=      '<div class="swiper slide_service swiper-container">'; 
+    service_list_living +=        '<div class="service_list swiper-wrapper">'; 
+    service_list_living +=            '<div class="swiper-slide">'; 
+/*     service_list_living +=                '<a href="" target="_self" class="service_item_ living_eshare">공유누리</a>';  */
+/*     service_list_living +=                '<a href="" target="_self" class="service_item_ living_greendaero">그린대로(귀농귀촌 토탈 서비스)</a>';  */
+/*     service_list_living +=                '<a href="" target="_self" class="service_item_ living_epostParcel">우체국 방문소포 서비스</a>';  */
+/*     service_list_living +=                '<a href="" target="_self" class="service_item_ living_eco15990903">폐가전 무상방문 수거 서비스</a>';  */
+    service_list_living +=             '</div>'; 
+    service_list_living +=         '</div>'; 
+    service_list_living +=      '</div>'; 
+    service_list_living +=      '<div class="wrap-slide-box">'; 
+    service_list_living +=        '<div class="swiper-button-prev"></div>'; 
+    service_list_living +=        '<div class="swiper-button-next"></div>';
+    service_list_living +=      '</div>'; 
+    service_list_living +=      '<div class="swiper-pagination"></div>'; 
+    service_list_living +=    '</div>'; 
+
+    $(".article01 .service_list_living").html(service_list_living);
+});
+
+// 모바일 버전
+$(document).ready(function () {
+
+    var service_list_living_mob = "";
+    service_list_living_mob += '<div class="select_area">'; 
+    service_list_living_mob +=    '<!-- combo box -->'; 
+    service_list_living_mob +=    '<div class="combo_box_wrap">';  
+    service_list_living_mob +=        '<h3>개방서비스를 찾아보세요!</h3>'; 
+    service_list_living_mob +=       '<label for="service_list_young_mob" class="sr_only">개방서비스 선택 목록 열기 : </label>';
+    service_list_living_mob +=         '<select id="service_list_young_mob" onchange="if(this.value) location.href=(this.value);" class="combo_box">';
+/*     service_list_living_mob +=            '<option value="" class="service_option living_eshare">공유누리</option>';  */
+/*     service_list_living_mob +=            '<option value="" class="service_option living_greendaero">그린대로(귀농귀촌 토탈 서비스)</option>';  */
+/*     service_list_living_mob +=            '<option value="" class="service_option living_epostParcel">우체국 방문소포 서비스</option>';  */
+/*     service_list_living_mob +=            '<option value="" class="service_option living_eco15990903">폐가전 무상방문 수거 서비스</option>';  */
+    service_list_living_mob +=        '</select>';   
+    service_list_living_mob +=      '</div>';   
+    service_list_living_mob +=    '</div>'; 
+
+    $(".article01 .service_list_living_mob").html(service_list_living_mob);
+});
+
+
+
+
+
+
 
 
 

@@ -95,7 +95,9 @@ small {
 }
 
 select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-family: inherit;
 }
 
@@ -115,7 +117,8 @@ summary {
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 button, select {
@@ -128,16 +131,21 @@ button, select {
 }
 
 button, [type=button], [type=reset], [type=submit] {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 [type=search] {
-  appearance: textfield;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
   outline-offset: -2px;
 }
 
 input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -146,7 +154,8 @@ progress {
 }
 
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;

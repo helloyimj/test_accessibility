@@ -1678,3 +1678,79 @@ $(document).ready(function () {
 
     $(".contents_forest_kbstarbanking").html(contents_forest_kbstarbanking);
 });
+
+
+
+
+/* 문화누리카드 이용 ******************************************/
+// 네이버 페이
+$(document).ready(function () {
+
+    var contents_mnuriApi_naverPay = "";
+    contents_mnuriApi_naverPay +=            '<article class="contents_wrap">';
+    contents_mnuriApi_naverPay +=                '<div class="shadow_box case_detail bg_purple">';
+    contents_mnuriApi_naverPay +=                    '<div class="title_area under_1024">';
+    contents_mnuriApi_naverPay +=                        '<div class="left">';
+    contents_mnuriApi_naverPay +=                            '<h3 class="public_service_name">문화누리카드 이용</h3>';
+    contents_mnuriApi_naverPay +=                            '<h5 class="only_pc">공공서비스를 민간플랫폼에서 한 번에</h5>';
+    contents_mnuriApi_naverPay +=                        '</div>';
+    contents_mnuriApi_naverPay +=                        '<div class="right">';
+    contents_mnuriApi_naverPay +=                            '<h4 class="com_service_name name_naverPay only_pc">네이버 페이</h4>';                                                                                    
+    contents_mnuriApi_naverPay +=                            '<div class="wrap_logo">';
+    contents_mnuriApi_naverPay +=                                '<img src="../img/app_logo/app_naverPay.png" alt="네이버 페이 로고" />';
+    contents_mnuriApi_naverPay +=                            '</div>';
+    contents_mnuriApi_naverPay +=                            '<div class="only_mob">';
+    contents_mnuriApi_naverPay +=                                '<h5>공공서비스를<br class="block_768"/> 민간플랫폼에서 한 번에</h5>';
+    contents_mnuriApi_naverPay +=                                '<h4 class="com_service_name name_naverPay">네이버 페이</h4>';
+    contents_mnuriApi_naverPay +=                            '</div>';
+    contents_mnuriApi_naverPay +=                        '</div>';
+    contents_mnuriApi_naverPay +=                    '</div>';   
+    contents_mnuriApi_naverPay +=                    '<div class="contents_area">';
+    contents_mnuriApi_naverPay +=                        '<div>';
+    contents_mnuriApi_naverPay +=                            '<div class="img_area">';
+    contents_mnuriApi_naverPay +=                                '<div class="wrap_img">';
+    contents_mnuriApi_naverPay +=                                    '<img src="../img/prCase/case_mnuriApi_naver_01.png" alt="네이버 페이에서 현장 결제 수단에 문화누리카드가 추가되어있는 화면입니다."/>';
+    contents_mnuriApi_naverPay +=                                '</div>';
+    contents_mnuriApi_naverPay +=                                '<div class="wrap_img">';
+    contents_mnuriApi_naverPay +=                                     '<img src="../img/prCase/case_mnuriApi_naver_02.png" alt="네이버 페이에서 현장 결제 수단으로 문화누리카드를 선택했을 때의 화면입니다."/>';
+    contents_mnuriApi_naverPay +=                                '</div>';
+    contents_mnuriApi_naverPay +=                              '</div>';
+    contents_mnuriApi_naverPay +=                              '<div class="text_area">';
+    contents_mnuriApi_naverPay +=                                  '<h5>디지털서비스개방을 통해 공공서비스인<br /> 문화누리카드 이용 서비스를 <br />네이버 페이에서 제공합니다.</h5>';
+    contents_mnuriApi_naverPay +=                                  '<h6 class="img_title">네이버 페이에 한 번만 등록하면<br> 실물카드 없이도 언제든지 간편결제를</h6>';
+    contents_mnuriApi_naverPay +=                                  '<p>네이버 페이의 ‘신용/체크카드 등록’에서 소지한 실물 문화누리카드를 등록한 후,<br /> 문화누리카드 가맹점에서 현장결제시 또는 온라인 결제시<br class="none_480"/> 등록된 문화누리카드를 선택하면 결제가 가능합니다.</p>';
+    contents_mnuriApi_naverPay +=                              '</div>';
+    contents_mnuriApi_naverPay +=                          '</div>';
+    contents_mnuriApi_naverPay +=                          '<div>';
+    contents_mnuriApi_naverPay +=                              '<div class="text_area">';
+    contents_mnuriApi_naverPay +=                                  '<h6 class="img_title">네이버와 네이버 지도에서 ‘문화누리카드’로 검색하여<br> 편하게 가맹점 조회를</h6>';
+    contents_mnuriApi_naverPay +=                                  '<p>일일이 이용 가능한 가맹점을 찾아다니지 않아도<br /> 한 번의 검색만으로 편리하게 이용할 수 있고,<br /> 가맹점이 추가되거나 변경된 정보도 즉시 확인할 수 있습니다.</p>';
+    contents_mnuriApi_naverPay +=                              '</div>';
+    contents_mnuriApi_naverPay +=                              '<div class="img_area">';
+    contents_mnuriApi_naverPay +=                                  '<div class="wrap_img">';
+    contents_mnuriApi_naverPay +=                                      '<img src="../img/prCase/case_mnuriApi_naver_03.png" alt="네이버 지도에서 검색창에 ‘문화누리카드’를 검색했을 때 문화누리카드를 이용할 수 있는 가맹점이 표시된 지도 화면입니다."/>';
+    contents_mnuriApi_naverPay +=                                  '</div>';
+    contents_mnuriApi_naverPay +=                                  '<div class="wrap_img">';
+    contents_mnuriApi_naverPay +=                                      '<img src="../img/prCase/case_mnuriApi_naver_04.png" alt="네이버 지도에서 검색창에 ‘문화누리카드’를 검색했을 때 문화누리카드를 이용할 수 있는 가맹점의 목록을 보여주는 화면입니다."/>';
+    contents_mnuriApi_naverPay +=                                  '</div>';
+    contents_mnuriApi_naverPay +=                              '</div>';
+    contents_mnuriApi_naverPay +=                          '</div>';
+    contents_mnuriApi_naverPay +=                      '</div>';
+    contents_mnuriApi_naverPay +=                      '<div class="bottom_area">';
+    contents_mnuriApi_naverPay +=                          '<div>';
+    contents_mnuriApi_naverPay +=                              '<h5>서비스 이용해 보기</h5>';
+    contents_mnuriApi_naverPay +=                              '<p>네이버 페이로 문화누리카드를 이용해 보세요</p>';
+    contents_mnuriApi_naverPay +=                          '</div>';
+    contents_mnuriApi_naverPay +=                          '<div>';
+    contents_mnuriApi_naverPay +=                              '<div class="wrap_btn">';
+    contents_mnuriApi_naverPay +=                                  '<a class="btn_action filled_white link_out_black" href="https://new-m.pay.naver.com/" target="_blank" title="새 창 열림- 네이버 페이 웹사이트로 외부 이동">WEB에서 이용</a>';
+    contents_mnuriApi_naverPay +=                                  '<a class="btn_action filled_white link_out_black" href="https://apps.apple.com/kr/app/%EB%84%A4%EC%9D%B4%EB%B2%84%ED%8E%98%EC%9D%B4/id1554807824" target="_blank" title="새 창 열림- 앱스토어 네이버 페이 페이지로 외부 이동">iOS에서 이용</a>';
+    contents_mnuriApi_naverPay +=                                  '<a class="btn_action filled_white link_out_black" href="https://play.google.com/store/apps/details?id=com.naverfin.payapp&hl=ko&gl=US" target="_blank" title="새 창 열림- 구글 플레이 스토어 네이버 페이 페이지로 외부 이동">Android에서 이용</a>';
+    contents_mnuriApi_naverPay +=                              '</div>';
+    contents_mnuriApi_naverPay +=                          '</div>';
+    contents_mnuriApi_naverPay +=                      '</div>';    
+    contents_mnuriApi_naverPay +=                '</div>';    
+    contents_mnuriApi_naverPay +=            '</article>';    
+
+    $(".contents_mnuriApi_naverPay").html(contents_mnuriApi_naverPay);
+});

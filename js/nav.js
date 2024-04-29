@@ -1,8 +1,8 @@
 let header = "";
 // header +=          '<header id="header" class="header">';
 header +='<div class="header_inner">';
-header +=    '<div class="nav_dim"></div>'; 
-header +=    '<div class="wrap_gnb">';
+header +=    '<div class="nav_dim pc_dim"></div>';  
+header +=   '<div class="wrap_gnb main_only">';
 header +=        '<!-- 최상단 로그인 화면크기 조절 버튼 -->';
 header +=        '<div class="area_top">';
 header +=            '<div class="area_top_inner">';
@@ -23,8 +23,8 @@ header +=        '</div>';
 header +=        '<div class="area_menu">';
 header +=            '<div class="area_menu_inner">';
 header +=                '<h1 class="logo">';
-header +=                 '<span class="sr_only">디지털서비스개방 로고</span>';
-header +=                    '<a href="00_대외홍보포털_메인.html" target="_self" class="logo_anchor" title="메인 페이지 이동"></a>';
+header +=                   '<span class="sr_only">디지털서비스개방 로고</span>';
+header +=                   '<a href="00_대외홍보포털_메인.html" target="_self" class="logo_anchor" title="메인 페이지 이동"></a>';
 header +=                '</h1>';
 header +=                '<div class="wrap_menus">';
 header +=                    '<!-- 모바일 상단 로그인 상태창 -->';
@@ -38,9 +38,6 @@ header +=                            '<div class="box_state state_login_before">
 header +=                                '<div class="user_info">';
 header +=                                    '<p class="greeting">디지털서비스개방에 <br /> 오신 것을 환영합니다.</p>';
 header +=                                '</div>';
-/* header +=                                '<div class="wrap_gnb_btn">';
-header +=                                    '<a href="javascript:;" target="_blank" class="btn_action in_gnb filled_brand link_related_white" title="새 창 열림- 기관지원센터 포털">기관지원센터 포털</a>';
-header +=                                '</div>'; */
 header +=                            '</div>';
 header +=                        '</div>';
 header +=                    '</div>';
@@ -50,68 +47,63 @@ header +=                            '<h2 class="sr_only">주메뉴</h2>';
 header +=                            '<ul class="lnb_list">';
 header +=                                '<li class="depth01">';
 header +=                                    '<div class="depth01_item"><a href="01_디지털서비스개방소개_정책소개.html" target="_self" class="depth01_item_anchor" title="디지털서비스개방 정책 소개 페이지로 이동">디지털서비스개방 소개</a></div>';
-header +=                                    '<div class="depth02_wrap">';
-header +=                                       '<ul class="depth02">';
-header +=                                          '<li class="depth02_item"><a href="01_디지털서비스개방소개_정책소개.html" target="_self" class="depth02_item_anchor" title="디지털서비스개방 정책 소개 페이지로 이동">정책 소개</a></li>';
-header +=                                          '<li class="depth02_item"><a href="01_디지털서비스개방소개_BI소개.html" target="_self" class="depth02_item_anchor" title="디지털서비스개방 BI 소개 페이지로 이동">BI 소개</a></li>';
-header +=                                       '</ul>';
-header +=                                    '</div>';
+header +=                                    '<ul class="depth02">';
+header +=                                       '<li class="depth02_item"><a href="01_디지털서비스개방소개_정책소개.html" target="_self" class="depth02_item_anchor" title="디지털서비스개방 정책 소개 페이지로 이동">정책 소개</a></li>';
+header +=                                       '<li class="depth02_item"><a href="01_디지털서비스개방소개_BI소개.html" target="_self" class="depth02_item_anchor" title="디지털서비스개방 BI 소개 페이지로 이동">BI 소개</a></li>';
+header +=                                    '</ul>';
 header +=                                '</li>';
 header +=                                '<li class="depth01">';
 header +=                                    '<div class="depth01_item"><a href="04_개방서비스_청년_동원훈련 일정조회.html" target="_self" class="depth01_item_anchor" title="개방서비스 청년 카테고리 페이지로 이동">개방서비스</a></div>';
-header +=                                    '<div class="depth02_wrap">';
-header +=                                       '<ul class="depth02 column_2">';
-header +=                                           '<li class="depth02_item">';
-header +=                                               '<a href="04_개방서비스_청년_동원훈련 일정조회.html" target="_self" class="depth02_item_anchor" title="개방서비스 청년 카테고리 소개 페이지로 이동">청년</a>';
-header +=                                           '</li>';
-header +=                                           '<li class="depth02_item">';
-header +=                                               '<a href="04_개방서비스_교통_벌점감경교육 예약.html" target="_self" class="depth02_item_anchor" title="개방서비스 교통 카테고리 소개 페이지로 이동">교통</a>';
-header +=                                           '</li>';
-header +=                                           '<li class="depth02_item">';
-header +=                                               '<a href="javascript:void(0);" target="_self" class="depth02_item_anchor" title="개방서비스 안전 카테고리 소개 페이지로 이동" onclick="openPop(\'layer\', \'contents_alertPop\'); return false;">안전</a>';
-header +=                                           '</li>';
-header +=                                           '<li class="depth02_item">';
-header +=                                               '<a href="04_개방서비스_여행·휴양_KTX승차권예매.html" target="_self" class="depth02_item_anchor" title="개방서비스 여행·휴양 카테고리 소개 페이지로 이동">여행·휴양</a>';
-header +=                                           '</li>';
-header +=                                           '<li class="depth02_item">';
-header +=                                               '<a href="04_개방서비스_임신·육아_예방접종 내역 조회.html" target="_self" class="depth02_item_anchor" title="개방서비스 임신·육아 카테고리 소개 페이지로 이동">임신·육아</a>';
-header +=                                           '</li>';
-header +=                                           '<li class="depth02_item">';
-header +=                                               '<a href="04_개방서비스_바우처·증명_문화누리카드이용.html" target="_self" class="depth02_item_anchor" title="개방서비스 바우처·증명 카테고리 소개 페이지로 이동">바우처·증명</a>';
-header +=                                           '</li>';
-header +=                                           '<li class="depth02_item">';
-header +=                                               '<a href="javascript:void(0);" target="_self" class="depth02_item_anchor" title="개방서비스 발급 카테고리 소개 페이지로 이동" onclick="openPop(\'layer\', \'contents_alertPop\'); return false;">발급</a>';
-header +=                                           '</li>';
-header +=                                           '<li class="depth02_item">';
-header +=                                               '<a href="04_개방서비스_국민비서.html" target="_self" class="depth02_item_anchor" title="개방서비스 국민비서 소개 페이지로 이동">국민비서</a>';
-header +=                                           '</li>';
-header +=                                           '<li class="depth02_item">';
-header +=                                               '<a href="04_개방서비스_전자증명서.html" target="_self" class="depth02_item_anchor" title="개방서비스 전자증명서 소개 페이지로 이동">전자증명서</a>';
-header +=                                           '</li>';
-header +=                                       '</ul>';
-header +=                                    '</div>';
+header +=                                    '<ul class="depth02 column_2">';
+header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="04_개방서비스_청년_동원훈련 일정조회.html" target="_self" class="depth02_item_anchor" title="개방서비스 청년 카테고리 소개 페이지로 이동">청년</a>';
+header +=                                        '</li>';
+header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="04_개방서비스_임신·육아_예방접종 내역 조회.html" target="_self" class="depth02_item_anchor" title="개방서비스 임신, 육아 카테고리 소개 페이지로 이동">임신육아</a>';
+header +=                                        '</li>';
+header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="04_개방서비스_교통_벌점감경교육 예약.html" target="_self" class="depth02_item_anchor" title="개방서비스 교통 카테고리 소개 페이지로 이동">교통</a>';
+header +=                                        '</li>';
+header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="04_개방서비스_바우처·자격_문화누리카드이용.html" target="_self" class="depth02_item_anchor" title="개방서비스 바우처·자격 카테고리 소개 페이지로 이동">바우처·자격</a>';
+header +=                                        '</li>';
+header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="javascript:void(0);" target="_self" class="depth02_item_anchor" title="개방서비스 안전 카테고리 소개 페이지로 이동" onclick="openPop(\'layer\', \'contents_alertPop\'); return false;">안전</a>';
+header +=                                        '</li>';
+header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="04_개방서비스_디지털지갑_국민비서.html" target="_self" class="depth02_item_anchor" title="개방서비스 디지털지갑 카테고리 소개 페이지로 이동">디지털지갑</a>';
+header +=                                        '</li>';
+header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="04_개방서비스_여행_KTX승차권예매.html" target="_self" class="depth02_item_anchor" title="개방서비스 여행 카테고리 소개 페이지로 이동">여행</a>';
+header +=                                        '</li>';
+/* header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="javascript:;" target="_self" class="depth02_item_anchor" title="개방서비스 미환급금 카테고리 소개 페이지로 이동">미환급금</a>';
+header +=                                        '</li>'; */
+header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="04_개방서비스_발급_여권재발급온라인신청.html" target="_self" class="depth02_item_anchor" title="개방서비스 발급 카테고리 소개 페이지로 이동">발급</a>';
+header +=                                        '</li>';
+/* header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="javascript:void(0);" target="_self" class="depth02_item_anchor" title="개방서비스 생활 카테고리 소개 페이지로 이동">생활</a>';
+header +=                                        '</li>'; */
+header +=                                    '</ul>';
 header +=                                '</li>';
 header +=                                '<li class="depth01">';
-header +=                                    '<div class="depth01_item"><a href="03_적용사례_서비스별 사례_KTX승차권 예매.html" target="_self" class="depth01_item_anchor" title="서비스 사례 소개 페이지로 이동">적용사례</a></div>';
-header +=                                    '<div class="depth02_wrap">';
-header +=                                       '<ul class="depth02">';
-header +=                                           '<li class="depth02_item">';
-header +=                                               '<a href="03_적용사례_서비스별 사례_KTX승차권 예매.html" target="_self" class="depth02_item_anchor" title="서비스 사례 소개 페이지로 이동">서비스 사례</a>';
-header +=                                           '</li>';
-header +=                                           '<li class="depth02_item">';
-header +=                                               '<a href="03_적용사례_기업사례.html" target="_self" class="depth02_item_anchor" title="기업사례 소개 페이지로 이동">기업사례</a>';
-header +=                                           '</li>';
-header +=                                       '</ul>';
-header +=                                    '</div>';
+header +=                                    '<div class="depth01_item"><a href="03_적용사례_서비스별 사례_SRT승차권 예매.html" target="_self" class="depth01_item_anchor" title="서비스 사례 소개 페이지로 이동">적용사례</a></div>';
+header +=                                    '<ul class="depth02">';
+header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="03_적용사례_서비스별 사례_SRT승차권 예매.html" target="_self" class="depth02_item_anchor" title="서비스 사례 소개 페이지로 이동">서비스 사례</a>';
+header +=                                        '</li>';
+header +=                                        '<li class="depth02_item">';
+header +=                                            '<a href="03_적용사례_기업사례.html" target="_self" class="depth02_item_anchor" title="기업사례 소개 페이지로 이동">기업사례</a>';
+header +=                                        '</li>';
+header +=                                    '</ul>';
 header +=                                '</li>';
 header +=                                '<li class="depth01">';
 header +=                                    '<div class="depth01_item"><a href="02_이용안내_서비스개방절차.html" target="_self" class="depth01_item_anchor" title="서비스 개방 절차 안내 페이지로 이동">이용 안내</a></div>';
-header +=                                    '<div class="depth02_wrap">';
-header +=                                       '<ul class="depth02">';
-header +=                                           '<li class="depth02_item"><a href="02_이용안내_서비스개방절차.html" target="_self" class="depth02_item_anchor" title="서비스 개방 절차 안내 페이지로 이동">서비스 개방 절차</a></li>';
-header +=                                           '<li class="depth02_item"><a href="02_이용안내_수시신청제.html" target="_self" class="depth02_item_anchor" title="디지털서비스개방 수시신청제 페이지로 이동">수시신청제</a></li>';
-header +=                                       '</ul>';
-header +=                                    '</div>';
+header +=                                    '<ul class="depth02">';
+header +=                                        '<li class="depth02_item"><a href="02_이용안내_서비스개방절차.html" target="_self" class="depth02_item_anchor" title="서비스 개방 절차 안내 페이지로 이동">서비스 개방 절차</a></li>';
+/* header +=                                        '<li class="depth02_item"><a href="02_이용안내_수시신청제.html" target="_self" class="depth02_item_anchor" title="디지털서비스개방 수시신청제 페이지로 이동">수시신청제</a></li>'; */
+header +=                                    '</ul>';
 header +=                                '</li>';
 header +=                            '</ul>';
 header +=                        '</div>';
@@ -120,17 +112,15 @@ header +=                '</div>';
 header +=                '<!-- mob 햄버거 메뉴 버튼 -->';
 header +=                '<div class="box_btn_util">';
 header +=                    '<div class="box_btn_item">';
-header +=                        '<a href="javascript:;" target="_self" class="btn_util_ham" title="lnb 전체 메뉴 열기"></a>';
+header +=                        '<button type="button" class="btn_util_ham" title="lnb 전체 메뉴 열기"></button>';
 header +=                    '</div>';
 header +=                '</div>';
-/* header +=                '<div class="wrap_gnb_btn none_1150">';
-header +=                    '<a href="javascript:;" target="_blank" class="btn_action in_gnb filled_brand link_related_white boundfor_dev" title="새 창 열림- 기관지원센터 포털">기관지원센터 포털</a>';
-header +=                '</div>'; */
 header +=            '</div>';
-header +=        '<div class="lnb_drop_menu_back"></div>';
 header +=        '</div>';
-header +=    '</div>';
-header +='</div>';
+header +=  '</div>';
+header += '</div>';
+
+
 
 let footer = "";
 footer +=  		'<div class="inner">'
@@ -166,6 +156,8 @@ footer +=  						'<img src="../img/logo/logo_nia.png" alt="한국지능정보사
 footer +=  				'</div>'
 footer +=  		'</div>'
 
+
+
 let skip = "";
 skip += '<nav id="skip" class="skip">'
 skip +=  '<a href="#content" class="skip_anchor">본문 바로가기</a>'
@@ -176,132 +168,123 @@ skip +=  '<a href="#content" class="skip_anchor">본문 바로가기</a>'
 skip += '</nav>'
 
 
+
+
 $(document).ready(function () {
-  $("header.header").html(header);
-  $("footer.footer").html(footer);
-  
-  $(".footer .wrap_select_family").on("click", function(){
-    $(".footer .wrap_select_family ul").slideToggle(200);
-    $(".footer .wrap_select_family").toggleClass('toggle');
-  });
+    $("header.header").html(header);
+    $("footer.footer").html(footer);
     
-  // 접근성 관련 
-   // 접근성 - 스킵 메뉴
-  $(".wrapper").prepend(skip);
-  $(".skip .skip_anchor").on("focus", function () {
-    $(this).parent(".skip").addClass("on");
-    $(this).parent(".skip").stop().css({top: 0});
-  });
-  $(".skip .skip_anchor").on("click", function () {
-    $(this).parent(".skip").removeClass("on");
-    $(this).parent(".skip").stop().animate({top: "-40px"});
-  });
-  $(".skip .skip_anchor").on("focusout", function () {
-    $(this).parent(".skip").removeClass("on");
-    $(this).parent(".skip").stop().animate({top: "-40px"});
-  });
+    $(".footer .wrap_select_family").on("click", function(){
+        $(".footer .wrap_select_family ul").slideToggle(200);
+        $(".footer .wrap_select_family").toggleClass('toggle');
+    });
+    
+    // 접근성 관련 
+    // 접근성 - 스킵 메뉴
+    $(".wrapper").prepend(skip);
+    $(".skip .skip_anchor").on("focus", function () {
+        $(this).parent(".skip").addClass("on");
+        $(this).parent(".skip").stop().css({top: 0});
+    });
+    $(".skip .skip_anchor").on("click", function () {
+        $(this).parent(".skip").removeClass("on");
+        $(this).parent(".skip").stop().animate({top: "-40px"});
+    });
+    $(".skip .skip_anchor").on("focusout", function () {
+        $(this).parent(".skip").removeClass("on");
+        $(this).parent(".skip").stop().animate({top: "-40px"});
+    });
 
-  // focus events
-
-
-  // 디바이스 사이즈 체크
-  let w1025 = window.matchMedia("(max-width: 1025px)");
-  if (w1025.matches) {
-    $(".header").removeClass("gnb_wide");
-    $(".header").addClass("gnb_mob");
-  } else {
-    $(".header").removeClass("gnb_mob");
-    $(".header").addClass("gnb_wide");
-  }
+    // focus events
+      // 디바이스 사이즈 체크
+    let w1100 = window.matchMedia("(max-width: 1100px)");
+    if (w1100.matches) {
+        $(".header").removeClass("gnb_pc");
+        $(".header").addClass("gnb_mo");
+    } else {
+        $(".header").removeClass("gnb_mo");
+        $(".header").addClass("gnb_pc");
+    }
 
 });
 
 // 창 크기 변경 시 헤더 스타일 변경 1025px 까지 gnb_wide
 $(window).on("resize", function () {
-  $("html").removeClass("open_lnb");
-  $(".header").removeClass("on");
-  
-  // submenu 모두 닫기  
-  $(".header .btn_util_search").removeClass("on");
-  $(".header .menu_search").removeClass("on");
-  $(".header.gnb_mob").removeClass("open_search");
-  $(".header .depth01").removeClass("on");  
+    $("html").removeClass("open_lnb");
+    $(".header").removeClass("on");
+    
+    // submenu 모두 닫기  
+    $(".header .depth01").removeClass("on");  
 
-  let w1025 = window.matchMedia("(max-width: 1025px)");
-  if (w1025.matches) {
-    $(".header").removeClass("gnb_wide");
-    $(".header").addClass("gnb_mob");
-  } else {
-    $(".header").removeClass("gnb_mob");
-    $(".header").addClass("gnb_wide");
-  }
-
+    let w1100 = window.matchMedia("(max-width: 1100px)");
+    if (w1100.matches) {
+        $(".header").removeClass("gnb_pc");
+        $(".header").addClass("gnb_mo");
+    } else {
+        $(".header").removeClass("gnb_mo");
+        $(".header").addClass("gnb_pc");
+    }
 });
+
 
 
 // area_top 화면크기 조절
 let nowZoom = 100;
 let zoomControl = {
-  zoomOut: function () {
-    nowZoom = nowZoom - 5;
-    if (nowZoom <= 90) nowZoom = 90;
-    zoomControl.zooms();
-    // $(".box_btn_zoom .btn_zoom").text(nowZoom + '%")
-  },
-  zoomIn: function () {
-    nowZoom = nowZoom + 5;
-    if (nowZoom >= 120) nowZoom = 120;
-    zoomControl.zooms();
-    // $(".box_btn_zoom .btn_zoom").text(nowZoom + '%")
-  },
-  zoomReset: function () {
-    nowZoom = 100;
-    zoomControl.zooms();
-    // $(".box_btn_zoom .btn_zoom").text(nowZoom + '%")
-  },
-  zooms: function () {
-    let aUserAgent = navigator.userAgent.toLowerCase();
+    zoomOut: function () {
+        nowZoom = nowZoom - 5;
+        if (nowZoom <= 90) nowZoom = 90;
+        zoomControl.zooms();
+        // $(".box_btn_zoom .btn_zoom").text(nowZoom + '%")
+    },
+    zoomIn: function () {
+        nowZoom = nowZoom + 5;
+        if (nowZoom >= 120) nowZoom = 120;
+        zoomControl.zooms();
+        // $(".box_btn_zoom .btn_zoom").text(nowZoom + '%")
+    },
+    zoomReset: function () {
+        nowZoom = 100;
+        zoomControl.zooms();
+        // $(".box_btn_zoom .btn_zoom").text(nowZoom + '%")
+    },
+    zooms: function () {
+        let aUserAgent = navigator.userAgent.toLowerCase();
 
-    if (aUserAgent.indexOf("firefox") >= 0) {
-      $("body").css("-moz-transform", "scale(" + nowZoom + "%)");
-      $("body").css("-moz-transform-origin", "0 0");
-    } else {
-      document.body.style.zoom = nowZoom + "%";
-    }
-    if (nowZoom == 90) {
-      // 최소 배율 설정
-      alert("더 이상 축소할 수 없습니다.");
-    }
-    if (nowZoom == 120) {
-      // 최대 배율 설정
-      alert("더 이상 확대할 수 없습니다.");
-    }
-  },
+        if (aUserAgent.indexOf("firefox") >= 0) {
+            $("body").css("-moz-transform", "scale(" + nowZoom + "%)");
+            $("body").css("-moz-transform-origin", "0 0");
+        } else {
+            document.body.style.zoom = nowZoom + "%";
+        }
+        if (nowZoom == 90) {
+            // 최소 배율 설정
+            alert("더 이상 축소할 수 없습니다.");
+        }
+        if (nowZoom == 120) {
+            // 최대 배율 설정
+            alert("더 이상 확대할 수 없습니다.");
+        }
+    },
 };
-
 //////////////////////////////////////////////////////////////
 // //header gnb_wide
 
-// GNB 마우스 호버시 네비게이션 드롭다운 및 GNB 배경색 바뀜
-$(document).ready(function () {
-    var $depth01 = $(".gnb_wide .lnb_list .depth01");
-    var $html = $("html");
-    var $depth02_wrap = $(".gnb_wide .lnb_list .depth02_wrap, .lnb_drop_menu_back");
-    var $elementsToToggleClass = $(".area_top, .area_top_inner p, .box_btns li, .box_btns .btn_zoom.in, .box_btns .btn_zoom.out, .box_btns .btn_zoom.reset, .area_menu, .area_menu, .lnb_list, .depth01, .depth01_item, .depth01_item_anchor, .area_menu .area_menu_inner .logo .logo_anchor");
 
-    $depth01.on("mouseenter focusin", function () {
-        $html.addClass("open_lnb");
-        $depth02_wrap.stop().slideDown(200);
-        $elementsToToggleClass.addClass("gnb_mouse_over");
+$(document).ready(function() {
+    // PC 버전 GNB 마우스 호버 이벤트
+    $(document).on("mouseenter focusin", ".header.gnb_pc .lnb_list .depth01", function () {
+        $("html").addClass("open_lnb");
+        $(".depth02").stop().show();
+        $(".area_top, .area_top_inner p, .box_btns li, .box_btns .btn_zoom.in, .box_btns .btn_zoom.out, .box_btns .btn_zoom.reset, .area_menu, .area_menu, .lnb_list, .depth01, .depth01_item, .depth01_item_anchor, .area_menu .area_menu_inner .logo .logo_anchor").addClass("gnb_mouse_over");
     });
 
-    $depth01.on("mouseleave focusout", function () {
-        $html.removeClass("open_lnb");
-        $depth02_wrap.stop().slideUp(200);
-        $elementsToToggleClass.removeClass("gnb_mouse_over");
+    $(document).on("mouseleave focusout", ".header.gnb_pc .lnb_list .depth01", function () {
+        $("html").removeClass("open_lnb");
+        $(".depth02").stop().hide(); 
+        $(".area_top, .area_top_inner p, .box_btns li, .box_btns .btn_zoom.in, .box_btns .btn_zoom.out, .box_btns .btn_zoom.reset, .area_menu, .area_menu, .lnb_list, .depth01, .depth01_item, .depth01_item_anchor, .area_menu .area_menu_inner .logo .logo_anchor").removeClass("gnb_mouse_over");
     });
 });
-
 
 
 // 스크롤 시 메인 비주얼 영역을 벗어나면 헤더 배경색 바뀜
@@ -328,14 +311,12 @@ $(document).ready(function() {
 
 
   // // nav_dim 클릭 시 메뉴 닫기
-    $(document).on("click", ".header.gnb_wide .nav_dim", function(e) {
+    $(document).on("click", ".header .nav_dim", function(e) {
         e.stopPropagation();
         $("html").removeClass("open_lnb");
-        $(".gnb_wide .lnb_list").removeClass("on");
-        $(".gnb_wide .menu_text .depth02_wrap").stop().slideUp(200);
-        $(".header.gnb_mob .btn_util_ham").removeClass("on");
-        $(".gnb_wide .btn_util_search").removeClass("on");
-        $(".header .btn_util_search").removeClass("on");
+        $(".gnb_pc .lnb_list").removeClass("on");
+        $(".gnb_pc .menu_text .depth02").stop().slideUp(200);
+        $(".header .gnb_mo .btn_util_ham").removeClass("on");
         $(".header .menu_search").removeClass("on");
     });
 
@@ -346,77 +327,133 @@ $(document).ready(function() {
   // 터치디바이스 - wrap_menus 외 영역 터치 시 메뉴 닫기
 
     $("html").on("touchend", function(e) {
-        if ( !$(e.target).is(".header.gnb_mob .wrap_menus") && $(e.target).is(".nav_dim") ) {
+        if ( !$(e.target).is(".header .gnb_mo .wrap_menus") && $(e.target).is(".nav_dim") ) {
 			    e.stopPropagation();
             $("html").removeClass("open_lnb");
-            $(".header.gnb_mob").removeClass("on");
-            $(".header.gnb_mob .btn_util_ham").removeClass("on");
-            $(".header .btn_util_search").removeClass("on");
+            $(".header .gnb_mo").removeClass("on");
+            $(".header .gnb_mo .btn_util_ham").removeClass("on");
             $(".header .menu_search").removeClass("on");
-            $(".header.gnb_mob").removeClass("open_search");
+            $(".header .gnb_mo").removeClass("open_search");
         }
     });
 
 
-//  검색 열기 mob
-$(document).on("click", ".gnb_mob .btn_util_search", function () {
-  $(this).toggleClass("on");
-
-  if ($(this).hasClass("on") === true) {
-    $("html").addClass("open_lnb");
-    $(".header .menu_search").addClass("on");
-    $(".gnb_wide .menu_text .lnb_list").removeClass("on");
-  } else {
-    $("html").removeClass("open_lnb");
-    $(".header .menu_search").removeClass("on");
-
-  }
-});
-
-// gnb 아코디언
-$(document).on("click", ".gnb_mob .depth01", function () {
-  $(this).toggleClass("on");
-
-  if ($(this).hasClass("on") === true) {
-    $(this).children(".depth02_wrap").stop().slideDown(200);
-  }
-   else {
-    $(this).children(".depth02_wrap").stop().slideUp(200);
-  }
-});
-
 // 햄버거 메뉴 열기 버튼 클릭 시 
+$(document).on("click", ".gnb_mo .btn_util_ham", function () {
+    $(this).toggleClass("on");
 
-$(document).on("click", ".gnb_mob .btn_util_ham", function () {
-  $(this).toggleClass("on");
-
-  if ($(this).hasClass("on") === true) {
-    $("html").addClass("open_lnb");
-    $(".header.gnb_mob").addClass("on");
-  } else {
-    $("html").removeClass("open_lnb");
-    $(".header.gnb_mob").removeClass("on");
-  }
-
+    if ($(this).hasClass("on") === true) {
+        $("html").addClass("open_lnb");
+        $(".header.gnb_mo").addClass("on");
+    } else {
+        $("html").removeClass("open_lnb");
+        $(".header.gnb_mo").removeClass("on");
+    }
 });
+
 
 // 햄버거 메뉴 닫기 버튼 클릭 시 
-$(document).on("click", ".header.gnb_mob .btn_close_menu", function () {
-  
-  $(".header.gnb_mob").removeClass("on");
-  $(".header.gnb_mob .btn_util_ham").removeClass("on");
+$(document).on("click", ".header.gnb_mo .btn_close_menu", function () {
 
-  if ($(".menu_search").hasClass("on") === true) {
-// 
-  } else {
-    $("html").removeClass("open_lnb");
-  }
+    $(".header.gnb_mo").removeClass("on");
+    $(".header.gnb_mo .btn_util_ham").removeClass("on");  
+    $(".gnb_mo .depth02").stop().slideUp(200);  
+    $(".depth01").removeClass("on");
 
+    if ($(".menu_search").hasClass("on") === true) {
+
+    } else {
+        $("html").removeClass("open_lnb");
+    }
 });
+
 
 // 모바일에서 뎁스 1 클릭 시 링크 이동 금지
 $(document).ready(function() {
-  $('.header.gnb_mob .depth01_item_anchor').on('click', function(event) {
-    event.preventDefault(); 
-  });
-});
+    // .header의 클래스에 따라 이벤트 리스너를 바인딩합니다.
+    if ($('.header').hasClass('gnb_mo')) {
+        // gnb_mo 클래스가 있는 경우에만 이벤트 리스너를 바인딩합니다.
+        $('.header.gnb_mo .depth01_item_anchor').on('click', function(event) {
+            event.preventDefault(); // 링크 이동 기본 동작 막기
+            // 이벤트 핸들러 내용 추가
+        });
+    }
+}); 
+
+
+
+
+$(document).ready(function() {
+    var isGnbOpen = $(".header.gnb_mo").hasClass("on"); // 페이지 로드 시 GNB가 열려있는지 여부를 확인하여 isGnbOpen 변수 설정
+    var isDepth02Open = false; // .depth02가 열려있는지 여부를 추적하는 변수
+
+    $(".header.gnb_mo .btn_util_ham").click(function () {
+        // 버튼 클릭 시 GNB가 열렸다면 isGnbOpen 변수 값을 true로 설정
+        isGnbOpen = true;
+
+        if ($(this).hasClass("on")) {
+            // GNB 열기 로직
+            $("html").addClass("open_lnb");
+            $(".header.gnb_mo").addClass("on");
+            // .depth02가 열려있는 상태 초기화
+            isDepth02Open = false;
+        } else {
+            // GNB 닫기 로직
+            $("html").removeClass("open_lnb");
+            $(".header.gnb_mo").removeClass("on");
+        }
+    });
+
+    // GNB 뎁스 1 클릭 시 뎁스 2 열림
+    $(".header.gnb_mo .depth01").click(function (event) {
+        $(this).toggleClass("on");
+
+        if ($(this).hasClass("on")) {
+            // GNB가 열린 경우
+            isGnbOpen = true;
+            // 다른 요소들의 ".depth02_wrap"을 숨김
+            $(".header.gnb_mo .depth01").not(this).removeClass("on");
+            $(".header.gnb_mo .depth02").stop().slideUp(200); // 다른 서브메뉴 닫기
+            $(this).children(".header.gnb_mo .depth02").stop().slideDown(200);
+            // .depth02가 열려있다는 상태 업데이트
+            isDepth02Open = true;
+        } else {
+            // GNB가 닫힌 경우
+            isGnbOpen = false;
+            // 모든 요소들의 "on" 클래스를 제거하고 서브메뉴를 닫음
+            $(".header.gnb_mo .depth01").removeClass("on");
+            $(".header.gnb_mo .depth02").stop().slideUp(200);
+            // .depth02가 닫혔다는 상태 업데이트
+            isDepth02Open = false;
+        }
+    });
+
+
+    // 윈도우 리사이즈 이벤트 핸들러
+    $(window).resize(function() {
+        var windowWidth = $(window).width();    
+
+        if (windowWidth < 1100 && isGnbOpen && isDepth02Open) {
+            // 브라우저 창의 너비가 1100px 미만이고 GNB가 열려있고, 이전에 열었던 .depth02가 열려있는 경우
+            // .depth02를 닫음
+            $(".header.gnb_mo .depth02").stop().slideUp(200);
+            // .depth02가 닫혔다는 상태 업데이트
+            isDepth02Open = false;
+
+            // GNB 메뉴 초기화
+            $(".wrap_gnb.gnb_mo").hide();
+            $("html").removeClass("open_lnb");
+            $(".header.gnb_mo").removeClass("on");
+            $(".header.gnb_mo .depth01").removeClass("on");
+        } else if (windowWidth < 1100 && isGnbOpen && !isDepth02Open) {
+            // 브라우저 창의 너비가 1100px 미만이고 GNB가 열려있지만 .depth02가 열려있지 않은 경우
+            // GNB 메뉴만 초기화
+            $(".wrap_gnb.gnb_mo").hide();
+            $("html").removeClass("open_lnb");
+            $(".header.gnb_mo").removeClass("on");
+        }
+    }); 
+    
+}); 
+
+

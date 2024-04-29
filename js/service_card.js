@@ -504,6 +504,45 @@ $(document).ready(function () {
     $(".case_card.naverCorp_korail").html(naverCorp_korail);
 });
 
+// 문화누리카드 이용
+$(document).ready(function () {
+
+    var naverCorp_mnuriApi = "";
+    naverCorp_mnuriApi +=    '<div class="case_item_info slide_case_item">'; 
+    naverCorp_mnuriApi +=        '<h4 class="title_article title_upperline">문화누리카드 이용</h4>'; 
+    naverCorp_mnuriApi +=        '<div class="case_item_inner">'; 
+    naverCorp_mnuriApi +=            '<div class="wrap_img">'; 
+    naverCorp_mnuriApi +=                '<img src="../img/screenshot/mnuriApi_naverPay.PNG" alt="네이버 페이 앱의 문화누리카드 결제 화면의 스크린샷입니다." class="viewer"/>'; 
+    naverCorp_mnuriApi +=            '</div>'; 
+    naverCorp_mnuriApi +=            '<div class="name">'; 
+    naverCorp_mnuriApi +=                '<div class="wrap_logo">'; 
+    naverCorp_mnuriApi +=                    '<img src="../img/app_logo/app_naverpay.png" alt="네이버 페이 앱 로고" />'; 
+    naverCorp_mnuriApi +=                '</div>';    
+    naverCorp_mnuriApi +=                '<h4>네이버 페이</h4>';    
+    naverCorp_mnuriApi +=                '<p>현장 결제 / 온라인 결제</p>';    
+    naverCorp_mnuriApi +=                '<button type="button" aria-labelledby="modal_mnuriApi_naverPay" class="btn_link filled_white_font_black link_in_black" onclick="openPop(\'layer\',\'modal_mnuriApi_naverPay\'); return false;">자세히 보기</button>';    
+    naverCorp_mnuriApi +=                '<h5>네이버 페이에서 문화누리카드 이용을</h5>';    
+    naverCorp_mnuriApi +=            '</div>'; 
+    naverCorp_mnuriApi +=        '</div>'; 
+    naverCorp_mnuriApi +=        '<div class="case_item_bottom">';
+    naverCorp_mnuriApi +=            '<h5>서비스 이용해보기</h5>';
+    naverCorp_mnuriApi +=            '<ul class="link_service_list">';
+    naverCorp_mnuriApi +=                '<li class="link_service_item">';
+    naverCorp_mnuriApi +=                    '<a href="https://new-m.pay.naver.com/" target="_blank" class="link_service_anchor" title="새 창 열림- 네이버 페이 웹사이트로 외부 이동">WEB</a>';    
+    naverCorp_mnuriApi +=                '</li>'; 
+    naverCorp_mnuriApi +=                '<li class="link_service_item">';
+    naverCorp_mnuriApi +=                    '<a href="https://apps.apple.com/kr/app/%EB%84%A4%EC%9D%B4%EB%B2%84%ED%8E%98%EC%9D%B4/id1554807824" target="_blank" class="link_service_anchor" title="새 창 열림- 앱스토어 네이버 페이 페이지로 외부 이동">iOS</a>';    
+    naverCorp_mnuriApi +=                '</li>'; 
+    naverCorp_mnuriApi +=                '<li class="link_service_item">';
+    naverCorp_mnuriApi +=                    '<a href="https://play.google.com/store/apps/details?id=com.naverfin.payapp&hl=ko&gl=US" target="_blank" class="link_service_anchor" title="새 창 열림- 구글 플레이 스토어 네이버 페이 페이지로 외부 이동">Android</a>';    
+    naverCorp_mnuriApi +=                '</li>'; 
+    naverCorp_mnuriApi +=            '</ul>'; 
+    naverCorp_mnuriApi +=        '</div>'; 
+    naverCorp_mnuriApi +=    '</div>'; 
+
+    $(".case_card.naverCorp_mnuriApi").html(naverCorp_mnuriApi);
+});
+
 
 
 
