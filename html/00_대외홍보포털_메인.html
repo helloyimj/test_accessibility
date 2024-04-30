@@ -510,7 +510,7 @@
 					// simulateTouch: false,
 					autoplay: {
 							// delays: [162300, 5000], // 1번 동영상 길이, 2번 동영상 길이, 
-							// delay: 500,
+							delay: 500,
 							waitForTransition: false,
 							disableOnInteraction: false, // 
 					},
@@ -567,22 +567,44 @@
 
 			/* SWIPER API - Event will be fired after animation to other slide (next or previous) */
 			visualSwiper.on('slideChange', function() {
-					// console.log('slide changed');
-					/* stop all videos (currentTime buggy without this loop idea) */
-					sliderVideos.each(function(index) {
-                        this.currentTime = 0;
-					});
+                // console.log('slide changed');
+                /* stop all videos (currentTime buggy without this loop idea) */
+                sliderVideos.each(function(index) {
+                    this.currentTime = 0;
+                });
 
-					/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
-					var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
-					var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
-					prevVideo.trigger('pause');
-					currentVideo.trigger('play');
+                /* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
+                var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
+                var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
 
-					/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
-					// var prevSlide = $('[data-swiper-slide-index=' + this.previousIndex + ']');
-					var currentSlide = $('[data-swiper-slide-index=' + this.realIndex + ']');
-					currentSlide.addClass('zooming');
+
+
+                // prevVideo.trigger('pause');
+
+                // prevVideo.each(function() {
+                //     // Check if the device is iOS
+                //     if (/iPad|iPhone|iPod/.test(navigator.platform)) {
+                //         // Set the current time to the current time to simulate a pause effect on iOS
+                //         this.currentTime = 0;
+                //     } else {
+                //         // Pause the video on other platforms
+                //         this.pause();
+                //     }
+                // });
+                
+// Stop the previous video on all platforms
+prevVideo.each(function() {
+    // Pause the video
+    this.pause();
+});
+
+
+                currentVideo.trigger('play');
+
+                /* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
+                // var prevSlide = $('[data-swiper-slide-index=' + this.previousIndex + ']');
+                var currentSlide = $('[data-swiper-slide-index=' + this.realIndex + ']');
+                currentSlide.addClass('zooming');
 
 			});
 
