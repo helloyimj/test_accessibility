@@ -315,8 +315,9 @@ $(document).ready(function() {
         e.stopPropagation();
         $("html").removeClass("open_lnb");
         $(".gnb_pc .lnb_list").removeClass("on");
+        $(".header.gnb_mo").removeClass("on");
         $(".gnb_pc .menu_text .depth02").stop().slideUp(200);
-        $(".header .gnb_mo .btn_util_ham").removeClass("on");
+        $(".header.gnb_mo .btn_util_ham").removeClass("on");
         $(".header .menu_search").removeClass("on");
     });
 
@@ -327,13 +328,13 @@ $(document).ready(function() {
   // 터치디바이스 - wrap_menus 외 영역 터치 시 메뉴 닫기
 
     $("html").on("touchend", function(e) {
-        if ( !$(e.target).is(".header .gnb_mo .wrap_menus") && $(e.target).is(".nav_dim") ) {
-			    e.stopPropagation();
+        if ( !$(e.target).is(".header.gnb_mo .wrap_menus") && $(e.target).is(".nav_dim") ) {
+            e.stopPropagation();
             $("html").removeClass("open_lnb");
-            $(".header .gnb_mo .btn_util_ham").removeClass("on");
+            $(".header.gnb_mo .btn_util_ham").removeClass("on");
             $(".header .menu_search").removeClass("on");
-            $(".header .gnb_mo").removeClass("on");
-            $(".header .gnb_mo").removeClass("open_search");
+            $(".header.gnb_mo").removeClass("on");
+            $(".header.gnb_mo").removeClass("open_search");
         }
     });
 

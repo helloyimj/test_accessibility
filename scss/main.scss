@@ -659,6 +659,17 @@ section.main_visual {
     height: 100vh;
     width: 100%;
     min-height: 500px;
+
+    &::after {
+        content: '';
+        background-color: $color_111;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        z-index: 5;                    
+    }
+    
     .video {
         position: absolute;
         top: 50%;
