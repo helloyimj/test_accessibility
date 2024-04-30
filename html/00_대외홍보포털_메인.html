@@ -583,18 +583,18 @@
                 var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
                 var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
 
-                // prevVideo.trigger('pause');
-                // prevVideo.each(function() {
-                //     // Check if the device is iOS
-                //     if (/iPad|iPhone|iPod/.test(navigator.platform)) {
-                //         // Set the current time to the current time to simulate a pause effect on iOS
-                //         this.currentTime = 0;
-                //     } else {
-                //         // Pause the video on other platforms
-                //         this.pause();
-                //     }
-                // });
-                
+                prevVideo.trigger('pause');
+                prevVideo.each(function() {
+                    // Check if the device is iOS
+                    if (/iPad|iPhone|iPod/.test(navigator.platform)) {
+                        // Set the current time to the current time to simulate a pause effect on iOS
+                        this.currentTime = 0;
+                    } else {
+                        // Pause the video on other platforms
+                        this.pause();
+                    }
+                });
+
                 // // Stop the previous video on all platforms
                 // prevVideo.each(function() {
                 //     // Pause the video
