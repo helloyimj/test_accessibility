@@ -525,21 +525,21 @@
 							nextEl: ".main_visual .controller_btn_next",
 					},
 
-					on: {
-							slideChange: function(swiper) {
-									//console.log('swiper initialized');
-									// var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
-									// var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
-									// prevVideo.trigger('pause');
-									// currentVideo.trigger('play');
-                                      // Pause all videos and reset their time
+					// on: {
+					// 		slideChange: function(swiper) {
+					// 				//console.log('swiper initialized');
+					// 				// var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
+					// 				// var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
+					// 				// prevVideo.trigger('pause');
+					// 				// currentVideo.trigger('play');
+                    //                   // Pause all videos and reset their time
                                     
-									// 현재 슬라이드에 애니메이션 클래스 추가
-									$('.swiper-slide').removeClass('zooming');
-									// // swiper.removeClass('zooming');
-									// // currentVideo.addClass('zooming');
-							},
-					},
+					// 				// 현재 슬라이드에 애니메이션 클래스 추가
+					// 				$('.swiper-slide').removeClass('zooming');
+					// 				// // swiper.removeClass('zooming');
+					// 				// // currentVideo.addClass('zooming');
+					// 		},
+					// },
 
 					// 웹접근성  추가
 					// Enable keyboard navigation
@@ -578,12 +578,15 @@
                     //                 });
 
                     prevVideo.trigger('pause');
-                    prevVideo.currentTime = 0;
+                    currentVideo.currentTime = 0;
 					currentVideo.trigger('play');
-
+                    
 					/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
+					var prevSlide = $('[data-swiper-slide-index=' + this.previousIndex + ']');
 					var currentSlide = $('[data-swiper-slide-index=' + this.realIndex + ']');
+                    prevSlide.removeClass('zooming');
 					currentSlide.addClass('zooming');
+
 
 			});
 
