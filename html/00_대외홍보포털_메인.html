@@ -534,11 +534,6 @@
 									// currentVideo.trigger('play');
                                       // Pause all videos and reset their time
                                     
-                                    $('video').each(function() {
-                                        // this.pause();
-                                        this.currentTime = 0;
-                                    });
-
 									// 현재 슬라이드에 애니메이션 클래스 추가
 									$('.swiper-slide').removeClass('zooming');
 									// // swiper.removeClass('zooming');
@@ -576,7 +571,14 @@
 					/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
 					var prevVideo = $('[data-swiper-slide-index=' + this.previousIndex + ']').find('video');
 					var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
-					prevVideo.trigger('pause');
+					
+                    // $('video').each(function() {
+                    //                     // this.pause();
+                    //                     this.currentTime = 0;
+                    //                 });
+
+                    prevVideo.trigger('pause');
+                    prevVideo.currentTime = 0;
 					currentVideo.trigger('play');
 
 					/* SWIPER GET CURRENT AND PREV SLIDE (AND VIDEO INSIDE) */
