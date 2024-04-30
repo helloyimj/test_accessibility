@@ -74,7 +74,7 @@
 																			<div class="controller_btn_item controller_box_state">
 																					<span class="swiper-pagination-current">01</span>
 																					<div class="swiper-pagination"></div>
-																					<span class="swiper-pagination-total">03</span>
+																					<span class="swiper-pagination-total">02</span>
 																			</div>
 																			<div class="controller_btn_item controller_box_btn">
 																					<button type="button" class="controller_btn_prev" title="슬라이드 이전 보기"></button>
@@ -112,12 +112,12 @@
 																			</div>
 																	</div>
 															</div>
-                                                            <div class="swiper-slide" data-swiper-autoplay="18500">
+                                                            <!-- <div class="swiper-slide" data-swiper-autoplay="18500">
                                                                 <div class="slide_inner">
                                                                         <video class="video none_768" data-autoplay src="../img/video/main_video_01.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_03.png"></video>
                                                                         <video class="video block_768" data-autoplay src="../img/video/main_mobile_01.mp4" autoplay loop muted playsinline poster="../img/main/bg_main_visual_m_03.png"></video>
                                                                 </div>
-                                                        </div>
+                                                        </div> -->
 													</div>
 											</div>
 											<!-- 페이지 아래로 이동 버튼 -->
@@ -515,7 +515,7 @@
 					speed: 500,
 					// simulateTouch: false,
 					autoplay: {
-							delays: [162300, 5000, 185000], // 1번 동영상 길이, 2번 동영상 길이, 
+							// delays: [162300, 5000, 185000], // 1번 동영상 길이, 2번 동영상 길이, 
 							delay: 500,
 							waitForTransition: false,
 							disableOnInteraction: false, // 
@@ -584,16 +584,17 @@
                 var currentVideo = $('[data-swiper-slide-index=' + this.realIndex + ']').find('video');
 
                 // prevVideo.trigger('pause');
-                prevVideo.each(function() {
-                    // Check if the device is iOS
-                    if (/iPad|iPhone|iPod/.test(navigator.platform)) {
-                        // Set the current time to the current time to simulate a pause effect on iOS
-                        this.currentTime = 0;
-                    } else {
-                        // Pause the video on other platforms
-                        this.pause();
-                    }
-                });
+                // prevVideo.each(function() {
+                //     // Check if the device is iOS
+                //     if (/iPad|iPhone|iPod/.test(navigator.platform)) {
+                //         // Set the current time to the current time to simulate a pause effect on iOS
+                //         this.currentTime = 0;
+                //     } else {
+                //         // Pause the video on other platforms
+                //         this.pause();
+                //     }
+                // });
+                
                 // // Stop the previous video on all platforms
                 // prevVideo.each(function() {
                 //     // Pause the video
