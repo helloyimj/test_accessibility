@@ -67,7 +67,7 @@
   margin: 0 auto;
   overflow: hidden;
 }
-.gnb_pc .area_top .gov_top_info p {
+.gnb_pc .area_top s .gov_top_info p {
   height: 40px;
   line-height: 40px;
   margin: 0 auto;
@@ -77,10 +77,10 @@
   color: #111;
   background: url("../img/logo/logo_eg.png") no-repeat center left;
 }
-.gnb_pc .area_top .gov_top_info p.gnb_scroll_change {
+.gnb_pc .area_top s .gov_top_info p.gnb_scroll_change {
   color: #fff;
 }
-.gnb_pc .area_top .gov_top_info p.gnb_mouse_over {
+.gnb_pc .area_top s .gov_top_info p.gnb_mouse_over {
   color: #111;
 }
 .gnb_pc .area_top .box_btns {

@@ -154,8 +154,6 @@ section.main_visual {
 .main_visual {
   width: 100%;
   height: 100vh;
-  min-height: unset;
-  max-height: 220rem;
   color: #fff;
   background-color: #111;
 }
