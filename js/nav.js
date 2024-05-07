@@ -115,9 +115,10 @@ header +=                    '<div class="box_btn_item">';
 header +=                        '<button type="button" class="btn_util_ham" title="lnb 전체 메뉴 열기"></button>';
 header +=                    '</div>';
 header +=                '</div>';
-header +=            '</div>';
-header +=        '</div>';
-header +=  '</div>';
+header +=             '</div>';
+header +=          '<div class="lnb_drop_menu_back"></div>';
+header +=       '</div>';
+header +=    '</div>';
 header += '</div>';
 
 
@@ -275,16 +276,20 @@ $(document).ready(function() {
     // PC 버전 GNB 마우스 호버 이벤트
     $(document).on("mouseenter focusin", ".header.gnb_pc .lnb_list .depth01", function () {
         $("html").addClass("open_lnb");
-        $(".depth02").stop().show();
+        $(".gnb_pc .lnb_list .depth02").stop().slideDown(200);
+        $(".lnb_drop_menu_back").stop().slideDown(200);
         $(".area_top, .area_top_inner p, .box_btns li, .box_btns .btn_zoom.in, .box_btns .btn_zoom.out, .box_btns .btn_zoom.reset, .area_menu, .area_menu, .lnb_list, .depth01, .depth01_item, .depth01_item_anchor, .area_menu .area_menu_inner .logo .logo_anchor").addClass("gnb_mouse_over");
     });
 
     $(document).on("mouseleave focusout", ".header.gnb_pc .lnb_list .depth01", function () {
         $("html").removeClass("open_lnb");
-        $(".depth02").stop().hide(); 
+        $(".gnb_pc .lnb_list .depth02").stop().slideUp(200);
+        $(".lnb_drop_menu_back").stop().slideUp(200);
         $(".area_top, .area_top_inner p, .box_btns li, .box_btns .btn_zoom.in, .box_btns .btn_zoom.out, .box_btns .btn_zoom.reset, .area_menu, .area_menu, .lnb_list, .depth01, .depth01_item, .depth01_item_anchor, .area_menu .area_menu_inner .logo .logo_anchor").removeClass("gnb_mouse_over");
     });
-});
+});  
+
+
 
 
 // 스크롤 시 메인 비주얼 영역을 벗어나면 헤더 배경색 바뀜

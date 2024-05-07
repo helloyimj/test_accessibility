@@ -1,15 +1,9 @@
 @charset "UTF-8";
 .flex_center {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -25,12 +19,9 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-transition-property: visibility, opacity;
   transition-property: visibility, opacity;
-  -webkit-transition-duration: 0.1s;
-          transition-duration: 0.1s;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
 }
 .header .wrap_gnb {
   width: 100%;
@@ -66,15 +57,9 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .gnb_pc .area_top .area_top_inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
   padding: 0 4rem;
   padding-top: 1rem;
@@ -99,12 +84,8 @@
   color: #111;
 }
 .gnb_pc .area_top .box_btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #fff;
   font-size: 1.4rem;
 }
@@ -136,12 +117,8 @@
   padding-right: 0.8rem;
 }
 .gnb_pc .area_top .box_btn_zoom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .gnb_pc .area_top .box_btn_zoom .btn_zoom {
   width: 1.9rem;
@@ -202,23 +179,15 @@
 }
 .gnb_pc .area_menu .area_menu_inner {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 0 4rem;
   margin: 0 auto;
 }
 .gnb_pc .area_menu .area_menu_inner .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 70px;
   margin-right: 10.8rem;
 }
@@ -231,8 +200,7 @@
   background-position: center left;
   background-repeat: no-repeat;
   background-size: 100% 3rem;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .gnb_pc .area_menu .area_menu_inner .logo .logo_anchor.gnb_scroll_change {
   background-image: url("../img/logo/logo_openservice_white.png");
@@ -252,8 +220,6 @@
   height: 100%;
 }
 .gnb_pc .menu_text .lnb_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   position: relative;
@@ -306,15 +272,9 @@
   position: relative;
   width: 100%;
   height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-size: 18px;
   font-family: "NotoSansBold", "나눔바른고딕", "NanumBarunGothic", "Apple SD 산돌고딕 Neo", "Apple SD Gothic Neo", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -331,22 +291,22 @@
 }
 .gnb_pc .menu_text .lnb_list .depth01:nth-of-type(1) {
   width: 19rem;
-  /* transition: width 0.2s ease-in-out; */
+  transition: width 0.2s ease-in-out;
 }
 .gnb_pc .menu_text .lnb_list .depth01:nth-of-type(2) .depth01_item {
   padding-left: 4rem;
-  /*   transition: padding-left 0.3s ease-in-out; */
+  transition: padding-left 0.3s ease-in-out;
 }
 .gnb_pc .menu_text .lnb_list .depth01:nth-of-type(3) .depth01_item {
   padding-left: 4rem;
-  /*   transition: padding-left 0.3s ease-in-out; */
+  transition: padding-left 0.3s ease-in-out;
 }
 .gnb_pc .menu_text .lnb_list .depth01:nth-of-type(3) .depth02 {
   padding: 1rem 4.3rem;
 }
 .gnb_pc .menu_text .lnb_list .depth01:nth-of-type(4) .depth01_item {
   padding-left: 4rem;
-  /*   transition: padding-left 0.3s ease-in-out; */
+  transition: padding-left 0.3s ease-in-out;
 }
 .gnb_pc .menu_text .lnb_list .depth01:nth-of-type(4) .depth02 {
   padding: 1rem 4.3rem;
@@ -371,16 +331,16 @@
   width: 100%;
   max-width: 24rem;
   min-width: 21rem;
+  height: 19.4rem;
   padding: 1rem 3.8rem;
   margin: 3rem 0;
 }
 .gnb_pc .menu_text .lnb_list .depth02::before {
   content: "";
-  display: block;
   position: absolute;
   width: 1px;
   background-color: #eee;
-  height: 20rem;
+  height: 100%;
   left: 0;
   top: 0;
 }
@@ -425,6 +385,15 @@
 .gnb_pc .menu_text .lnb_list.gnb_mouse_over {
   gap: 0;
 }
+.gnb_pc .lnb_drop_menu_back {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: 25.4rem;
+  z-index: -1;
+}
 
 /* mobile 버전 GNB */
 .gnb_mo {
@@ -448,7 +417,6 @@
   width: 84%;
   max-width: 315px;
   height: 100dvh;
-  -webkit-transition: ease-in-out 0.25s;
   transition: ease-in-out 0.25s;
 }
 .gnb_mo.on .nav_dim {
@@ -474,12 +442,8 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .gnb_mo .gov_top_info p {
   line-height: 1;
@@ -491,42 +455,25 @@
 }
 .gnb_mo .area_menu {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   border-bottom: 1px solid #ddd;
 }
 .gnb_mo .area_menu .area_menu_inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   width: 100%;
   height: 8.3rem;
   padding: 4.3rem 1.4rem 1.8rem;
   background-color: #fff;
 }
 .gnb_mo .area_menu .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .gnb_mo .area_menu .logo .logo_anchor {
   display: inline-block;
@@ -559,23 +506,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
 }
 .gnb_mo .menu_text .lnb_list {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-wrap: wrap;
+  flex-direction: column;
   top: 0;
   width: 100%;
   overflow-y: auto;
@@ -599,8 +539,7 @@
   content: "";
   top: 50%;
   right: 2.45rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 1.5rem;
   height: 0.95rem;
   background-image: url("../img/icon/icon_mob_chevron_down.png");
@@ -609,8 +548,7 @@
   background-size: 100%;
 }
 .gnb_mo .menu_text .lnb_list .depth01.on .depth01_item::after {
-  -webkit-transform: rotate(180deg) translateY(50%);
-          transform: rotate(180deg) translateY(50%);
+  transform: rotate(180deg) translateY(50%);
 }
 .gnb_mo .menu_text .lnb_list .depth02 {
   display: none;
@@ -669,13 +607,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .gnb_mo .wrap_menus .area_state {
   position: relative;
@@ -708,15 +641,13 @@
 .gnb_mo .wrap_menus .area_state .user_info .logo_lnb img {
   width: auto;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 auto;
 }
 .gnb_mo .wrap_menus .area_state .user_info .logo_lnb a img {
   width: auto;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0 auto;
 }
 .gnb_mo .wrap_menus .area_state .user_info .box_state {
@@ -731,12 +662,8 @@
   margin-bottom: 0.5rem;
 }
 .gnb_mo .wrap_menus .area_state .user_info .box_state .wrap_gnb_btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .gnb_mo .wrap_menus .area_state .user_info .box_state .wrap_gnb_btn .btn_action {
   width: 16.5rem;
@@ -752,8 +679,7 @@
   position: absolute;
   right: 1.4rem;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 2rem;
   height: 2rem;
   background-image: url("../img/icon/icon_outbound_white.svg");
@@ -766,29 +692,17 @@
   margin-top: 1rem;
 }
 .gnb_mo .wrap_menus .area_state .user_info .box_state .box_btn_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 23rem;
   margin: 0 auto;
   margin-top: 1.5rem;
 }
 .gnb_mo .wrap_menus .area_state .user_info .box_state .box_btn_info .btn_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 11rem;
   height: 3rem;
   border-radius: 0.35rem;
@@ -797,14 +711,9 @@
   background-color: #111;
 }
 .gnb_mo .wrap_menus .area_state .user_info .area_profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
   width: 100%;
   gap: 1.5rem;
 }
@@ -820,8 +729,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .gnb_mo .wrap_menus .area_state .user_info .area_profile .wrap_txt_profile {
   width: calc(100% - 6.5rem);
@@ -839,27 +747,21 @@
   font-size: 1.4rem;
 }
 .gnb_mo .wrap_menus .area_state .user_info .user_btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 2rem;
   gap: 1rem;
 }
 
 html.open_lnb body {
   overflow: hidden;
-  -ms-touch-action: none;
-      touch-action: none;
+  touch-action: none;
 }
 html.open_lnb .header .nav_dim {
   opacity: 1;
   visibility: visible;
   overflow: hidden !important;
-  -ms-touch-action: none;
-      touch-action: none;
+  touch-action: none;
 }
 html.open_lnb .gnb_pc .area_menu::after {
   content: "";
