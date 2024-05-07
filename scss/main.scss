@@ -156,13 +156,12 @@ img {
 
 section.main_visual {
     min-height: unset;
+    max-height: 220rem;
   }
   
 .main_visual {
     width: 100%;
-    height: 100vh;
-    min-height: unset;
-    max-height: 220rem;
+    height: 100vh;    
     color: $color_white; 
     background-color: $color_111;
     
