@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/layout.css" />
     <link rel="stylesheet" type="text/css" href="../css/main.css" />
+   <!--  <link rel="stylesheet" type="text/css" href="../css/style_promotion.css" /> -->
 
     <!-- 파비콘 적용 -->
     <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
@@ -36,7 +37,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- JS -->
-    <script src="../js/jquery-3.6.3/jquery.min.js"></script>  
+    <script src="../js/jquery-3.6.3/jquery.min.js"></script>
+       
     <script src="../js/swiper-5.4.3.min.js"></script>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="../js/aos.js"></script>  
@@ -69,34 +71,37 @@
                                 </div>
                                 <!-- 슬라이드 자동재생, 일시정지 버튼 -->
                                 <div class="slide_controller">
-                                    <div class="controller_btns">  
-                                        <div class="controller_btn_item controller_box_state">                            
-                                            <span class="swiper-pagination-current">01</span>
-                                            <div class="swiper-pagination"></div>
-                                            <span class="swiper-pagination-total">02</span>
-                                        </div>
-                                        <div class="controller_btn_item controller_box_btn">
-                                            <button type="button" class="controller_btn_prev" title="슬라이드 이전 보기"></button>
-                                            <button type="button" id="controller_btn_pause" class="controller_btn_pause" title="슬라이드 일시정지"></button>
-                                        <!--   <button type="button" id="controller_btn_start" class="controller_btn_start" title="슬라이드 재생"></button> -->
-                                            <button type="button" class="controller_btn_next" title="슬라이드 다음 보기"></button>
-                                        </div>                             
+                                    <div class="controller_btns">
+                                            <div class="controller_btn_item controller_box_state">
+                                                    <span class="swiper-pagination-current">01</span>
+                                                    <div class="swiper-pagination"></div>
+                                                    <span class="swiper-pagination-total">02</span>
+                                            </div>
+                                            <div class="controller_btn_item controller_box_btn">
+                                                    <button type="button" class="controller_btn_prev" title="슬라이드 이전 보기"></button>
+                                                    <button type="button" id="controller_btn_play" class="controller_btn_play" title="슬라이드 재생"></button>
+                                                    <button type="button" id="controller_btn_pause" class="controller_btn_pause" title="슬라이드 일시정지"></button>
+                                                    <button type="button" class="controller_btn_next" title="슬라이드 다음 보기"></button>
+                                            </div>
                                     </div>
                                     <button type="button" class="swiper-button-next" title="슬라이드 다음 보기"></button>
-                                    <button type="button" class="swiper-button-prev" title="슬라이드 이전 보기"></button>    
-                                </div>
+                                    <button type="button" class="swiper-button-prev" title="슬라이드 이전 보기"></button>
+                            </div>
                             </article>                                 
                         </div>
                         <div class="swiper-wrapper">
                             <div class="main_visual_slide01 swiper-slide" data-swiper-autoplay="16500">     
                                 <div class="inner">
                                     <!-- PC 영상 -->                                       
-                                <video class="none_768"  autoplay muted loop playsinline aria-label="배경 동영상"> 
-                                        <source type="video/mp4" src="http://121.128.108.74:8882/video/api_pc_V01.mp4">                               
+                                <video class="video none_768" data-autoplay autoplay muted loop playsinline aria-label="배경 동영상" poster="../img/main/bg_main_visual_01.png"> 
+                                        <!-- <source type="video/mp4" src="http://121.128.108.74:8882/video/api_pc_V01.mp4">                                -->
+                                        <source type="video/mp4" src="../img/video/main_video_03.mp4">
                                     </video>
+
                                     <!-- 모바일 영상 -->                                     
-                                <video class="block_768" autoplay muted loop playsinline aria-label="배경 동영상"> 
-                                        <source type="video/mp4" src="http://121.128.108.74:8882/video/api_mobile_V01.mp4">        
+                                <video class="block_768" autoplay muted loop playsinline aria-label="배경 동영상" poster="../img/main/bg_main_visual_m_01.png"> 
+                                        <!-- <source type="video/mp4" src="http://121.128.108.74:8882/video/api_mobile_V01.mp4">         -->
+                                        <source type="video/mp4" src="../img/video/main_mobile_03.mp4" >
                                     </video> 
                                 </div>
                             </div>
@@ -350,36 +355,13 @@
                                                 <a href="03_적용사례_서비스별 사례_휴양림 예약.html" target="_self" id="mo_btn_to_forest_kbstarbanking" class="btn_action filled_brand link_in_white only_mob" title="휴양림 예약 서비스 사례 소개 페이지로 이동">상세히 알아보기</a>
                                             </div>                                    
                                         </article>
-                                    </div>
-                                    <!-- 문화누리카드 이용 -->
-                                    <div class="swiper-slide slide_con04">
-                                        <article> 
-                                            <div class="wrap_txt">
-                                                <div class="logo_group under_two">
-                                                    <div class="wrap_app_logo">
-                                                        <img src="../img/app_logo/app_naverpay.png" alt="네이버 페이 앱 로고">
-                                                    </div>                                                                                                                                            
-                                                </div>
-                                                <h5>문화누리카드 이용</h5>
-                                                <p>문화 예술과 여행, 체육의 다양한 분야에서 
-                                                    <br /> 간편하게 문화누리카드를 사용할 수 있습니다.
-                                                </p> 
-                                                <a href="03_적용사례_서비스별 사례_문화누리카드이용.html" target="_self" id="btn_to_mnuriApi_naverPay" class="btn_action filled_brand link_in_white only_pc" title="문화누리카드 이용 서비스 사례 소개 페이지로 이동">상세히 알아보기</a>
-                                            </div>
-                                            <div class="wrap_img">
-                                                <div class="img_wrap_box">
-                                                    <img src="../img/main/app_naverPay.png" alt="네이버 페이 앱에 문화누리카드를 등록하여 현장결제 때 문화누리카드로 결제하는 화면 스크린샷 이미지입니다">
-                                                </div>                                             
-                                                <a href="03_적용사례_서비스별 사례_문화누리카드이용.html" target="_self" id="mo_btn_to_mnuriApi_naverPay" class="btn_action filled_brand link_in_white only_mob" title="문화누리카드 이용 서비스 사례 소개 페이지로 이동">상세히 알아보기</a>
-                                            </div>                                    
-                                        </article>
                                     </div>                        
                                 </div>
                                 <div class="swiper-pagination swiper-pagination-progressbar"></div>                                  
                             </div>
                             <!-- 스와이퍼 컨트롤러 -->
-                            <button type="button" class="swiper-button-next" title="슬라이드 다음 보기"></button>
-                            <button type="button" class="swiper-button-prev" title="슬라이드 이전 보기"></button>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
                     </div>
                 </section>
@@ -548,7 +530,7 @@
 
         $(window).on('resize', function() {
                 const windowWidth = $(window).width();
-                const mainVideo = $('.video02');            
+                const mainVideo = $('.main_visual_slide01');            
 
                 if (windowWidth >= 768) {
                     // Mobile resolution
@@ -560,19 +542,29 @@
 
                 // 비디오 소스 변경 후 비디오를 다시 로드해야 함
                 mainVideo[0].load();
-            });
+            });            
             
-            
-            // 스와이퍼 컨트롤러 (일시정지/재생)
+            // // 스와이퍼 컨트롤러 (일시정지/재생)
             $(".slide_controller .controller_btn_pause").on("click", function() {
                 $(this).toggleClass("pausing");
-                if ($(this).hasClass("pausing") == true) {
+                if ($(this).hasClass("pausing")) {
                     mainVisualSwiper.autoplay.stop();
-                    return false;
                 } else {
                     mainVisualSwiper.autoplay.start();
                 }
-            });  
+            });
+            			// 슬라이드 정지/재생
+			// $('.main_visual .controller_btn_play').hide();
+			// $('.main_visual .controller_btn_pause').on('click', function() {
+			// 		visualSwiper.autoplay.stop();
+			// 		$('.main_visual .controller_btn_play').show();
+			// 		$(this).hide();
+			// });
+			// $('.main_visual .controller_btn_play').on('click', function() {
+			// 		visualSwiper.autoplay.start();
+			// 		$('.main_visual .controller_btn_pause').show();
+			// 		$(this).hide();
+			// });
 
         // 이전 슬라이드의 애니메이션 클래스 제거 함수
             function removeAnimationClass() {

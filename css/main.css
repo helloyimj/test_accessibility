@@ -2612,3 +2612,11 @@ section.main_visual {
       overflow-x: hidden;
   }
 } */
+/* 20240522 접근성 추가 */
+.main_visual_inner .slide_controller button:focus-visible {
+  outline-style: dashed;
+  outline-width: 3px !important;
+  outline-offset: 3px !important;
+  border: 1px solid #000 !important;
+  outline-color: #fff !important;
+}

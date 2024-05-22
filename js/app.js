@@ -169,12 +169,12 @@ function popupAriaAttrAdd() {
     $(".popup_layer").attr({
         "role": "dialog",
         "aria-modal": "true",
-        "aria-labelledby": "",
+        // "aria-labelledby": "",
     });
 
-    $(".popup_layer").attr("aria-labelledby", function () {
-        return this.id + "Title";
-    });
+    // $(".popup_layer").attr("aria-labelledby", function () {
+    //     return this.id + "Title";
+    // });
 }
 $(document).ready(function () {
     popupAriaAttrAdd();

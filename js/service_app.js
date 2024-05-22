@@ -24,7 +24,7 @@
                 nextSlideMessage: '다음 슬라이드',
                 firstSlideMessage: '처음 슬라이드',
                 lastSlideMessage: '마지막 슬라이드',
-                paginationBulletMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+                
             },
         });
     })
@@ -59,7 +59,7 @@
                 nextSlideMessage: '다음 슬라이드',
                 firstSlideMessage: '처음 슬라이드',
                 lastSlideMessage: '마지막 슬라이드',
-                paginationBulletMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+                
             },
         });
     });

@@ -71,7 +71,7 @@
             margin: 0 auto;
             overflow: hidden;
             // margin-left: auto;
-        }s
+        }
 
         // 상단 누리집  
         .gov_top_info {
@@ -263,7 +263,6 @@
             background-color: $color_white;
         }
     }
-
 
     /* lnb 메뉴 */
     .menu_text {
@@ -513,6 +512,9 @@
         height: 25.4rem;
         z-index: -1;
     }
+    .box_btn_util {
+        display: none;
+    }
 }
 
 /* mobile 버전 GNB */
@@ -624,6 +626,7 @@
         }
 
         .box_btn_util {
+            display: block;
             // height: 100%;               
             width: 2.5rem;
             gap: 0rem;

@@ -397,19 +397,19 @@
                         <div class="wrap_section_contents">
                             <div>
                                 <div class="wrap_img">
-                                    <img src="../img/main/section_example01.png" alt="자동차 검사하듯 자동차를 살펴보는 일러스트">
+                                    <img src="../img/main/section_example01.png" alt="">
                                 </div>
                                 <p>자동차 검사 기간이 도래하면 알림을 받고 자동차 검사 예약까지 한 번에 할 수 있는 서비스를 제공할 수 있습니다.</p>
                             </div>
                             <div>
                                 <div class="wrap_img">
-                                    <img src="../img/main/section_example02.png" alt="비행기와 비행기 티켓, 여권 등을 들고 있는 손 일러스트 ">
+                                    <img src="../img/main/section_example02.png" alt="">
                                 </div>
                                 <p>집에서부터 인천국제공항까지의 경로와 이용하려는 항공편 탑승구까지의 최적의 경로와 혼잡도, 소요시간을 실시간으로 확인할 수 있는 서비스를 제공할 수 있습니다.</p>
                             </div>
                             <div>
                                 <div class="wrap_img">
-                                    <img src="../img/main/section_example03.png" alt="나무와 수풀이 우거진 풍경 일러스트">
+                                    <img src="../img/main/section_example03.png" alt="">
                                 </div>
                                 <p>하나의 앱에서 휴양림까지의 경로 검색, 이용 예약과 기차표 예매까지 할 수 있는 통합 서비스를 제공할 수 있습니다.</p>
                             </div>
@@ -556,7 +556,7 @@
                 nextSlideMessage: '다음 슬라이드',
                 firstSlideMessage: '처음 슬라이드',
                 lastSlideMessage: '마지막 슬라이드',
-                paginationBulletMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+                
             },
 
         });
@@ -567,7 +567,7 @@
         /* SWIPER API - Event will be fired after animation to other slide (next or previous) */
         visualSwiper.on('slideChange', function() {
             // console.log('slide changed');
-            /* stop all videos (currentTime buggy without this loop idea) */
+            
             sliderVideos.each(function(index) {
                 this.currentTime = 0;
             });

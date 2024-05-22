@@ -112,7 +112,7 @@ header +=                '</div>';
 header +=                '<!-- mob 햄버거 메뉴 버튼 -->';
 header +=                '<div class="box_btn_util">';
 header +=                    '<div class="box_btn_item">';
-header +=                        '<button type="button" class="btn_util_ham" title="lnb 전체 메뉴 열기"></button>';
+header +=                        '<button type="button" class="btn_util_ham" title="gnb 메뉴 열기"></button>';
 header +=                    '</div>';
 header +=                '</div>';
 header +=             '</div>';
@@ -137,7 +137,7 @@ footer +=  						'<p>© Ministry of the Interior and Safety. <br class="only_mob
 footer +=  				'</div>'
 footer +=  				'<div class="area_links">'
 footer +=  			    	'<div class="wrap_select_family">'
-footer +=  			    		'<a href="javascript:;" class="rel_link_sel" title="관련사이트 목록 열기">관련기관 누리집</a>'
+footer +=  			    		'<a href="javascript:;" class="rel_link_sel" title="관련기관 누리집 목록 열기">관련기관 누리집</a>'
 footer +=                        '<ul>'
 footer +=                            '<li><a href="https://www.gov.kr/portal/main/nologin" target="_blank" title="새 창 열림- 정부24">정부24</a></li>'
 footer +=                            '<li><a href="https://www.ips.go.kr/pot/forwardMain.do" target="_blank" title="새 창 열림- 국민비서">국민비서</a></li>'
